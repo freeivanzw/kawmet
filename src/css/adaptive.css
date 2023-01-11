@@ -1,0 +1,30 @@
+@media only screen and (min-width: 480px) {
+  /*HEADER*/
+  h1 {
+    color: red;
+  }
+}
+@media only screen and (min-width: 640px) {
+  /*HEADER*/
+  h2 {
+    color: blue;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /*HEADER*/
+  h1 {
+    color: yellow;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /*HEADER*/
+  h1 {
+    color: green;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /*HEADER*/
+  h1 {
+    color: gray;
+  }
+}
