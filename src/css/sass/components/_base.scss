@@ -4,7 +4,7 @@ BODY, HTML {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.4;
     width: 100%;
     min-width: 360px;
@@ -16,12 +16,77 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: var(--site-bg-color);
+    background-color: var(--base-color-1);
 }
 
 main {
     flex: 1 0 auto;
 }
+
+h1,
+.headline_1 {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.headline_2 {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+h2,
+.sub_title_1 {
+    font-size: 20px;
+    line-height: 1.4;
+    margin: 0 0 10px 0;
+}
+
+.sub_title_2 {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+}
+
+h3,
+.sub_title_3 {
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 400;
+    margin: 0 0 8px 0;
+}
+
+h4,
+.sub_title_4 {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 700;
+    margin: 0 0 7px 0;
+}
+
+h5,
+.sub_title_5 {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    margin: 0 0 7px 0;
+}
+
+h6,
+.sub_title_6 {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 700;
+    margin: 0 0 7px 0;
+}
+
+
+
 
 input {
     font-size: 14px;
@@ -65,7 +130,7 @@ textarea  {
 }
 
 a {
-    color: var(--link-color);
+    color: var(--text-color);
 }
 
 a:hover {
@@ -73,15 +138,10 @@ a:hover {
 }
 
 article a {
-    color: var(--link-color);
-    text-decoration: none;
-    border-bottom: 1px solid var(--border-color);
-    transition: 0.3s;
+    color: var(--text-color);
+    text-decoration: underline;
 }
 
-article a:hover {
-    color: var(--link-color-active)
-}
 
 article li {
     position: relative;
@@ -103,41 +163,6 @@ a:active {
     color: inherit;  /* НЕ УДАЛЯТИ */
 }
 
-.main_title,
-h1 {
-    text-transform: uppercase;
-    display: inline-block;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 39px;
-    text-decoration: none;
-    color: var(--text-color);
-    margin-bottom: 40px;
-    transition: 0.3s;
-}
-
-a.main_title:hover {
-    opacity: 0.7;
-}
-
-.sub_title,
-h2,
-h3 {
-    text-transform: uppercase;
-    display: inline-block;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 30px;
-    text-decoration: none;
-    color: var(--text-color);
-    margin-bottom: 24px;
-    transition: 0.3s;
-}
-
-a.sub_title:hover {
-    opacity: 0.7;
-}
-
 .centre {
     margin: 0 auto;
     padding: 0 10px;
@@ -152,64 +177,11 @@ a.sub_title:hover {
 }
 
 .btn {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-    color: var(--btn-text);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 40px;
-    width: max-content;
-    padding: 5px 20px;
-    border-radius: 20px;
-    background-color: var(--btn-bg);
-    border: 1px solid var(--btn-border);
-    cursor: pointer;
-    transition: 0.3s;
+
 }
 
 .btn:hover {
-    background-color: transparent;
-    color: var(--btn-text-hover);
-}
 
-.close_btn {
-    font-size: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    cursor: pointer;
-}
-
-.close_btn::before,
-.close_btn::after {
-    content: "";
-    width: 18px;
-    height: 2px;
-    background-color: var(--icon-color);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transition: background-color 0.3s;
-}
-
-.close_btn::before {
-    transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-.close_btn::after {
-    transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.close_btn:hover::before,
-.close_btn:hover::after {
-    background-color: #EE3C30;;
 }
 
 .shadow {
@@ -222,7 +194,6 @@ a.sub_title:hover {
     background: rgba(32, 30, 80, 0.4);
     z-index: 10;
 }
-
 
 .hidden {
     display: none !important;

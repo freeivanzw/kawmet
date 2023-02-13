@@ -1,21 +1,27 @@
 @import "./components/header/header-adaptive";
+@import "./components/base-adaptive";
 
 @media only screen and (min-width : 480px)  {
+    @include base-480;
     @include header-480;
 }
 
 @media only screen and (min-width : 640px)  {
+    @include base-640;
     @include header-640;
 }
 
 @media only screen and (min-width : 768px)  {
+    @include base-768;
     @include header-768;
 }
 
 @media only screen and (min-width : 1024px) {
+    @include base-1024;
     @include header-1024;
 }
 
 @media only screen and (min-width : 1280px) {
+    @include base-1024;
     @include header-1280;
 }

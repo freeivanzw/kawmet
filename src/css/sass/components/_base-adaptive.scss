@@ -1,0 +1,88 @@
+@mixin base-480 {
+    /*BASE*/
+
+}
+
+@mixin base-640 {
+    /*BASE*/
+
+}
+
+@mixin base-768 {
+    /*BASE*/
+
+}
+
+@mixin base-1024 {
+    /*BASE*/
+    BODY, HTML {
+        font-size: 16px;
+    }
+
+    h1,
+    .headline_1 {
+        font-size: 38px;
+        line-height: 1.4;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .headline_2 {
+        font-size: 36px;
+        line-height: 1.4;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    h2,
+    .sub_title_1 {
+        font-size: 36px;
+        line-height: 1.4;
+        margin: 0;
+    }
+
+    .sub_title_2 {
+        text-transform: uppercase;
+        font-size: 32px;
+        line-height: 1.4;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    h3,
+    .sub_title_3 {
+        font-size: 32px;
+        line-height: 1.3;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    h4,
+    .sub_title_4 {
+        font-size: 24px;
+        line-height: 1.4;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    h5,
+    .sub_title_5 {
+        font-size: 24px;
+        line-height: 1.4;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    h6,
+    .sub_title_6 {
+        font-size: 20px;
+        line-height: 1.4;
+        font-weight: 700;
+        margin: 0;
+    }
+}
+
+@mixin base-1280 {
+    /*BASE*/
+
+}
