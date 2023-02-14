@@ -18,8 +18,156 @@
 </head>
 <body>
 
+
     <div class="styleguide" style="display: flex; flex-direction: column">
-        <div class="icon_wrap">
+        <a href="#">test link</a>
+        <a href="#" class="site_link disabled">test link</a>
+        <a href="#" class="site_link black">test link</a>
+        <a href="#" class="site_link black disabled">test link</a>
+        <a href="#" class="site_link gray">test link</a>
+        <a href="#" class="site_link gray disabled">test link</a>
+        <label class="input_wrap">
+            <span class="label_text">Ім'я користувача</span>
+            <input type="text" placeholder="Ім'я користувача">
+            <div class="input_message">Повідомлення під інпуторм</div>
+        </label>
+        <label class="input_wrap">
+            <span class="label_text">Ім'я користувача</span>
+            <input type="text" class="small" placeholder="Ім'я користувача">
+            <div class="input_message">Повідомлення під інпуторм</div>
+        </label>
+        <label class="input_wrap">
+            <span class="label_text">Ім'я користувача</span>
+            <input type="text" class="small error" placeholder="Ім'я користувача">
+            <div class="input_message">Повідомлення під інпуторм</div>
+        </label>
+        <label class="input_wrap">
+            <span class="label_text">Ім'я користувача</span>
+            <input type="text" disabled placeholder="Ім'я користувача">
+            <div class="input_message success"><svg class="icon"><use xlink:href="./images/sprite.svg#success-filled"></use></svg>Повідомлення під інпуторм</div>
+        </label>
+        <label class="input_wrap">
+            <span class="label_text">Ім'я користувача</span>
+            <input type="text" class="error" placeholder="Ім'я користувача">
+            <div class="input_message error"><svg class="icon"><use xlink:href="./images/sprite.svg#warning-filled"></use></svg>Повідомлення під інпуторм</div>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#warning"></use></svg>
+        </label>
+        <label class="input_wrap small">
+            <span class="label_text">Ім'я користувача</span>
+            <input type="text" placeholder="Ім'я користувача">
+        </label>
+        <label class="input_wrap small">
+            <span class="label_text">Текст користувача</span>
+            <textarea placeholder="Текст користувача"></textarea>
+        </label>
+        <label class="input_wrap small">
+            <span class="label_text">Текст користувача</span>
+            <textarea placeholder="Текст користувача" class="error"></textarea>
+            <div class="input_message error"><svg class="icon"><use xlink:href="./images/sprite.svg#warning-filled"></use></svg>Повідомлення під інпуторм</div>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#warning"></use></svg>
+        </label>
+        <div class="input_wrap">
+            <span class="label_text">Спосіб оплати</span>
+            <div class="dropdown order_payment">
+                <div class="overflow"><span>Спосіб оплати</span><button type="button" class="drop_arrow"></button></div>
+                <ul>
+                    <li>test test test 1</li>
+                    <li>test test test 2</li>
+                    <li>test test test 3</li>
+                    <li>test test test 4</li>
+                    <li>test test test 5</li>
+                </ul>
+                <input type="hidden" name="payment" value="">
+            </div>
+        </div>
+        <div class="input_wrap">
+            <span class="label_text">Спосіб оплати</span>
+            <div class="dropdown order_payment2 error">
+                <div class="overflow"><span>Спосіб оплати</span><button type="button" class="drop_arrow"></button></div>
+                <ul>
+                    <li>test test test 1</li>
+                    <li>test test test 2</li>
+                    <li>test test test 3</li>
+                    <li>test test test 4</li>
+                    <li>test test test 5</li>
+                </ul>
+                <input type="hidden" name="payment" value="">
+            </div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap">
+            <label class="checkbox_styled">
+                <input type="radio" name="rb1">
+                <span>checkbox</span>
+            </label>
+            <label class="checkbox_styled">
+                <input type="radio" name="rb1">
+                <span>checkbox</span>
+            </label>
+            <label class="checkbox_styled">
+                <input type="radio" name="rb1" disabled>
+                <span>checkbox</span>
+            </label>
+        </div>
+        <div style="display: flex; flex-wrap: wrap">
+            <label class="checkbox_styled">
+                <input type="checkbox">
+                <span>checkbox</span>
+            </label>
+            <label class="checkbox_styled">
+                <input type="checkbox" disabled>
+                <span>checkbox</span>
+            </label>
+        </div>
+        <a href="#" class="close_btn"><svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg>close</a>
+        <div style="display: flex; flex-wrap: wrap; margin: 0 0 10px 0">
+            <a href="#" class="btn_text">Кнопка з текстом</a>
+            <a href="#" class="btn_text"><span>Кнопка з текстом</span><svg class="icon"><use xlink:href="./images/sprite.svg#filter-outline"></use></svg></a>
+            <a href="#" class="btn_text disabled"><svg class="icon"><use xlink:href="./images/sprite.svg#filter-outline"></use></svg><span>Кнопка з текстом</span></a>
+        </div>
+        <hr>
+        <div style="display: flex; flex-wrap: wrap; margin: 0 0 10px 0">
+            <a href="#" class="btn"><span>Тест кнопки</span></a>
+            <a href="#" class="btn"><svg class="icon"><use xlink:href="./images/sprite.svg#filter-outline"></use></svg><span>Тест кнопки</span></a>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; margin: 0 0 10px 0">
+            <a href="#" class="btn loading"><span>Тест кнопки</span></a>
+            <a href="#" class="btn loading"><svg class="icon"><use xlink:href="./images/sprite.svg#user"></use></svg><span>Тест кнопки</span></a>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; margin: 0 0 10px 0">
+            <a href="#" class="btn disabled"><span>Тест кнопки</span></a>
+            <button class="btn" disabled><span>Тест кнопки</span></button>
+            <a href="#" class="btn disabled"><svg class="icon"><use xlink:href="./images/sprite.svg#user"></use></svg><span>Тест кнопки</span></a>
+        </div>
+        <hr style="width: 100%">
+        <div style="display: flex; flex-wrap: wrap; margin: 0 0 10px 0">
+            <a href="#" class="btn outline"><span>Тест кнопки</span></a>
+            <a href="#" class="btn outline"><svg class="icon"><use xlink:href="./images/sprite.svg#user"></use></svg><span>Тест кнопки</span></a>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; margin: 0 0 10px 0">
+            <a href="#" class="btn outline loading"><span>Тест кнопки</span></a>
+            <a href="#" class="btn outline loading"><svg class="icon"><use xlink:href="./images/sprite.svg#user"></use></svg><span>Тест кнопки</span></a>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; margin: 0 0 10px 0">
+            <a href="#" class="btn outline disabled"><span>Тест кнопки</span></a>
+            <button class="btn outline" disabled><span>Тест кнопки</span></button>
+            <a href="#" class="btn outline disabled"><svg class="icon"><use xlink:href="./images/sprite.svg#user"></use></svg><span>Тест кнопки</span></a>
+        </div>
+        <hr style="width: 100%">
+        <div style="display: flex; flex-wrap: wrap; margin: 0 0 10px 0">
+            <a href="#" class="btn big"><span>Тест кнопки</span></a>
+            <a href="#" class="btn big"><svg class="icon"><use xlink:href="./images/sprite.svg#filter-outline"></use></svg><span>Тест кнопки</span></a>
+        </div>
+        <hr style="width: 100%">
+        <div style="display: flex; flex-wrap: wrap; margin: 0 0 10px 0">
+            <a href="#" class="btn medium"><span>Тест кнопки</span></a>
+            <a href="#" class="btn medium"><svg class="icon"><use xlink:href="./images/sprite.svg#filter-outline"></use></svg><span>Тест кнопки</span></a>
+        </div>
+        <hr style="width: 100%">
+        <div style="display: flex; flex-wrap: wrap; margin: 0 0 10px 0">
+            <a href="#" class="btn small"><span>Тест кнопки</span></a>
+            <a href="#" class="btn small"><svg class="icon"><use xlink:href="./images/sprite.svg#filter-outline"></use></svg><span>Тест кнопки</span></a>
+        </div>
+        <div>
             <svg class="icon"><use xlink:href="./images/sprite.svg#ua"></use></svg>
             <svg class="icon"><use xlink:href="./images/sprite.svg#ru"></use></svg>
             <svg class="icon"><use xlink:href="./images/sprite.svg#placeholder"></use></svg>
@@ -65,6 +213,9 @@
             <svg class="icon"><use xlink:href="./images/sprite.svg#up"></use></svg>
             <svg class="icon"><use xlink:href="./images/sprite.svg#down"></use></svg>
             <svg class="icon"><use xlink:href="./images/sprite.svg#placeholder-2"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#warning"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#warning-filled"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#success-filled"></use></svg>
         </div>
         <h1>h1</h1>
         <span class="headline_1">Headline 1</span>
@@ -83,17 +234,7 @@
 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga nulla ratione ut voluptates! Ab assumenda autem cum dolores eaque earum magni necessitatibus, pariatur, perferendis quod quos recusandae, repellendus sunt suscipit!</p>
 
-        <div class="dropdown order_payment">
-            <div class="overflow"><span>Спосіб оплати</span><button type="button" class="drop_arrow"></button></div>
-            <ul>
-                <li>test test test 1</li>
-                <li>test test test 2</li>
-                <li>test test test 3</li>
-                <li>test test test 4</li>
-                <li>test test test 5</li>
-            </ul>
-            <input type="hidden" name="payment" value="">
-        </div>
+
     </div>
 
 

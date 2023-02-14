@@ -98,7 +98,7 @@ $(function () {
         });
     };
 
-    $('.test_slider').slick();
+
     $('.order_payment').dropdown();
 })
 

@@ -80,6 +80,33 @@
         font-weight: 700;
         margin: 0;
     }
+
+    .btn {
+        font-size: 16px;
+        padding: 20px 30px;
+    }
+
+    .btn.big {
+        font-size: 16px;
+        padding: 29px 42px;
+    }
+
+    .label_text {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    input {
+        height: 70px;
+        padding: 0 25px;
+        font-size: 16px;
+    }
+
+    input[type=text].error, input[type=password].error, input[type=tel].error, input[type=number].error, input[type=email].error, textarea.error {
+        background-position: calc(100% - 22px) 20px;
+        background-size: 26px;
+        padding-right: 50px;
+    }
 }
 
 @mixin base-1280 {
