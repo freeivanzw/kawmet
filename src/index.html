@@ -17,7 +17,157 @@
     <link rel="stylesheet" href="./css/adaptive.css">
 </head>
 <body>
+    <!--HEADER-->
+    <header class="site_header">
+        <div class="top_header">
+            <div class="centre">
+                <div class="col-1">
+                    <a href="#" class="header_logo">
+                        <img src="./images/desktop-logo.svg" width="143" height="38" class="desktop" alt="header logo">
+                        <img src="./images/mobile-logo.svg" width="40" height="40" class="mobile" alt="header logo">
+                    </a>
+                    <span class="header_slogan">Камінні топки та печі від офіційного представника в Україні</span>
+                    <a href="#" class="btn medium header_catalog-btn"><svg class="icon"><use xlink:href="./images/sprite.svg#grid-1"></use></svg>Каталог товарів</a>
+                    <form class="search_box dark">
+                        <button type="submit"><svg class="icon"><use xlink:href="./images/sprite.svg#search"></use></svg>search</button>
+                        <input type="text" placeholder="Пошук по сайту">
+                    </form>
+                </div>
+                <div class="col-2">
+                    <a href="#" class="header_btn-icon compare_header">
+                        <svg class="icon"><use xlink:href="./images/sprite.svg#compare"></use></svg>
+                        <span class="counter">2</span>
+                    </a>
+                    <div class="header_dropdown choose_language">
+                        <a href="#" class="selected_box"><svg class="icon"><use xlink:href="./images/sprite.svg#ua"></use></svg>UA</a>
+                        <ul>
+                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#ua"></use></svg>UA</a></li>
+                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#ru"></use></svg>RU</a></li>
+                        </ul>
+                    </div>
+                    <div class="header_dropdown choose_city">
+                        <a href="#" class="selected_box"><svg class="icon"><use xlink:href="./images/sprite.svg#placeholder"></use></svg>Львів</a>
+                        <ul>
+                            <li><a href="#">Львів</a></li>
+                            <li><a href="#">Київ</a></li>
+                            <li><a href="#">Одеса</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="info_list header_phones">
+                        <svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>
+                        <ul>
+                            <li><a href="tel:+380674827941">+38 067 482 79 41</a></li>
+                            <li><a href="tel:+380674827941">+38 067 482 79 41</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn medium outline callback_btn">Передзвоніть мені</a>
+                    <a href="#" class="header_btn-icon user_header"><svg class="icon"><use xlink:href="./images/sprite.svg#user"></use></svg></a>
+                </div>
+                <a href="#" class="mob_menu-btn"><svg class="icon"><use xlink:href="./images/sprite.svg#menu"></use></svg>menu</a>
+            </div>
+        </div>
+        <div class="menu_header">
+            <div class="centre">
+                <nav class="col-1 top_menu-1lvl">
+                    <ul>
+                        <li><a href="#" class="active">Каміни та печі</a></li>
+                        <li><a href="#" class="has_drop">Комплектуючі та аксесуари</a></li>
+                        <li><a href="#" class="has_drop opened_submenu">Блог</a></li>
+                        <li><a href="#" class="has_drop active">Галерея</a></li>
+                        <li><a href="#">Де купити</a></li>
+                        <li><a href="#">Гарантія</a></li>
+                        <li><a href="#">Стати партнером</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                </nav>
+                <div class="col-2">
+                    <form class="search_box">
+                        <button type="submit"><svg class="icon"><use xlink:href="./images/sprite.svg#search"></use></svg>search</button>
+                        <input type="text" placeholder="Пошук по сайту">
+                    </form>
+                    <a href="#" class="header_btn-icon compare_near-menu">
+                        <svg class="icon"><use xlink:href="./images/sprite.svg#compare"></use></svg>
+                        <span class="counter">2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mobile_menu">
+            <div class="mobile_menu-header">
+                <a href="#" class="mobile_menu-logo"><img src="./images/desktop-logo.svg" width="120" height="32" alt="site logo"></a>
+                <span class="header_slogan">Камінні топки та печі від офіційного представника в Україні</span>
+                <a href="#" class="close-mobile_menu"><svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg>close</a>
+            </div>
+            <div class="mobile_menu-body">
+                <ul class="mob-choose_lang">
+                    <li><a href="#" class="active"><svg class="icon"><use xlink:href="./images/sprite.svg#ua"></use></svg><span>UA</span></a></li>
+                    <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#ru"></use></svg><span>RU</span></a></li>
+                </ul>
+                <hr>
+                <a href="#" class="mobile_item-link has_drop mob-choose_city"><svg class="icon"><use xlink:href="./images/sprite.svg#placeholder"></use></svg><span>Виберіть місто</span></a>
+                <hr>
+                <div class="mobile_menu-phone">
+                    <svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>
+                    <ul>
+                        <li><a href="tel: +380985811613">+38 098 581 16 13</a></li>
+                        <li><a href="tel: +380985811613">+38 098 581 16 13</a></li>
+                    </ul>
+                    <a href="#" class="btn outline small"><span>Передзвоніть мені</span></a>
+                </div>
+                <hr>
+                <ul>
+                    <li><a href="#" class="mobile_item-link has_drop"><span>Каміни та печі</span></a></li>
+                    <li class="active">
+                        <a href="#" class="mobile_item-link has_drop"><span>Комплектуючі і аксесуари</span></a>
+                        <div class="sub_menu-box">  <!-- active -->
+                            <a href="#" class="back_mob-top">Комплектуючі та аксесуари</a>
+                            <ul class="mob_grid-photo">
+                                <li class="active">
+                                    <a href="#"><img src="./images/product-mini-photo.png"><span>Дверцята</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./images/product-mini-photo.png"><span>Димоходи для печей і камінів</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./images/product-mini-photo.png"><span>Підставки</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#" class="mobile_item-link"><span>Блог</span></a></li>
+                    <li><a href="#" class="mobile_item-link"><span>Галерея</span></a></li>
+                    <li><a href="#" class="mobile_item-link"><span>Де купити</span></a></li>
+                    <li><a href="#" class="mobile_item-link"><span>Гарантія</span></a></li>
+                    <li><a href="#" class="mobile_item-link"><span>Стати пртнером</span></a></li>
+                    <li><a href="#" class="mobile_item-link"><span>Контакти</span></a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="#" class="mobile_item-link has_drop"><span>Для клієнтів</span></a></li>
+                    <li><a href="#" class="mobile_item-link has_drop"><span>Корисні матеріали</span></a></li>
+                    <li><a href="#" class="mobile_item-link has_drop"><span>Співпраця</span></a></li>
+                </ul>
+                <hr>
+                <a href="#" class="mobile_item-link has_drop"><svg class="icon"><use xlink:href="./images/sprite.svg#compare"></use></svg><span>Порівняння</span></a>
+                <a href="#" class="mobile_item-link has_drop"><svg class="icon"><use xlink:href="./images/sprite.svg#user"></use></svg><span>Увійти в кабінет</span></a>
+                <hr>
+                <ul class="mobile_social">
+                    <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#facebook"></use></svg></a></li>
+                    <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#youtube"></use></svg></a></li>
+                    <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#instagram"></use></svg></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
 
+    </main>
+    <!--FOOTER-->
+    <footer class="site_footer">
+
+    </footer>
 
     <div class="styleguide" style="display: flex; flex-direction: column">
         <a href="#">test link</a>
@@ -71,11 +221,11 @@
             <div class="dropdown order_payment">
                 <div class="overflow"><span>Спосіб оплати</span><button type="button" class="drop_arrow"></button></div>
                 <ul>
-                    <li>test test test 1</li>
-                    <li>test test test 2</li>
-                    <li>test test test 3</li>
-                    <li>test test test 4</li>
-                    <li>test test test 5</li>
+                    <li><a href="#">test test test 1</a></li>
+                    <li><a href="#">test test test 2</a></li>
+                    <li><a href="#">test test test 3</a></li>
+                    <li><a href="#">test test test 4</a></li>
+                    <li><a href="#">test test test 5</a></li>
                 </ul>
                 <input type="hidden" name="payment" value="">
             </div>
@@ -85,11 +235,11 @@
             <div class="dropdown order_payment2 error">
                 <div class="overflow"><span>Спосіб оплати</span><button type="button" class="drop_arrow"></button></div>
                 <ul>
-                    <li>test test test 1</li>
-                    <li>test test test 2</li>
-                    <li>test test test 3</li>
-                    <li>test test test 4</li>
-                    <li>test test test 5</li>
+                    <li><a href="#">test test test 1</a></li>
+                    <li><a href="#">test test test 2</a></li>
+                    <li><a href="#">test test test 3</a></li>
+                    <li><a href="#">test test test 4</a></li>
+                    <li><a href="#">test test test 5</a></li>
                 </ul>
                 <input type="hidden" name="payment" value="">
             </div>
@@ -167,7 +317,7 @@
             <a href="#" class="btn small"><span>Тест кнопки</span></a>
             <a href="#" class="btn small"><svg class="icon"><use xlink:href="./images/sprite.svg#filter-outline"></use></svg><span>Тест кнопки</span></a>
         </div>
-        <div>
+        <div style="display: flex;flex-wrap: wrap">
             <svg class="icon"><use xlink:href="./images/sprite.svg#ua"></use></svg>
             <svg class="icon"><use xlink:href="./images/sprite.svg#ru"></use></svg>
             <svg class="icon"><use xlink:href="./images/sprite.svg#placeholder"></use></svg>

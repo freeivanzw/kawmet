@@ -19,6 +19,11 @@ body {
     background-color: var(--base-color-1);
 }
 
+body.overflow {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
 main {
     flex: 1 0 auto;
 }
@@ -463,7 +468,7 @@ input,
 textarea {
     min-width: 1px;
     //font-size: 16px;
-    font-size: 12px;
+    font-size: 14px;
     color: var(--text-color);
     //height: 70px;
     //padding: 0 25px;
@@ -475,7 +480,6 @@ textarea {
 }
 
 input.small {
-    font-size: 12px;
     height: 46px;
     padding: 0 15px;
 }
@@ -603,10 +607,11 @@ a:not([class]):active {
     margin: 0 auto;
     padding: 0 10px;
     width: 100%;
-    max-width: 1205px;
+    max-width: 1190px;
 }
 
 .icon {
+    display: block;
     width: 16px;
     height: 16px;
 }

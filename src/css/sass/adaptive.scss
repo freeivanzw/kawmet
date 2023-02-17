@@ -21,7 +21,7 @@
     @include header-1024;
 }
 
-@media only screen and (min-width : 1280px) {
-    @include base-1024;
-    @include header-1280;
+@media only screen and (min-width : 1190px) {
+    @include base-1190;
+    @include header-1190;
 }
