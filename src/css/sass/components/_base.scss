@@ -607,6 +607,7 @@ a:not([class]):active {
     margin: 0 auto;
     padding: 0 10px;
     width: 100%;
+    width: 100%;
     max-width: 1190px;
 }
 
@@ -623,10 +624,13 @@ a:not([class]):active {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(32, 30, 80, 0.4);
+    background: #1E1E1E;
+    opacity: 0.5;
     z-index: 10;
 }
 
 .hidden {
     display: none !important;
 }
+
+

@@ -137,5 +137,29 @@ $(function () {
 
 
     $('.order_payment').dropdown();
+
+
+    // --------------------- тест верхнього меню
+
+    $('.top_menu-1lvl').on('click', 'a', function (e) {
+        e.preventDefault();
+
+        $('.site_header').toggleClass('menu-has_opened');
+        $('body').toggleClass('overflow');
+        $('.desk-top_menu').toggleClass('active');
+        $('.shadow').toggleClass('hidden');
+
+    })
+
+    $('.header_catalog-btn').on('click', function (e) {
+        e.preventDefault();
+
+        $('.site_header').toggleClass('menu-has_opened');
+        $('body').toggleClass('overflow');
+        $('.desk-top_menu').toggleClass('active_fixed');
+        $('.shadow').toggleClass('hidden');
+    })
+    // --------------------- тест верхнього меню
+
 })
 

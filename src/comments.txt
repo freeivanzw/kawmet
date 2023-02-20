@@ -1,0 +1,11 @@
+1. На десктопі шоб відкрити верхнє менє потірбно до site_header клас menu-has_opened,
+    відкривати тінь ,desk-top_menu клас active,  і до body клас overflow.
+
+    При скролі якщо нажати на "каталог товарів" тоді до desk-top_menu потрібно додавати клас active_fixed.
+
+2. В десктопі якшо відкритий пошук до menu_header додати клас потрібно
+3. Щоб показати пошук потррібно показати тінь і додати до site_header клас is_searching.
+    Якщо в мобільному тоді до top_header додати клас top_header-search і до самого пошуку search_box клас search_opened.
+    Якщо в десктопі коли екран з верху сторінки до search_box що в top_header потрібно додати клас not_active, до menu_header додати клас menu_header-search і потім до пошуку search_box додавати клас search_opened.
+    Якшо прокрутити сторінку на десктопі тоді зробити як на мобільному.
+    загрузка фільтру пошуку - search-loading_list
