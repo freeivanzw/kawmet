@@ -246,34 +246,9 @@
         align-items: center;
     }
 
-    .info_list {
-        display: flex;
-    }
-
-    .info_list > .icon {
-        display: block;
-        margin: 4px 6px 0 0;
-        width: 14px;
-        height: 14px;
-        fill: var(--main-color-1);
-    }
-
-    .info_list ul a {
-        font-size: 16px;
-        text-decoration: none;
-    }
 
     .info_list.header_phones {
         margin-right: 10px;
-    }
-
-    .info_list.header_phones ul a {
-        color: var(--base-color-1);
-        transition: 0.3s;
-    }
-
-    .info_list.header_phones ul a:hover {
-        color: var(--main-color-1);
     }
 
     .callback_btn.btn.medium {

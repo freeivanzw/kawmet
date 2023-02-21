@@ -137,6 +137,7 @@ $(function () {
 
 
     $('.order_payment').dropdown();
+    $('.city_dropdown').dropdown();
 
 
     // --------------------- тест верхнього меню
@@ -161,5 +162,24 @@ $(function () {
     })
     // --------------------- тест верхнього меню
 
+
+    $(window).on('scroll', function () {
+        console.log()
+        if ($(window).scrollTop() > 500) {
+            $('.to_up').addClass('active');
+        } else {
+            $('.to_up').removeClass('active');
+        }
+    })
+
+    $('.to_up').on('click', function (e) {
+        e.preventDefault();
+
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    })
 })
 

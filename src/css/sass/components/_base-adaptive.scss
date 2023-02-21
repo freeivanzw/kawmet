@@ -107,9 +107,22 @@
         background-size: 26px;
         padding-right: 50px;
     }
+
+    .close_btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .close_btn .icon {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 @mixin base-1190 {
     /*BASE*/
+    .to_up {
+        left: calc(50% - 650px);
+    }
 
 }

@@ -1,0 +1,269 @@
+/*POPUPS*/
+.popup_box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 100px 0 50px 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(30, 30, 30, 0.85);
+    z-index: 10;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.popup {
+    display: none;
+    flex-direction: column;
+    padding: 40px 15px 48px 15px;
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--base-color-1);
+    border-radius: 20px;
+    position: relative;
+}
+
+.popup.active {
+    display: flex;
+}
+
+.popup .close_btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.popup .sub_title_5 {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.popup .popup_subtitle {
+    color: var(--text-light);
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.popup_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup_form .input_wrap {
+    margin-bottom: 10px;
+}
+
+.popup_form .btn[type=submit]{
+    margin-bottom: 15px;
+}
+
+.popup-privacy_policy {
+    color: var(--text-light);
+    font-size: 11px;
+    text-align: center;
+}
+
+.popup_product-name {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.icon-thank_you {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 10px auto;
+}
+
+.popup.eco_popup {
+    padding: 25px 15px;
+    border-radius: 20px 20px 0 0;
+    margin-top: auto;
+    margin-bottom: -50px;
+}
+
+.eco_popup-title {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 30px;
+    margin-bottom: 10px;
+}
+
+.eco_popup-title .icon {
+    margin-right: 24px;
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.eco_text {
+    margin-bottom: 16px;
+}
+
+.popup.eco_popup .site_link {
+    display: flex;
+    align-items: center;
+}
+
+.popup.eco_popup .site_link .icon {
+    fill: currentColor;
+    width: 10px;
+    height: 10px;
+    margin-left: 6px;
+}
+
+.popup.video_popup {
+    padding: 0;
+    border-radius: 0;
+    background-color: var(--base-color-8);
+    max-width: 1170px;
+}
+
+.popup.video_popup iframe {
+    width: 100%;
+    height: 300px;
+}
+
+.popup.where_buy-popup {
+    max-width: 1170px;
+}
+
+.where_popup-text {
+    font-size: 13px;
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.choose_city-store {
+    margin-bottom: 10px;
+}
+
+.big_city-list {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.big_city-list ul {
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+
+.big_city-list ul li {
+    margin-right: 20px;
+}
+
+.big_city-list ul li a.active {
+    font-size: inherit;
+    color: var(--main-color-1);
+    transition: 0.3s;
+}
+
+.where_box {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.stores_map > * {
+    width: 100%;
+    height: 330px;
+    border-radius: var(--border-radius);
+}
+
+.stores_map {
+    margin-bottom: 15px;
+}
+
+.store_item-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.store_item-subtitle {
+    font-size: 16px;
+    color: var(--text-light);
+    margin-bottom: 15px;
+}
+
+.where_store-list > li {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--base-color-3);
+}
+
+.where_store-list > li + li {
+    margin-top: 15px;
+}
+
+.store_info-list > li + li {
+    margin-top: 15px;
+}
+
+.store_info-list .info_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.store_info-list .info_list ul a {
+    color: var(--text-color);
+}
+
+.store_info-list .info_list ul a:hover {
+    color: var(--main-color-1);
+}
+
+.store_info-list .site_link {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    width: calc(100% - 20px);
+}
+
+.store_info-list .site_link .icon {
+    fill: var(--main-color-1);
+    width: 10px;
+    height: 10px;
+    margin-left: 6px;
+}
+
+.info_time {
+    display: flex;
+}
+
+.info_time .icon {
+    flex: 0 0 14px;
+    display: block;
+    margin: 4px 6px 0 0;
+    width: 14px;
+    height: 14px;
+    fill: var(--main-color-1);
+}
+
+.info_time .time_box {
+    font-size: 16px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.info_time .time_box b {
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+.info_time .time_box span {
+    color: var(--text-light);
+}

@@ -1,0 +1,153 @@
+@mixin popups-480 {
+    /*POPUPS*/
+    .popup {
+        padding: 60px 56px;
+    }
+
+    .popup .close_btn {
+        top: 12px;
+        right: 12px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .popup .close_btn .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .popup .sub_title_5 {
+        font-size: 24px;
+    }
+
+    .popup .popup_subtitle {
+        font-size: 16px;
+    }
+
+    .popup_product-name {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .icon-thank_you {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 30px;
+    }
+
+    .popup.eco_popup {
+        margin: 0;
+        border-radius: 20px;
+        padding: 45px 40px;
+    }
+
+    .eco_popup-title {
+        font-size: 24px;
+        padding-right: 20px;
+        margin-bottom: 26px;
+    }
+
+    .eco_popup-title .icon {
+        flex: 0 0 60px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .popup.video_popup iframe {
+        height: 450px;
+    }
+}
+
+@mixin popups-640 {
+    /*POPUPS*/
+
+    .popup.video_popup iframe {
+        height: 658px;
+    }
+}
+
+@mixin popups-768 {
+    /*POPUPS*/
+    .choose_city-store {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .big_city-list {
+        flex: 0 1 43.5%;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .choose_city-store .dropdown.city_dropdown {
+        flex: 0 1 56.5%
+    }
+}
+
+@mixin popups-1024 {
+    /*POPUPS*/
+    .popup.where_buy-popup .headline_2 {
+        margin-bottom: 14px;
+    }
+
+    .where_popup-text {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .where_box {
+        flex-direction: row;
+        position: relative;
+    }
+
+    .where_box::before {
+        content: "";
+        width: 43.5%;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+        pointer-events: none;
+    }
+
+    .where_store-list {
+        flex: 0 1 43.5%;
+        padding-right: 30px;
+        max-height: 570px;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+    }
+
+    .big_city-list ul {
+        font-size: 16px;
+    }
+
+    .stores_map {
+        flex: 0 1 56.5%;
+        margin-bottom: 0;
+    }
+
+    .stores_map > * {
+        height: 570px;
+    }
+
+    .where_store-list > li {
+        padding: 0;
+        border-radius: 0;
+        border: none;
+    }
+
+    .where_store-list > li + li {
+        padding-top: 22px;
+        margin-top: 22px;
+        border-top: 1px solid var(--base-color-3);
+    }
+}
+
+@mixin popups-1190 {
+    /*POPUPS*/
+
+}
