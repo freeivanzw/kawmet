@@ -83,6 +83,34 @@
     .choose_city-store .dropdown.city_dropdown {
         flex: 0 1 56.5%
     }
+
+    .swiper-slide.certificate_slide {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .swiper.certificate_slider {
+        padding: 0 20px;
+    }
+
+    .popup.certificate_popup .slider_arrow {
+        display: block;
+    }
+
+    .certificate_img {
+        flex: 0 1 50%;
+        margin-bottom: 0;
+    }
+
+    .certificate_slide figcaption {
+        flex: 0 1 50%;
+        padding-left: 30px;
+    }
+
+    .popup_swipe-icon {
+        display: none;
+    }
 }
 
 @mixin popups-1024 {
@@ -145,6 +173,7 @@
         margin-top: 22px;
         border-top: 1px solid var(--base-color-3);
     }
+
 }
 
 @mixin popups-1190 {

@@ -306,7 +306,74 @@
         </div>
     </header>
     <main>
-
+        <!--MAIN_SLIDER-->
+        <section class="swiper main_slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide dark_slide main_slider-item">
+                    <picture class="main_slide-bg">
+                        <source media="(max-width: 639px)" srcset="./images/kamin-dark-mob.png">
+                        <source media="(min-width: 640px)" srcset="./images/kamin-dark.png">
+                        <img src="./images/kamin-dark.png" alt="slide image">
+                    </picture>
+                    <div class="centre">
+                        <span class="slide_slogan">KAWMET — тепло сімейних цінностей</span>
+                        <span class="headline_1">Насолоджуйтесь теплою оселею завдяки камінам та печам на дровах від офіційного представника KAWMET в Україні</span>
+                        <a href="#" class="btn big search_product"><span>Підібрати піч або камін</span></a>
+                    </div>
+                </div>
+                <div class="swiper-slide main_slider-item">
+                    <picture class="main_slide-bg">
+                        <source media="(max-width: 639px)" srcset="./images/kamin-white-mob.png">
+                        <source media="(min-width: 640px)" srcset="./images/kamin-white.png">
+                        <img src="./images/kamin-white.png" alt="slide image">
+                    </picture>
+                    <div class="centre">
+                        <span class="slide_slogan">KAWMET — тепло сімейних цінностей</span>
+                        <span class="headline_1">Насолоджуйтесь теплою оселею завдяки камінам та печам на дровах від офіційного представника KAWMET в Україні</span>
+                        <a href="#" class="btn big search_product"><span>Підібрати піч або камін</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--CATEGORIES-->
+        <section class="categories five_columns"><!--four_columns-->
+            <div class="centre">
+                <div class="categories_header">
+                    <span class="headline_1">Каміни та печі</span>
+                    <svg class="icon swipe_icon"><use xlink:href="./images/sprite.svg#swipe"></use></svg>
+                </div>
+                <div class="swiper categories_slider">
+                    <div class="swiper-wrapper">
+                        <a href="#" class="swiper-slide categories_item">
+                            <img src="./images/catalog.png" width="230" height="230">
+                            <span>Чавунні топки конвекційного типу Чавунні топки конвекційного типу</span>
+                        </a>
+                        <a href="#" class="swiper-slide categories_item">
+                            <img src="./images/catalog.png" width="230" height="230">
+                            <span>Чавунні топки </span>
+                        </a>
+                        <a href="#" class="swiper-slide categories_item">
+                            <img src="./images/catalog.png" width="230" height="230">
+                            <span>Чавунні топки конвекційного типу Чавунні топки конвекційного типу</span>
+                        </a>
+                        <a href="#" class="swiper-slide categories_item">
+                            <img src="./images/catalog.png" width="230" height="230">
+                            <span>Чавунні топки </span>
+                        </a>
+                        <a href="#" class="swiper-slide categories_item">
+                            <img src="./images/catalog.png" width="230" height="230">
+                            <span>Чавунні топки конвекційного типу Чавунні топки конвекційного типу</span>
+                        </a>
+                        <a href="#" class="swiper-slide categories_item">
+                            <img src="./images/catalog.png" width="230" height="230">
+                            <span>Чавунні топки </span>
+                        </a>
+                    </div>
+                    <div class="custom-scrollbar"></div>
+                </div>
+                <a href="#" class="btn big show_catalog"><svg class="icon"><use xlink:href="./images/sprite.svg#grid-1"></use></svg><span>Каталог товарів</span></a>
+            </div>
+        </section>
     </main>
     <!--FOOTER-->
     <footer class="site_footer">
@@ -712,6 +779,7 @@
 
 
     <script src="./js/jquery.min.js"></script>
+    <script src="./js/plugins/swiper/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
 </html>

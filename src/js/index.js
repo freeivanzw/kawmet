@@ -181,5 +181,42 @@ $(function () {
             behavior: 'smooth'
         });
     })
+
+    var $certificateSlider = new Swiper(".certificate_slider", {
+        spaceBetween: 20,
+        scrollbar: {
+            el: ".custom-scrollbar",
+            hide: false,
+            draggable: true,
+        },
+        navigation: {
+            nextEl: ".arrow-next",
+            prevEl: ".arrow-prev",
+        },
+    });
+
+    var $mainSlider = new Swiper(".main_slider", {
+        autoplay: {
+            delay: 8000,
+            disableOnInteraction: false,
+        },
+    });
+
+    if ($(window).width() < 640) {
+        var $categoriesSlider = new Swiper(".categories_slider", {
+            spaceBetween: 5,
+            slidesPerView: "auto",
+            scrollbar: {
+                el: ".custom-scrollbar",
+                hide: false,
+                draggable: true,
+            },
+        });
+    }
+
+
+
+
+
 })
 

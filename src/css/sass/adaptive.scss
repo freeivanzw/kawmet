@@ -2,12 +2,16 @@
 @import "./components/header/header-adaptive";
 @import "./components/footer/footer-adaptive";
 @import "./components/popups/popups-adaptive";
+@import "./components/main-slider/main-slider-apaptive";
+@import "./components/categories/categories-adaptive";
 
 @media only screen and (min-width : 480px)  {
     @include base-480;
     @include popups-480;
     @include header-480;
     @include footer-480;
+    @include main-slider-480;
+    @include categories-480;
 }
 
 @media only screen and (min-width : 640px)  {
@@ -15,6 +19,8 @@
     @include popups-640;
     @include header-640;
     @include footer-640;
+    @include main-slider-640;
+    @include categories-640;
 }
 
 @media only screen and (min-width : 768px)  {
@@ -22,6 +28,8 @@
     @include popups-768;
     @include header-768;
     @include footer-768;
+    @include main-slider-768;
+    @include categories-768;
 }
 
 @media only screen and (min-width : 1024px) {
@@ -29,6 +37,8 @@
     @include popups-1024;
     @include header-1024;
     @include footer-1024;
+    @include main-slider-1024;
+    @include categories-1024;
 }
 
 @media only screen and (min-width : 1190px) {
@@ -36,6 +46,8 @@
     @include popups-1190;
     @include header-1190;
     @include footer-1190;
+    @include main-slider-1190;
+    @include categories-1190;
 }
 
 @media only screen and (min-width : 1264px) {
