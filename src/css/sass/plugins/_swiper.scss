@@ -18,7 +18,7 @@
 }
 
 :root {
-    --swiper-theme-color: #007aff
+    --swiper-theme-color: #FF6E00
 }
 
 .swiper, swiper-container {
@@ -778,4 +778,40 @@ button.swiper-pagination-bullet {
     height: 3px;
     background-color: #F7F7F7;
     border-radius: 3px;
+}
+
+.swiper-pagination.slider_pag {
+    position: relative;
+    margin: 5px 0 15px 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+}
+
+.swiper-pagination.slider_pag .swiper-pagination-bullet {
+    width: 20px;
+    height: 3px;
+    border-radius: 3px;
+    position: relative;
+    margin: 5px;
+    background-color: #626366;
+    opacity: 1;
+}
+
+.swiper-pagination.slider_pag .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #FF6E00;
+}
+
+.swiper-pagination.slider_pag .swiper-pagination-bullet::before {
+    content: "";
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    position: absolute;
+    transform: translate(-50%, -50%);
 }

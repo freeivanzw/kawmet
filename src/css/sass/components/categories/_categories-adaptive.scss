@@ -5,6 +5,16 @@
 
 @mixin categories-640 {
     /*CATEGORIES*/
+    .categories_header-text {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .categories .headline_1 {
+        padding-right: 0;
+        text-align: center;
+    }
+
     .main_slider + .categories {
         margin: -160px 0 0 0;
         padding-bottom: 60px;
@@ -53,7 +63,7 @@
         max-height: 44px;
     }
 
-    .main_slider + .categories .show_catalog {
+    .categories .show_catalog {
         display: none;
     }
 }

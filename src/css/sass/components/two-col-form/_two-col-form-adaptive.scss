@@ -1,0 +1,65 @@
+@mixin  tow-col-form-480 {
+    /*TWO COL FORM*/
+
+}
+
+@mixin  tow-col-form-640 {
+    /*TWO COL FORM*/
+    .two_col_form .centre {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .two_col_form .centre > .col-1 {
+        flex: 1 1 auto;
+        max-width: 550px;
+        padding-right: 20px;
+    }
+
+    .two_col_form .centre > .col-2 {
+        flex: 0 0 50%;
+        max-width: 420px;
+        padding-left: 20px;
+    }
+
+    .two_col_form .phone_form {
+        margin-top: 0;
+    }
+}
+
+@mixin  tow-col-form-768 {
+    /*TWO COL FORM*/
+    .two_col_form {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        margin-bottom: 120px;
+    }
+
+    .interior + .two_col_form {
+        margin-top: -100px;
+    }
+
+    .two_form-header {
+        font-size: 20px;
+    }
+
+    .two_form-header .icon {
+        flex: 0 0 60px;
+        margin-right: 20px;
+        height: 60px;
+    }
+
+    .two_form-text {
+        font-size: 24px;
+    }
+}
+
+@mixin  tow-col-form-1024 {
+    /*TWO COL FORM*/
+
+}
+
+@mixin  tow-col-form-1190 {
+    /*TWO COL FORM*/
+
+}

@@ -28,6 +28,22 @@
 
 .categories_header {
     display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.categories_header-text {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: var(--base-color-7);
+}
+
+.main_slider + .categories .categories_header-text {
+    display: none;
+}
+
+.categories .headline_1 {
+    padding-right: 30px;
 }
 
 .main_slider + .categories .headline_1 {
@@ -41,9 +57,16 @@
     margin: 0 0 10px auto;
 }
 
+.categories_header .swipe_icon {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    margin: 0;
+}
+
 .swiper.categories_slider {
-    margin: -16px -10px 0 -10px;
-    width: calc(100% + 20px);
+    margin: -16px -15px 0 -15px;
+    width: calc(100% + 30px);
     padding: 16px 10px 0 10px;
 }
 
@@ -87,9 +110,5 @@
 }
 
 .show_catalog {
-    display: none;
-}
-
-.main_slider + .categories .show_catalog {
-    display: flex;
+    margin-top: 10px;
 }

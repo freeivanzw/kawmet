@@ -234,7 +234,42 @@ $(function () {
     }
 
 
+    var $reviewsSlider = new Swiper(".reviews_slider", {
+        spaceBetween: 20,
+        slidesPerView: "auto",
+        scrollbar: {
+            el: ".custom-scrollbar",
+            hide: false,
+            draggable: true,
+        },
+        navigation: {
+            nextEl: ".arrow-next",
+            prevEl: ".arrow-prev",
+        }
+    });
 
+    var $interiorSlider = new Swiper(".interior_slider", {
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+
+    if ($(window).width() < 1024) {
+        var $categoriesSlider = new Swiper(".last_news-slider", {
+            spaceBetween: 10,
+            slidesPerView: "auto",
+            scrollbar: {
+                el: ".custom-scrollbar",
+                hide: false,
+                draggable: true,
+            },
+        });
+    }
 
 
 })

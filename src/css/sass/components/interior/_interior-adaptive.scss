@@ -1,0 +1,58 @@
+@mixin interior-480 {
+    /*INTERIOR*/
+
+}
+
+@mixin interior-640 {
+    /*INTERIOR*/
+
+}
+
+@mixin interior-768 {
+    /*INTERIOR*/
+    .interior {
+        padding-top: 100px;
+        padding-bottom: 120px;
+        margin-bottom: 100px;
+    }
+
+    .interior .centre {
+        padding: 0 15px;
+    }
+
+    .interior .headline_2 {
+        text-align: center;
+        padding: 0;
+    }
+
+    .interior_info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0;
+    }
+
+    .interior_info > span {
+        width: 60%;
+    }
+
+    .interior_info .show_gallery {
+        display: flex;
+    }
+
+    .interior_slider + .show_gallery {
+        display: none;
+    }
+}
+
+@mixin interior-1024 {
+    /*INTERIOR*/
+    .interior_info > span {
+        font-size: 24px;
+    }
+}
+
+@mixin interior-1190 {
+    /*INTERIOR*/
+
+}

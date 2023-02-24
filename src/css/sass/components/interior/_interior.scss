@@ -1,0 +1,49 @@
+/*INTERIOR*/
+.interior {
+    padding: 40px 0 80px 0;
+    margin-bottom: 80px;
+    color: var(--base-color-1);
+    background-color: var(--base-color-8);
+}
+
+.interior .centre {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.interior .headline_2 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.interior_info {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+}
+
+.interior_info > span {
+    font-size: 16px;
+}
+
+.interior_info .show_gallery {
+    display: none;
+}
+
+.interior_item {
+    width: 100%;
+    height: auto;
+}
+
+.interior_item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+}
+
+.interior_slider + .show_gallery {
+    margin: 0 15px;
+}

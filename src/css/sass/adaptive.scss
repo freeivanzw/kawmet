@@ -1,14 +1,19 @@
-@import "./components/base-adaptive";
-@import "./components/header/header-adaptive";
-@import "./components/footer/footer-adaptive";
-@import "./components/popups/popups-adaptive";
-@import "./components/main-slider/main-slider-apaptive";
-@import "./components/categories/categories-adaptive";
-@import "./components/preference/preference-adaptive";
-@import "./components/certificate-text/certificate-text-adaptive";
-@import "./components/product-pref/product-pref-adaptive";
-@import "./components/main-article/main-article-adaptive";
-@import "./components/product-slider/product-slider-adaptive";
+@import "components/base-adaptive";
+@import "components/header/header-adaptive";
+@import "components/footer/footer-adaptive";
+@import "components/popups/popups-adaptive";
+@import "components/main-slider/main-slider-apaptive";
+@import "components/categories/categories-adaptive";
+@import "components/preference/preference-adaptive";
+@import "components/certificate-text/certificate-text-adaptive";
+@import "components/product-pref/product-pref-adaptive";
+@import "components/main-article/main-article-adaptive";
+@import "components/product-slider/product-slider-adaptive";
+@import "components/one-col-form/one-col-form-adaptive";
+@import "components/reviews/reviews-adaptive";
+@import "components/interior/interior-adaptive";
+@import "components/two-col-form/two-col-form-adaptive";
+@import "components/last-news/last-news-adaptive";
 
 @media only screen and (min-width : 480px)  {
     @include base-480;
@@ -22,6 +27,11 @@
     @include product-pref-480;
     @include main-article-480;
     @include product-slider-480;
+    @include one-col-form-480;
+    @include reviews-480;
+    @include interior-480;
+    @include tow-col-form-480;
+    @include last-news-480;
 }
 
 @media only screen and (min-width : 640px)  {
@@ -36,6 +46,11 @@
     @include product-pref-640;
     @include main-article-640;
     @include product-slider-640;
+    @include one-col-form-640;
+    @include reviews-640;
+    @include interior-640;
+    @include tow-col-form-640;
+    @include last-news-640;
 }
 
 @media only screen and (min-width : 768px)  {
@@ -50,6 +65,11 @@
     @include product-pref-768;
     @include main-article-768;
     @include product-slider-768;
+    @include one-col-form-768;
+    @include reviews-768;
+    @include interior-768;
+    @include tow-col-form-768;
+    @include last-news-768;
 }
 
 @media only screen and (min-width : 1024px) {
@@ -63,7 +83,11 @@
     @include certificate-text-1024;
     @include product-pref-1024;
     @include main-article-1024;
-    @include product-slider-1024;
+    @include one-col-form-1024;
+    @include reviews-1024;
+    @include interior-1024;
+    @include tow-col-form-1024;
+    @include last-news-1024;
 }
 
 @media only screen and (min-width : 1190px) {
@@ -77,7 +101,11 @@
     @include certificate-text-1190;
     @include product-pref-1190;
     @include main-article-1190;
-    @include product-slider-1190;
+    @include one-col-form-1190;
+    @include reviews-1190;
+    @include interior-1190;
+    @include tow-col-form-1190;
+    @include last-news-1190;
 }
 
 @media only screen and (min-width : 1264px) {
@@ -85,4 +113,21 @@
         top: 0;
         right: -40px;
     }
+
+    .product_slider .slider_arrow.arrow-prev {
+        left: 0;
+    }
+
+    .product_slider .slider_arrow.arrow-next {
+        right: 0;
+    }
+
+    .reviews_slider .slider_arrow.arrow-prev {
+        left: 0;
+    }
+
+    .reviews_slider .slider_arrow.arrow-next {
+        right: 0;
+    }
+
 }
