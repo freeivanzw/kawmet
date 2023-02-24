@@ -62,6 +62,57 @@
   /*FOOTER*/
   /*MAIN_SLIDER*/
   /*CATEGORIES*/
+  /*PREFERENCE*/
+  .preference_grid {
+    grid-gap: 20px;
+    padding-top: 20px;
+  }
+
+  .categories + .preference .preference_grid {
+    grid-gap: 26px;
+    padding-top: 40px;
+  }
+
+  .preference_grid li {
+    flex-direction: column;
+    padding: 42px 25px 38px 25px;
+  }
+
+  .preference_img {
+    margin: 0 0 14px 23px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .categories + .preference .preference_img {
+    margin: 0 0 20px 40px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .preference_img::before {
+    width: 100px;
+    height: 100px;
+  }
+
+  .categories + .preference .preference_img::before {
+    width: 140px;
+    height: 140px;
+  }
+
+  .preference-text b {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .preference-text span {
+    font-size: 16px;
+  }
+
+  /*CERTIFICATE TEXT*/
+  /*PRODUCT PREF*/
+  /*MAIN ARTICLE*/
+  /*PRODUCT SLIDER*/
 }
 @media only screen and (min-width: 640px) {
   /*BASE*/
@@ -158,7 +209,8 @@
 
   /*CATEGORIES*/
   .main_slider + .categories {
-    margin: -160px 0 60px 0;
+    margin: -160px 0 0 0;
+    padding-bottom: 60px;
   }
 
   .categories {
@@ -174,6 +226,10 @@
     padding: 0;
     width: 100%;
     overflow: unset;
+  }
+
+  .categories_header .swipe_icon {
+    display: none;
   }
 
   .swiper.categories_slider .swiper-wrapper {
@@ -203,9 +259,170 @@
   .main_slider + .categories .show_catalog {
     display: none;
   }
+
+  /*PREFERENCE*/
+  .preference_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*CERTIFICATE TEXT*/
+  .certificate_text .headline_2 {
+    margin-bottom: 60px;
+    max-width: 850px;
+  }
+
+  .certificate_inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .certificate_list {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-right: 10px;
+  }
+
+  .certificate_image {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: -50px;
+    margin-bottom: 0;
+    padding-left: 10px;
+    height: max-content;
+    z-index: -1;
+  }
+
+  .certificate_image .btn {
+    left: 50%;
+    right: auto;
+    bottom: 34px;
+    transform: translate(-50%);
+  }
+
+  /*PRODUCT PREF*/
+  .product_pref .headline_2 {
+    max-width: 770px;
+    margin-bottom: 40px;
+  }
+
+  .product_pref-list {
+    display: flex;
+    align-items: flex-end;
+    max-width: 670px;
+  }
+
+  .product_pref-list ul {
+    margin-bottom: 0;
+    width: 55%;
+  }
+
+  .product_pref-list li {
+    padding: 25px 20px 30px 25px;
+  }
+
+  .product_pref-list li + li {
+    margin-top: 10px;
+  }
+
+  .product_pref-video {
+    width: 45%;
+    padding-left: 30px;
+  }
+
+  .product_pref-icon {
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .product_pref-icon img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .product_pref-list li span {
+    font-size: 16px;
+    padding-left: 16px;
+  }
+
+  .product_pref-text {
+    font-size: 16px;
+    padding: 91px 22px 36px 22px;
+  }
+
+  .play_btn {
+    width: 90px;
+    height: 90px;
+  }
+
+  .play_btn::before {
+    width: 130px;
+    height: 130px;
+  }
+
+  .play_btn:hover::before {
+    width: 150px;
+    height: 150px;
+  }
+
+  .play_btn .icon {
+    width: 26px;
+    height: 26px;
+    margin: 32px 0 0 35px;
+  }
+
+  /*MAIN ARTICLE*/
+  /*PRODUCT SLIDER*/
 }
 @media only screen and (min-width: 768px) {
   /*BASE*/
+  /*product item*/
+  .product_item {
+    padding: 20px;
+    box-shadow: 0px 10px 30px rgba(27, 28, 32, 0);
+  }
+
+  .product_item:hover {
+    box-shadow: 0px 10px 30px rgba(27, 28, 32, 0.15);
+  }
+
+  .compare_btn {
+    width: 30px;
+    height: 30px;
+    top: -10px;
+    right: -10px;
+  }
+
+  .compare_btn .compare_icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .product_photo {
+    height: 240px;
+  }
+
+  .product_name {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .product_available {
+    margin-bottom: 15px;
+  }
+
+  .product_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .product_price {
+    margin-bottom: 0;
+    padding-right: 10px;
+  }
+
+  /*product item*/
   /*POPUPS*/
   .choose_city-store {
     display: flex;
@@ -258,6 +475,48 @@
   .swiper.categories_slider .swiper-wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  /*PREFERENCE*/
+  .categories + .preference {
+    padding-bottom: 100px;
+    margin-bottom: 120px;
+  }
+
+  /*CERTIFICATE TEXT*/
+  .certificate_image {
+    margin-top: -100px;
+  }
+
+  /*PRODUCT PREF*/
+  /*MAIN ARTICLE*/
+  /*PRODUCT SLIDER*/
+  .product_swiper .product_item {
+    width: 285px;
+  }
+
+  .product_slider .centre {
+    padding-right: 10px;
+  }
+
+  .product_slider-header {
+    padding-right: 0;
+  }
+
+  .product_slider .slider_arrow {
+    display: flex;
+  }
+
+  .product_swiper .custom-scrollbar {
+    margin-right: 0;
+  }
+
+  /*  .product_swiper:not(.swiper-initialized) .swiper-wrapper {
+        margin: 0 -5px;
+    }
+
+    .product_swiper:not(.swiper-initialized) .product_item {
+        margin: 0 5px;
+    }*/
 }
 @media only screen and (min-width: 1024px) {
   /*BASE*/
@@ -1138,6 +1397,51 @@
 .categories.four_columns .swiper.categories_slider .swiper-wrapper {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  /*PREFERENCE*/
+  .preference_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /*CERTIFICATE TEXT*/
+  .certificate_text {
+    margin-bottom: 120px;
+  }
+
+  .certificate_list li {
+    padding-left: 40px;
+  }
+
+  .certificate_list li + li {
+    margin-top: 30px;
+  }
+
+  .certificate_list .icon.check_icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .certificate_list li b {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .certificate_image {
+    margin-top: -135px;
+  }
+
+  /*PRODUCT PREF*/
+  .product_pref {
+    padding: 100px 0 120px 0;
+    margin-bottom: 120px;
+  }
+
+  /*MAIN ARTICLE*/
+  .main_article {
+    margin-bottom: 80px;
+  }
+
+  /*PRODUCT SLIDER*/
 }
 @media only screen and (min-width: 1190px) {
   /*BASE*/
@@ -1186,6 +1490,16 @@
   .categories.five_columns .swiper.categories_slider .swiper-wrapper {
     grid-template-columns: repeat(5, 1fr);
   }
+
+  /*PREFERENCE*/
+  .categories + .preference .preference_grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /*CERTIFICATE TEXT*/
+  /*PRODUCT PREF*/
+  /*MAIN ARTICLE*/
+  /*PRODUCT SLIDER*/
 }
 @media only screen and (min-width: 1264px) {
   .popup.video_popup .close_btn {

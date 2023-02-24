@@ -1,0 +1,77 @@
+@mixin preference-480 {
+    /*PREFERENCE*/
+    .preference_grid {
+        grid-gap: 20px;
+        padding-top: 20px;
+    }
+
+    .categories + .preference .preference_grid {
+        grid-gap: 26px;
+        padding-top: 40px;
+    }
+
+    .preference_grid li {
+        flex-direction: column;
+        padding: 42px 25px 38px 25px;
+    }
+
+    .preference_img {
+        margin: 0 0 14px 23px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .categories + .preference .preference_img {
+        margin: 0 0 20px 40px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .preference_img::before {
+        width: 100px;
+        height: 100px;
+    }
+
+    .categories + .preference .preference_img::before {
+        width: 140px;
+        height: 140px;
+    }
+
+    .preference-text b {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .preference-text span {
+        font-size: 16px;
+    }
+}
+
+@mixin preference-640 {
+    /*PREFERENCE*/
+    .preference_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@mixin preference-768 {
+    /*PREFERENCE*/
+    .categories + .preference {
+        padding-bottom: 100px;
+        margin-bottom: 120px;
+    }
+}
+
+@mixin preference-1024 {
+    /*PREFERENCE*/
+    .preference_grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@mixin preference-1190 {
+    /*PREFERENCE*/
+    .categories + .preference .preference_grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

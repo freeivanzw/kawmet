@@ -1,0 +1,116 @@
+/*PREFERENCE*/
+
+.preference {
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+}
+
+.preference .headline_2 {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 20px auto;
+}
+
+.preference .sub_title_5 {
+    text-align: center;
+    font-weight: 400;
+    max-width: 850px;
+    margin: 0 auto 20px auto;
+}
+
+
+.categories + .preference {
+    padding-top: 25px;
+    background-color: var(--base-color-2);
+}
+.main_slider + .categories + .preference {
+    padding-top: 0;
+}
+
+.preference .centre {
+    display: flex;
+    flex-direction: column;
+}
+
+.preference_grid {
+    display: grid;
+    grid-gap: 5px;
+}
+
+.categories + .preference .preference_grid {
+    grid-gap: 20px;
+}
+
+.preference_grid li {
+    display: flex;
+    padding: 18px 10px;
+    border-radius: var(--border-radius);
+    background-color: var(--base-color-2);
+}
+
+.categories + .preference .preference_grid li {
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+}
+
+.preference_img {
+    flex: 0 0 30px;
+    display: block;
+    margin-right: 16px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.categories + .preference .preference_img {
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.preference_img::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../images/img-bg-2.svg");
+    background-size: contain;
+    background-position: center;
+    z-index: -1;
+}
+
+.categories + .preference .preference_img::before {
+    width: 80px;
+    height: 80px;
+}
+
+.preference_img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.preference-text {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.preference-text b {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.preference-text span {
+    font-size: 13px;
+    color: var(--base-color-7);
+}

@@ -1,0 +1,57 @@
+/*CERTIFICATE TEXT*/
+.certificate_text {
+    margin-bottom: 80px;
+}
+
+.certificate_text .centre {
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate_image {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.certificate_image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.certificate_image .btn {
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+}
+
+.certificate_list li {
+    position: relative;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate_list li + li {
+    margin-top: 16px;
+}
+
+.certificate_list .icon.check_icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--main-color-1);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.certificate_list li b {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.certificate_list li span {
+    color: var(--base-color-7);
+}

@@ -1,0 +1,29 @@
+/*PRODUCT SLIDER*/
+
+.product_slider {
+    margin-bottom: 40px;
+}
+
+.product_slider .centre {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0;
+}
+
+.product_slider-header {
+    display: flex;
+    padding-right: 10px;
+}
+
+.product_slider .slider_arrow {
+    display: none;
+}
+
+.product_swiper .custom-scrollbar {
+    margin-right: 10px;
+}
+
+.product_swiper .product_item {
+    width: 165px;
+}
+

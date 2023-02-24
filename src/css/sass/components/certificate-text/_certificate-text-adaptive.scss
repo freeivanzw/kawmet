@@ -1,0 +1,83 @@
+@mixin certificate-text-480 {
+    /*CERTIFICATE TEXT*/
+
+}
+
+@mixin certificate-text-640 {
+    /*CERTIFICATE TEXT*/
+
+    .certificate_text .headline_2 {
+        margin-bottom: 60px;
+        max-width: 850px;
+    }
+
+    .certificate_inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .certificate_list {
+        //padding-bottom: ;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding-right: 10px;
+    }
+
+    .certificate_image {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-top: -50px;
+        margin-bottom: 0;
+        padding-left: 10px;
+        height: max-content;
+        z-index: -1;
+    }
+
+    .certificate_image .btn {
+        left: 50%;
+        right: auto;
+        bottom: 34px;
+        transform: translate(-50%);
+    }
+}
+
+@mixin certificate-text-768 {
+    /*CERTIFICATE TEXT*/
+    .certificate_image {
+        margin-top: -100px;
+    }
+}
+
+@mixin certificate-text-1024 {
+    /*CERTIFICATE TEXT*/
+    .certificate_text {
+        margin-bottom: 120px;
+    }
+
+    .certificate_list li {
+        padding-left: 40px;
+    }
+
+    .certificate_list li + li {
+        margin-top: 30px;
+    }
+
+    .certificate_list .icon.check_icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .certificate_list li b {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .certificate_image {
+        margin-top: -135px;
+    }
+}
+
+@mixin certificate-text-1190 {
+    /*CERTIFICATE TEXT*/
+
+}

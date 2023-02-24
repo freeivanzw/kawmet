@@ -202,6 +202,25 @@ $(function () {
         },
     });
 
+    var $productSlider = new Swiper(".product_swiper", {
+        spaceBetween: -1,
+        slidesPerView: "auto",
+        scrollbar: {
+            el: ".custom-scrollbar",
+            hide: false,
+            draggable: true,
+        },
+        navigation: {
+            nextEl: ".arrow-next",
+            prevEl: ".arrow-prev",
+        },
+        breakpoints: {
+            768: {
+                spaceBetween: 10,
+            }
+        }
+    });
+
     if ($(window).width() < 640) {
         var $categoriesSlider = new Swiper(".categories_slider", {
             spaceBetween: 5,

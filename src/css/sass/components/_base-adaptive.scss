@@ -11,6 +11,53 @@
 @mixin base-768 {
     /*BASE*/
 
+    /*product item*/
+    .product_item {
+        padding: 20px;
+        box-shadow: 0px 10px 30px rgba(27, 28, 32, 0);
+    }
+
+    .product_item:hover {
+        box-shadow: 0px 10px 30px rgba(27, 28, 32, 0.15);
+    }
+
+    .compare_btn {
+        width: 30px;
+        height: 30px;
+        top: -10px;
+        right: -10px;
+    }
+
+    .compare_btn .compare_icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .product_photo {
+        height: 240px;
+    }
+
+    .product_name {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .product_available {
+        margin-bottom: 15px;
+    }
+
+    .product_bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .product_price {
+        margin-bottom: 0;
+        padding-right: 10px;
+    }
+
+    /*product item*/
 }
 
 @mixin base-1024 {

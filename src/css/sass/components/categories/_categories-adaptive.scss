@@ -6,7 +6,8 @@
 @mixin categories-640 {
     /*CATEGORIES*/
     .main_slider + .categories {
-        margin: -160px 0 60px 0;
+        margin: -160px 0 0 0;
+        padding-bottom: 60px;
     }
 
     .categories {
@@ -22,6 +23,10 @@
         padding: 0;
         width: 100%;
         overflow: unset;
+    }
+
+    .categories_header .swipe_icon {
+        display: none;
     }
 
     .swiper.categories_slider .swiper-wrapper {
