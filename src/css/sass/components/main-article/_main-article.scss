@@ -2,3 +2,34 @@
 .main_article {
     margin-bottom: 60px;
 }
+
+.main_article.short_article .centre {
+    max-width: 986px;
+    max-height: 900px;
+    overflow: hidden;
+}
+
+.main_article.short_article.article_opened {
+    max-height: unset;
+}
+
+.open-short_article {
+    font-size: 13px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    margin: 20px auto 0 auto;
+}
+
+.open-short_article .icon {
+    width: 10px;
+    height: 10px;
+    margin-left: 6px;
+    fill: var(--main-color-1)
+}
+
+.main_article.short_article.article_opened .open-short_article .icon {
+    transform: rotate(180deg);
+}

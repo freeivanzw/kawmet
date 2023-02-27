@@ -52,7 +52,9 @@
 
 @mixin one-col-form-768 {
     /*ONE COL FORM*/
-
+    .one_col_form .sub_title_1 {
+        max-width: 930px;
+    }
 }
 
 @mixin one-col-form-1024 {
@@ -79,6 +81,10 @@
         height: 13px;
         left: 10px;
         top: 10px;
+    }
+
+    .one_col_form .sub_title_1 b::before {
+        height: 10px;
     }
 }
 

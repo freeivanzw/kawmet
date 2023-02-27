@@ -7,12 +7,10 @@
     /*CATEGORIES*/
     .categories_header-text {
         font-size: 32px;
-        text-align: center;
     }
 
     .categories .headline_1 {
         padding-right: 0;
-        text-align: center;
     }
 
     .main_slider + .categories {
@@ -77,6 +75,10 @@
 
 @mixin categories-1024 {
     /*CATEGORIES*/
+    .categories .headline_1 {
+        font-size: 36px;
+    }
+
     .categories.five_columns .swiper.categories_slider .swiper-wrapper,
     .categories.four_columns .swiper.categories_slider .swiper-wrapper {
         grid-template-columns: repeat(4, 1fr);

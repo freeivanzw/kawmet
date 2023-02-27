@@ -25,6 +25,8 @@
     position: absolute;
     right: 0;
     bottom: 8px;
+    padding: 8px 10px;
+    font-size: 10px;
 }
 
 .certificate_list li {
@@ -54,4 +56,5 @@
 
 .certificate_list li span {
     color: var(--base-color-7);
+    line-height: 1.4;
 }

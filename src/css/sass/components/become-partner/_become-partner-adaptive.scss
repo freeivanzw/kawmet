@@ -1,0 +1,64 @@
+@mixin become-partner-480 {
+    /*BECOME PARTNER*/
+
+}
+
+@mixin become-partner-640 {
+    /*BECOME PARTNER*/
+
+}
+
+@mixin become-partner-768 {
+    /*BECOME PARTNER*/
+
+}
+
+@mixin become-partner-1024 {
+    /*BECOME PARTNER*/
+    .become_partner {
+        margin-bottom: 120px;
+    }
+
+    .become_partner .centre {
+        padding: 80px 100px 80px 300px;
+        border-radius: 40px;
+        position: relative;
+    }
+
+    .become_header {
+        position: relative;
+    }
+
+    .become_icon {
+        position: absolute;
+        top: 20px;
+        left: -120px;
+    }
+
+    .become_icon::before {
+        width: 180px;
+        height: 180px;
+    }
+
+    .become_icon svg {
+        width: 100px;
+        height: 100px;
+    }
+
+    .become_partner .headline_2 {
+        z-index: 1;
+    }
+
+    .become_partner .btn {
+        z-index: 1;
+    }
+
+    .become_header span {
+        font-size: 24px;
+    }
+}
+
+@mixin become-partner-1190 {
+    /*BECOME PARTNER*/
+
+}

@@ -259,7 +259,7 @@ $(function () {
         },
     });
 
-    if ($(window).width() < 1024) {
+    if ($(window).width() < 768) {
         var $categoriesSlider = new Swiper(".last_news-slider", {
             spaceBetween: 10,
             slidesPerView: "auto",

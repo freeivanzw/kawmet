@@ -66,6 +66,10 @@
     .swiper-pagination.slider_pag .swiper-pagination-bullet {
         width: 30px;
     }
+
+    .breadcrumbs {
+        padding-bottom: 40px;
+    }
 }
 
 @mixin base-1024 {

@@ -100,9 +100,27 @@
     height: 140px;
   }
 
+  .preference_grid li.danger .preference_img {
+    margin-top: 0;
+    flex: 0 0 80px;
+    margin-bottom: 20px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .preference_grid li.danger .preference_img::before {
+    width: 140px;
+    height: 140px;
+    opacity: 0.7;
+  }
+
   .preference-text b {
     font-size: 16px;
     margin-bottom: 10px;
+  }
+
+  .preference_grid li.danger .preference-text b {
+    font-size: 24px;
   }
 
   .preference-text span {
@@ -118,6 +136,8 @@
   /*INTERIOR*/
   /*TWO COL FORM*/
   /*LAST NEWS*/
+  /*SHOPS MAP*/
+  /*BECOME PARTNER*/
 }
 @media only screen and (min-width: 640px) {
   /*BASE*/
@@ -204,7 +224,7 @@
 
   /*MAIN_SLIDER*/
   .main_slider-item .centre {
-    padding-top: 120px;
+    padding-top: 60px;
     padding-bottom: 240px;
   }
 
@@ -215,12 +235,10 @@
   /*CATEGORIES*/
   .categories_header-text {
     font-size: 32px;
-    text-align: center;
   }
 
   .categories .headline_1 {
     padding-right: 0;
-    text-align: center;
   }
 
   .main_slider + .categories {
@@ -312,6 +330,8 @@
     right: auto;
     bottom: 34px;
     transform: translate(-50%);
+    padding: 15px 20px;
+    font-size: 12px;
   }
 
   /*PRODUCT PREF*/
@@ -458,6 +478,8 @@
   }
 
   /*LAST NEWS*/
+  /*SHOPS MAP*/
+  /*BECOME PARTNER*/
 }
 @media only screen and (min-width: 768px) {
   /*BASE*/
@@ -514,6 +536,10 @@
 
   .swiper-pagination.slider_pag .swiper-pagination-bullet {
     width: 30px;
+  }
+
+  .breadcrumbs {
+    padding-bottom: 40px;
   }
 
   /*POPUPS*/
@@ -654,6 +680,10 @@
   }
 
   /*ONE COL FORM*/
+  .one_col_form .sub_title_1 {
+    max-width: 930px;
+  }
+
   /*REVIEWS*/
   .reviews {
     padding-top: 100px;
@@ -792,6 +822,76 @@
   }
 
   /*LAST NEWS*/
+  .last_news .centre {
+    padding-right: 15px;
+  }
+
+  .last_news-header {
+    margin-right: 0;
+  }
+
+  .last_news-header .headline_2 {
+    padding-right: 0;
+  }
+
+  .last_news-header .swipe_icon {
+    display: none;
+  }
+
+  .last_news-slider .custom-scrollbar {
+    display: none;
+  }
+
+  .last_news-item {
+    flex: 0 1 auto;
+  }
+
+  .swiper.last_news-slider {
+    overflow: unset;
+  }
+
+  .last_news-slider .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+  }
+
+  .btn.show-news_list {
+    margin: 40px auto 0 auto;
+    width: max-content;
+  }
+
+  /*SHOPS MAP*/
+  .shops_map {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+
+  .shops_map .centre {
+    padding: 0 15px;
+  }
+
+  .shops_map-text {
+    align-items: flex-start;
+    width: 50%;
+    max-width: 500px;
+    padding: 30px 30px 44px 30px;
+  }
+
+  .shops_map-text::before {
+    border-radius: 40px;
+    opacity: 0.9;
+  }
+
+  .shops_map > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /*BECOME PARTNER*/
 }
 @media only screen and (min-width: 1024px) {
   /*BASE*/
@@ -1679,12 +1779,24 @@
   }
 
   /*CATEGORIES*/
+  .categories .headline_1 {
+    font-size: 36px;
+  }
+
   .categories.five_columns .swiper.categories_slider .swiper-wrapper,
 .categories.four_columns .swiper.categories_slider .swiper-wrapper {
     grid-template-columns: repeat(4, 1fr);
   }
 
   /*PREFERENCE*/
+  .preference .headline_2 {
+    text-align: center;
+  }
+
+  .preference .sub_title_5 {
+    text-align: center;
+  }
+
   .preference_grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1727,6 +1839,11 @@
     margin-bottom: 80px;
   }
 
+  /*PRODUCT SLIDER*/
+  .product_slider-header .sub_title_2 {
+    font-size: 32px;
+  }
+
   /*ONE COL FORM*/
   .one_col_form {
     margin-bottom: 120px;
@@ -1752,6 +1869,10 @@
     top: 10px;
   }
 
+  .one_col_form .sub_title_1 b::before {
+    height: 10px;
+  }
+
   /*REVIEWS*/
   .review_item {
     width: 373px;
@@ -1764,6 +1885,98 @@
 
   /*TWO COL FORM*/
   /*LAST NEWS*/
+  .last_news {
+    margin-bottom: 120px;
+  }
+
+  .last_news-header {
+    margin-bottom: 60px;
+  }
+
+  .last_news-header .headline_2 {
+    text-align: center;
+  }
+
+  .last_news-slider .swiper-wrapper {
+    grid-gap: 30px;
+  }
+
+  .last_news-img {
+    height: 280px;
+  }
+
+  .last_news-item figcaption {
+    padding: 25px 20px;
+  }
+
+  .last_news-item figcaption time {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .last_news-item figcaption b {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .last_news-item figcaption span {
+    font-size: 16px;
+    margin-bottom: 20px;
+    max-height: 66px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .last_news-item figcaption .site_link .icon {
+    width: 10px;
+    height: 10px;
+  }
+
+  /*SHOPS MAP*/
+  /*BECOME PARTNER*/
+  .become_partner {
+    margin-bottom: 120px;
+  }
+
+  .become_partner .centre {
+    padding: 80px 100px 80px 300px;
+    border-radius: 40px;
+    position: relative;
+  }
+
+  .become_header {
+    position: relative;
+  }
+
+  .become_icon {
+    position: absolute;
+    top: 20px;
+    left: -120px;
+  }
+
+  .become_icon::before {
+    width: 180px;
+    height: 180px;
+  }
+
+  .become_icon svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .become_partner .headline_2 {
+    z-index: 1;
+  }
+
+  .become_partner .btn {
+    z-index: 1;
+  }
+
+  .become_header span {
+    font-size: 24px;
+  }
 }
 @media only screen and (min-width: 1190px) {
   /*BASE*/
@@ -1821,11 +2034,37 @@
   /*CERTIFICATE TEXT*/
   /*PRODUCT PREF*/
   /*MAIN ARTICLE*/
+  .main_article.short_article {
+    margin-bottom: 120px;
+  }
+
   /*ONE COL FORM*/
   /*REVIEWS*/
   /*INTERIOR*/
   /*TWO COL FORM*/
   /*LAST NEWS*/
+  /*SHOPS MAP*/
+  .shops_map {
+    margin-bottom: 120px;
+  }
+
+  .shops_map-text::before {
+    width: calc(100% + 140px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .shops_map-text {
+    padding: 70px 0 88px 0;
+  }
+
+  .shops_map-info {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+
+  /*BECOME PARTNER*/
 }
 @media only screen and (min-width: 1264px) {
   .popup.video_popup .close_btn {

@@ -6,25 +6,19 @@
 }
 
 .preference .headline_2 {
-    text-align: center;
     max-width: 850px;
     margin: 0 auto 20px auto;
 }
 
 .preference .sub_title_5 {
-    text-align: center;
     font-weight: 400;
+    line-height: 1.5;
     max-width: 850px;
     margin: 0 auto 20px auto;
 }
 
-
 .categories + .preference {
-    padding-top: 25px;
     background-color: var(--base-color-2);
-}
-.main_slider + .categories + .preference {
-    padding-top: 0;
 }
 
 .preference .centre {
@@ -48,6 +42,10 @@
     background-color: var(--base-color-2);
 }
 
+.preference_grid li.danger {
+    background-color: var(--main-color-6);
+}
+
 .categories + .preference .preference_grid li {
     background-color: transparent;
     padding: 0;
@@ -63,6 +61,21 @@
     height: 30px;
     position: relative;
     z-index: 1;
+}
+
+.preference_grid li.danger .preference_img {
+    flex: 0 0 36px;
+    margin-top: 5px;
+    margin-right: 12px;
+    margin-left: 15px;
+    width: 36px;
+    height: 36px;
+}
+
+.preference_grid li.danger .preference_img::before {
+    width: 70px;
+    height: 70px;
+    background-image: url("../images/img-bg-1.svg");
 }
 
 .categories + .preference .preference_img {
@@ -108,6 +121,10 @@
 .preference-text b {
     font-size: 13px;
     margin-bottom: 5px;
+}
+
+.preference_grid li.danger .preference-text b {
+    font-size: 15px;
 }
 
 .preference-text span {

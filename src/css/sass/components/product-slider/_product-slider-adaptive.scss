@@ -83,7 +83,9 @@
 
 @mixin product-slider-1024 {
     /*PRODUCT SLIDER*/
-
+    .product_slider-header .sub_title_2 {
+        font-size: 32px;
+    }
 }
 
 @mixin product-slider-1190 {

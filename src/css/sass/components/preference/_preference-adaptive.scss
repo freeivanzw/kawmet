@@ -37,9 +37,28 @@
         height: 140px;
     }
 
+    .preference_grid li.danger .preference_img {
+        margin-top: 0;
+        flex: 0 0 80px;
+        margin-bottom: 20px;
+        width: 80px;
+        height: 80px;
+    }
+
+
+    .preference_grid li.danger .preference_img::before {
+        width: 140px;
+        height: 140px;
+        opacity: 0.7;
+    }
+
     .preference-text b {
         font-size: 16px;
         margin-bottom: 10px;
+    }
+
+    .preference_grid li.danger .preference-text b {
+        font-size: 24px;
     }
 
     .preference-text span {
@@ -64,6 +83,14 @@
 
 @mixin preference-1024 {
     /*PREFERENCE*/
+    .preference .headline_2 {
+        text-align: center;
+    }
+
+    .preference .sub_title_5 {
+        text-align: center;
+    }
+
     .preference_grid {
         grid-template-columns: repeat(3, 1fr);
     }

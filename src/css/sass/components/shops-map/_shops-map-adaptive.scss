@@ -1,0 +1,69 @@
+@mixin shops-map-480 {
+    /*SHOPS MAP*/
+
+}
+
+@mixin shops-map-640 {
+    /*SHOPS MAP*/
+
+}
+
+@mixin shops-map-768 {
+    /*SHOPS MAP*/
+    .shops_map {
+        padding: 60px 0;
+        overflow: hidden;
+    }
+
+    .shops_map .centre {
+        padding: 0 15px;
+    }
+
+    .shops_map-text {
+        align-items: flex-start;
+        width: 50%;
+        max-width: 500px;
+        padding: 30px 30px 44px 30px;
+    }
+
+    .shops_map-text::before {
+        border-radius: 40px;
+        opacity: 0.9;
+    }
+
+    .shops_map > iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@mixin shops-map-1024 {
+    /*SHOPS MAP*/
+
+}
+
+@mixin shops-map-1190 {
+    /*SHOPS MAP*/
+    .shops_map {
+        margin-bottom: 120px;
+    }
+
+    .shops_map-text::before {
+        width: calc(100% + 140px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .shops_map-text {
+        padding: 70px 0 88px 0;
+    }
+
+    .shops_map-info {
+        font-size: 24px;
+        line-height: 1.6;
+        margin-bottom: 40px;
+    }
+}

@@ -825,6 +825,7 @@ a:not([class]):active {
     width: 16px;
     height: 16px;
     fill: var(--base-color-5);
+    transition: 0.3s;
 }
 
 .compare_btn .compare_added {
@@ -840,9 +841,17 @@ a:not([class]):active {
     display: block;
 }
 
+.compare_btn.compare_active .compare_icon {
+    fill: var(--base-color-8)
+}
+
+.compare_btn:hover .compare_icon {
+    fill: var(--main-color-1);
+}
+
 .product_photo {
     display: block;
-    height: 150px;
+    height: 146px;
     width: 100%;
 }
 
@@ -891,6 +900,11 @@ a:not([class]):active {
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    transition: 0.3s;
+}
+
+.product_name:hover {
+    color: var(--main-color-1)
 }
 
 .product_available {
@@ -941,3 +955,54 @@ a:not([class]):active {
 }
 
 /*product item*/
+
+.breadcrumbs {
+    padding-top: 10px;
+    padding-bottom: 25px;
+}
+
+.breadcrumbs .centre {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    font-size: 11px;
+    color: var(--base-color-7);
+    padding-right: 8px;
+    margin-right: 8px;
+    position: relative;
+}
+
+.breadcrumbs a:hover {
+    color: var(--main-color-2);
+}
+
+.breadcrumbs a::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-bottom: 1px solid var(--base-color-5);
+    border-right: 1px solid var(--base-color-5);
+    position: absolute;
+    top: 50%;
+    right: -1px;
+    transform: translateY(-50%) rotate(-45deg);
+    transition: 0.3s;
+}
+
+.breadcrumbs a:hover::before {
+    border-color: var(--main-color-2);
+}
+
+.breadcrumbs li:last-child a {
+    color: var(--base-color-5);
+    padding-top: 0;
+    margin-right: 0;
+    cursor: unset;
+}
+
+.breadcrumbs li:last-child a::before {
+    display: none;
+}
