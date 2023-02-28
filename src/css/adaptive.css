@@ -138,6 +138,7 @@
   /*LAST NEWS*/
   /*SHOPS MAP*/
   /*BECOME PARTNER*/
+  /*CATALOG*/
 }
 @media only screen and (min-width: 640px) {
   /*BASE*/
@@ -279,6 +280,11 @@
     width: 100%;
     font-size: 16px;
     padding: 15px;
+    transition: 0.3s;
+  }
+
+  .categories_item:hover {
+    box-shadow: 0px 10px 30px rgba(255, 110, 0, 0.15);
   }
 
   .categories_item img {
@@ -480,6 +486,7 @@
   /*LAST NEWS*/
   /*SHOPS MAP*/
   /*BECOME PARTNER*/
+  /*CATALOG*/
 }
 @media only screen and (min-width: 768px) {
   /*BASE*/
@@ -892,11 +899,16 @@
   }
 
   /*BECOME PARTNER*/
+  /*CATALOG*/
 }
 @media only screen and (min-width: 1024px) {
   /*BASE*/
   BODY, HTML {
     font-size: 16px;
+  }
+
+  body {
+    padding-top: 0;
   }
 
   h1,
@@ -959,6 +971,14 @@
     line-height: 1.4;
     font-weight: 600;
     margin: 0 0 16px 0;
+  }
+
+  h6.check_title::before {
+    top: 6px;
+  }
+
+  h6.check_title::after {
+    top: 9px;
   }
 
   .btn {
@@ -1069,6 +1089,12 @@
   }
 
   /*HEADER*/
+  .site_header {
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+
   .top_header .col-1 {
     flex: 0 1 auto;
     padding-right: 10px;
@@ -1977,6 +2003,11 @@
   .become_header span {
     font-size: 24px;
   }
+
+  /*CATALOG*/
+  .catalog {
+    padding-bottom: 120px;
+  }
 }
 @media only screen and (min-width: 1190px) {
   /*BASE*/
@@ -2065,6 +2096,7 @@
   }
 
   /*BECOME PARTNER*/
+  /*CATALOG*/
 }
 @media only screen and (min-width: 1264px) {
   .popup.video_popup .close_btn {

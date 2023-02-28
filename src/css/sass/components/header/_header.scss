@@ -1,7 +1,10 @@
 /*HEADER*/
 .site_header {
     z-index: 3;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .site_header.is_searching {

@@ -98,6 +98,13 @@ $(function () {
         });
     };
 
+    var $dark = $('.shadow');
+    $dark.on('click', function (e) {
+        e.preventDefault();
+
+        $(this).toggleClass('hidden');
+    })
+
     $('.header_dropdown').find('.selected_box').on('click', function (e) {
         e.preventDefault();
 
@@ -148,7 +155,7 @@ $(function () {
         $('.site_header').toggleClass('menu-has_opened');
         $('body').toggleClass('overflow');
         $('.desk-top_menu').toggleClass('active');
-        $('.shadow').toggleClass('hidden');
+        $dark.toggleClass('hidden');
 
     })
 
@@ -158,7 +165,7 @@ $(function () {
         $('.site_header').toggleClass('menu-has_opened');
         $('body').toggleClass('overflow');
         $('.desk-top_menu').toggleClass('active_fixed');
-        $('.shadow').toggleClass('hidden');
+        $dark.toggleClass('hidden');
     })
     // --------------------- тест верхнього меню
 
@@ -180,6 +187,66 @@ $(function () {
             left: 0,
             behavior: 'smooth'
         });
+    })
+
+    $('.filters_cat').find('.has_drop').on('click', function (e) {
+        e.preventDefault();
+
+        $(this).next('.for_drop').toggleClass('active');
+        $('.catalog_filters').addClass('filter_overflow');
+    })
+
+    $('.turn_back').on('click', function (e) {
+        e.preventDefault();
+
+        $(this).parent().removeClass('active');
+        $('.catalog_filters').removeClass('filter_overflow');
+    })
+
+    $('.open-filter_cat').on('click', function (e) {
+        e.preventDefault();
+
+        $('.catalog_filters').addClass('active');
+        $('body').addClass('overflow');
+        $dark.removeClass('hidden');
+    })
+
+    $('.close_filters').on('click', function (e) {
+        e.preventDefault();
+
+        $('.catalog_filters').removeClass('active');
+        $('body').removeClass('overflow');
+        $dark.addClass('hidden');
+    })
+
+    $dark.on('click', function () {
+        $('.catalog_filters').removeClass('active');
+        $('body').removeClass('overflow');
+        $dark.addClass('hidden');
+    })
+
+    $('.filter_title').on('click', function (e) {
+        e.preventDefault();
+
+        $(this).parent().toggleClass('active');
+    })
+
+    $('.open-sort_cat').on('click', function (e) {
+        e.preventDefault();
+
+        $('.filter_sort').addClass('active');
+        $dark.removeClass('hidden');
+    })
+
+    $('.close-filter_sort').on('click', function (e) {
+        e.preventDefault();
+
+        $('.filter_sort').removeClass('active');
+        $dark.addClass('hidden');
+    })
+
+    $dark.on('click', function () {
+        $('.filter_sort').removeClass('active');
     })
 
     var $certificateSlider = new Swiper(".certificate_slider", {

@@ -78,6 +78,10 @@
         font-size: 16px;
     }
 
+    body {
+        padding-top: 0;
+    }
+
     h1,
     .headline_1 {
         font-size: 38px;
@@ -138,6 +142,14 @@
         line-height: 1.4;
         font-weight: 600;
         margin: 0 0 16px 0;
+    }
+
+    h6.check_title::before {
+        top: 6px;
+    }
+
+    h6.check_title::after {
+        top: 9px;
     }
 
     .btn {

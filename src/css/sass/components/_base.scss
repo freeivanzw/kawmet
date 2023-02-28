@@ -13,6 +13,7 @@ BODY, HTML {
 }
 
 body {
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -88,6 +89,34 @@ h6,
     line-height: 1.4;
     font-weight: 600;
     margin: 0 0 10px 0;
+}
+
+h6.check_title {
+    padding-left: 23px;
+    position: relative;
+}
+
+h6.check_title::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    background-color: var(--main-color-1);
+    border-radius: var(--border-radius);
+}
+
+h6.check_title::after {
+    content: "";
+    width: 7px;
+    height: 5px;
+    border-bottom: 2px solid var(--base-color-1);
+    border-left: 2px solid var(--base-color-1);
+    position: absolute;
+    top: 6px;
+    left: 3px;
+    transform: rotate(-45deg);
 }
 
 .btn {
