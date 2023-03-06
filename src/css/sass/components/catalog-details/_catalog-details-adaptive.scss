@@ -1,0 +1,129 @@
+@mixin catalog-details-480 {
+    /*CATALOG DETAILS*/
+
+}
+
+@mixin catalog-details-640 {
+    /*CATALOG DETAILS*/
+
+}
+
+@mixin catalog-details-768 {
+    /*CATALOG DETAILS*/
+    .product_navigation ul a {
+        font-size: 14px;
+        margin: 0 30px 0 0;
+        padding: 12px 0;
+    }
+
+    .cat_details-header {
+        display: none;
+    }
+
+    .cat_details-info .centre {
+        display: flex;
+    }
+
+    .cat_details-info > .centre > .col-1 {
+        padding-right: 15px;
+        width: 50%;
+    }
+
+    .big_slider {
+        width: 100%;
+        margin: 0 0 5px 0;
+    }
+
+    .big_slider .slider_arrow {
+        //display: none;
+    }
+
+    .big_slider .swiper-pagination {
+        display: none;
+    }
+
+    .mini_slider {
+        display: flex;
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+    //
+    //.mini_slider::before,
+    //.mini_slider::after {
+    //    content: "";
+    //    width: 60px;
+    //    height: 100%;
+    //    background-color: var(--base-color-1);
+    //    position: absolute;
+    //    top: 0;
+    //    z-index: 2;
+    //}
+
+    .mini_slider::before {
+        left: 0;
+    }
+
+    .mini_slider::after {
+        right: 0;
+    }
+
+    .mini_slider .slider_arrow {
+        //z-index: 3;
+    }
+
+    .mini_slider .swiper-wrapper {
+        //z-index: 1;
+    }
+
+    .mini_slider .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+    }
+
+    .mini_slider .swiper-slide-thumb-active {
+        opacity: 1;
+    }
+
+    //.mini_slider .swiper-slide::after {
+    //    content: "";
+    //    width: 100%;
+    //    height: 100%;
+    //    border: 1px solid var(--base-color-3);
+    //    border-radius: var(--border-radius);
+    //    transition: 0.3s;
+    //    position: absolute;
+    //    top: 0;
+    //    left: 0;
+    //    z-index: 1;
+    //}
+    //
+    //.mini_slider .swiper-slide.swiper-slide-active::after {
+    //    border: 2px solid var(--main-color-1)
+    //}
+
+    .mini_slider .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .cat_details-info > .centre > .col-2 {
+        padding-left: 15px;
+        width: 50%;
+    }
+}
+
+@mixin catalog-details-1024 {
+    /*CATALOG DETAILS*/
+    .catalog_details {
+        margin-bottom: 120px;
+    }
+}
+
+@mixin catalog-details-1190 {
+    /*CATALOG DETAILS*/
+
+}

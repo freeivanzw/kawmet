@@ -13,6 +13,7 @@
     margin-bottom: 10px;
     position: sticky;
     top: 60px;
+    z-index: 1;
 }
 
 .mob-catalog_control .btn {
@@ -149,7 +150,7 @@
     z-index: 1;
 }
 
-.filters_cat .for_drop.active {
+.filters_cat li.active .for_drop {
     left: 0;
 }
 
@@ -282,7 +283,7 @@
 
 .filter_inner {
     display: none;
-    padding: 10px 0 15px 0;
+    padding: 5px 0 15px 0;
 }
 
 .filter_item.active .filter_inner {
@@ -310,7 +311,7 @@
     background-color: var(--base-color-6);
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: 16px;
     transform-origin: bottom;
     transition: 0.3s;
 }
@@ -555,4 +556,77 @@
 
 .filter_sort ul a.active::after {
     opacity: 1;
+}
+
+.desk-selected_filters {
+    display: none;
+}
+
+.catalog_grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog_grid .product_item {
+    flex: 0 1 50%;
+}
+
+.catalog_grid .product_item:nth-child(2n + 1) {
+    margin: 0 -1px -1px 0;
+}
+
+.catalog_grid .product_item:nth-child(2n + 2) {
+    margin: 0 0 -1px 0;
+}
+
+.catalog_navigation {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.pagination a,
+.pagination span {
+    font-size: 16px;
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    min-width: 35px;
+    padding: 0 5px;
+    border-radius: var(--border-radius);
+    transition: 0.3s;
+}
+
+.pagination a.active,
+.pagination a:not(.disabled):hover {
+    color: var(--text-color);
+    background-color: var(--base-color-3);
+}
+
+.pagination a .icon {
+    width: 16px;
+    height: 16px;
+    color: var(--text-color);
+}
+
+.pagination a.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.pagination ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }

@@ -17,6 +17,7 @@
 @import "components/shops-map/shops-map-adaptive";
 @import "components/become-partner/become-partner-adaptive";
 @import "components/catalog/catalog-adaptive";
+@import "components/catalog-details/catalog-details-adaptive";
 
 @media only screen and (min-width : 480px)  {
     @include base-480;
@@ -38,6 +39,7 @@
     @include shops-map-480;
     @include become-partner-480;
     @include catalog-480;
+    @include catalog-details-480;
 }
 
 @media only screen and (min-width : 640px)  {
@@ -60,6 +62,7 @@
     @include shops-map-640;
     @include become-partner-640;
     @include catalog-640;
+    @include catalog-details-640;
 }
 
 @media only screen and (min-width : 768px)  {
@@ -82,6 +85,7 @@
     @include shops-map-768;
     @include become-partner-768;
     @include catalog-768;
+    @include catalog-details-768;
 }
 
 @media only screen and (min-width : 1024px) {
@@ -104,6 +108,7 @@
     @include shops-map-1024;
     @include become-partner-1024;
     @include catalog-1024;
+    @include catalog-details-1024;
 }
 
 @media only screen and (min-width : 1190px) {
@@ -125,6 +130,7 @@
     @include shops-map-1190;
     @include become-partner-1190;
     @include catalog-1190;
+    @include catalog-details-1190;
 }
 
 @media only screen and (min-width : 1264px) {
