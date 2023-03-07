@@ -363,5 +363,5 @@
 </svg>
 
 <!-- link -->
+<!-- <svg class="icon"><use xlink:href="./images/sprite.svg#play-btn"></use></svg> -->
 
-<!-- <svg class="icon"><use xlink:href="./images/sprite.svg#two-form"></use></svg> -->

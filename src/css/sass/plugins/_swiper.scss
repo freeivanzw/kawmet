@@ -765,6 +765,7 @@ button.swiper-pagination-bullet {
 .slider_arrow.swiper-button-disabled {
     background-color: rgba(229, 208, 189, 0.1);
     cursor: unset;
+    display: none !important;
 }
 
 .slider_arrow.swiper-button-disabled::before,

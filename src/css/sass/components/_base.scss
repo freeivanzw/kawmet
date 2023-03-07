@@ -620,6 +620,19 @@ article li {
     padding-left: 10px;
 }
 
+article ol {
+    padding-left: 20px;
+}
+
+article ol li {
+    list-style: auto;
+    padding: 0;
+}
+
+article ol li::before {
+    display: none;
+}
+
 article li::before {
     content: "";
     width: 4px;
@@ -628,7 +641,7 @@ article li::before {
     border-radius: 50%;
     position: absolute;
     left: 0;
-    top: 7px;
+    top: 8px;
 }
 
 a:not([class]):active {

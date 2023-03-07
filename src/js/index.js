@@ -338,38 +338,21 @@ $(function () {
         });
     }
 
-    // var $miniSlider = new Swiper(".mini_slider", {
-    //     slidesPerView: "auto",
-    //     navigation: {
-    //         nextEl: ".arrow-next",
-    //         prevEl: ".arrow-prev",
-    //     },
-    // });
-    //
-    // var $bigSlider = new Swiper(".big_slider", {
-    //     spaceBetween: 10,
-    //     navigation: {
-    //         nextEl: ".arrow-next",
-    //         prevEl: ".arrow-prev",
-    //     },
-    //     pagination: {
-    //         el: ".swiper-pagination",
-    //         clickable: true,
-    //     },
-    // });
-
     var $miniSlider = new Swiper(".mini_slider", {
-        spaceBetween: 10,
-        slidesPerView: 4,
+        spaceBetween: 5,
+        slidesPerView: "auto",
         freeMode: true,
         watchSlidesProgress: true,
 
     });
     var $bigSlider = new Swiper(".big_slider", {
-        spaceBetween: 10,
         navigation: {
             nextEl: ".arrow-next",
             prevEl: ".arrow-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
         },
         thumbs: {
             swiper: $miniSlider,
@@ -389,10 +372,61 @@ $(function () {
         $('.big_slider').find('.arrow-prev').trigger('click');
     })
 
+    var $videoSwiper = new Swiper(".video_swiper.small_video", {
+        spaceBetween: 10,
+        slidesPerView: "auto",
+        scrollbar: {
+            el: ".custom-scrollbar",
+            hide: false,
+            draggable: true,
+        },
+        navigation: {
+            nextEl: ".arrow-next",
+            prevEl: ".arrow-prev",
+        },
+    });
 
+    var $videoSwiperBig = new Swiper(".video_swiper.big_video", {
+        spaceBetween: 10,
+        slidesPerView: "auto",
+        scrollbar: {
+            el: ".custom-scrollbar",
+            hide: false,
+            draggable: true,
+        },
+        navigation: {
+            nextEl: ".arrow-next",
+            prevEl: ".arrow-prev",
+        },
+        breakpoints: {
+            768: {
+                spaceBetween: 20,
+            }
+        }
+    });
 
-    // $bigSlider.thumbs.swiper = $miniSlider;
-    // $miniSlider.thumbs.swiper = $bigSlider;
+    var $interiorSwiper = new Swiper(".interior_swiper", {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".arrow-next",
+            prevEl: ".arrow-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
 
+    if ($(window).width() < 768) {
+        var $categoriesSlider = new Swiper(".download_doc-swiper", {
+            spaceBetween: 10,
+            slidesPerView: "auto",
+            scrollbar: {
+                el: ".custom-scrollbar",
+                hide: false,
+                draggable: true,
+            },
+        });
+    }
 })
 

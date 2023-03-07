@@ -328,11 +328,23 @@
                    <li><a href="#">Комплектуючі</a></li>
                 </ul>
             </div>
-            <picture class="cat_details-banner">
-                <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg" />
-                <source media="(min-width: 800px)" srcset="elva-800w.jpg" />
-                <img src="elva-800w.jpg" alt="catalog details banner" />
-            </picture>
+            <div class="cat_details-banner">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="./images/details-banner-mob.png" /> <!-- 640x370 -->
+                    <source media="(min-width: 769px)" srcset="./images/details-banner-deck.png" /> <!-- 1920x700 -->
+                    <img src="./images/details-banner-deck.png" alt="catalog details banner" />
+                </picture>
+                <div class="centre">
+                    <span class="headline_1">Чавунна піч KAWMET P7 PB (10.5 kW) ECO</span>
+                    <div class="banner_price">  <!-- якшо ціни нема цього блоку не потрібно -->
+                        <del>38 652 грн</del>
+                        <span class="banner-saving_money">Економія: <b>2000 грн</b></span>
+                        <span class="banner-product_price"><b>36 652</b> грн</span>
+                    </div>
+                    <a href="#" class="btn buy_btn"><span>Замовити</span></a> <!-- якшо ціни нема ця кнопка має бути "уточнити ціну" -->
+                    <a href="#" class="btn medium outline find_dealer"><span>Знайти продавця у вашому місті</span></a>
+                </div>
+            </div>
             <div class="cat_details-info">
                 <div class="centre">
                     <div class="cat_details-header">
@@ -341,7 +353,7 @@
                     </div>
                     <div class="col-1">
                         <div class="swiper big_slider">
-                            <div class="swiper-wrapper">
+                            <div class="swiper-wrapper"> <!--фотки розміром 668x700-->
                                 <div class="swiper-slide"><img src="./images/cat-details-1.png" alt="details slide"></div>
                                 <div class="swiper-slide"><img src="./images/cat-details-2.png" alt="details slide"></div>
                                 <div class="swiper-slide"><img src="./images/cat-details-3.png" alt="details slide"></div>
@@ -395,10 +407,10 @@
                                 <a href="#" class="btn buy_btn"><span>Замовити</span></a>
                                 <a href="#" class="btn medium outline find_dealer"><span>Знайти продавця у вашому місті</span></a>
                             </div>
-                            <div class="energy_saving">
-                                <span class="energy_saving-title">Клас енергоефективності</span>
-                                <span class="energy_saving-icon a-plus">A+</span>  <!--a-plus-plus a-plus a b c d e f g-->
-                            </div>
+                        </div>
+                        <div class="energy_saving">
+                            <span class="energy_saving-title">Клас енергоефективності</span>
+                            <a href="#" class="energy_saving-icon a-plus">A+</a>  <!--a-plus-plus a-plus a b c d e f g--> <!-- відкриватись повинне зображення в новій вкладці. З інформацією про класи енергоспоживання -->
                         </div>
                         <div class="advantages">
                             <div class="advantages_header">
@@ -450,14 +462,314 @@
                     </div>
                 </div>
             </div>
+            <div class="cat_details-description">
+                <div class="centre">
+                    <div class="col-1">
+                        <div class="video_slider">
+                            <div class="video_slider-header">
+                               <div class="col">
+                                   <span class="video_slider-title">Відеоогляд</span>
+                                   <span class="video_slider-subtitle">Чавунна піч KAWMET P7 PB (10.5 kW) ECO</span>
+                               </div>
+                               <a href="#" class="btn outline medium"><svg class="icon"><use xlink:href="./images/sprite.svg#youtube"></use></svg><span>Більше відео на kawmet.ua </span></a>
+                               <svg class="icon swipe_icon"><use xlink:href="./images/sprite.svg#swipe"></use></svg>
+                            </div>
+                            <div class="swiper video_swiper small_video">
+                                <div class="swiper-wrapper">
+                                    <a href="#" class="swiper-slide video_swiper-item">
+                                        <div class="video_swiper-img">
+                                            <img src="./images/cat-details-1.png" alt="video image">
+                                            <div class="play-btn"><svg class="icon"><use xlink:href="./images/sprite.svg#play-btn"></use></svg></div>
+                                        </div>
+                                        <span class="video_swiper-title">Відеоогляд процесу горіння в чавунній печі KAWMET P7 (10.5 kW) ECO</span>
+                                    </a>
+                                    <a href="#" class="swiper-slide video_swiper-item">
+                                        <div class="video_swiper-img">
+                                            <img src="./images/cat-details-1.png" alt="video image">
+                                            <div class="play-btn"><svg class="icon"><use xlink:href="./images/sprite.svg#play-btn"></use></svg></div>
+                                        </div>
+                                        <span class="video_swiper-title">Відеоогляд процесу горіння в чавунній печі KAWMET P7 (10.5 kW) ECO</span>
+                                    </a>
+                                    <a href="#" class="swiper-slide video_swiper-item">
+                                        <div class="video_swiper-img">
+                                            <img src="./images/cat-details-1.png" alt="video image">
+                                            <div class="play-btn"><svg class="icon"><use xlink:href="./images/sprite.svg#play-btn"></use></svg></div>
+                                        </div>
+                                        <span class="video_swiper-title">Відеоогляд процесу горіння в чавунній печі KAWMET P7 (10.5 kW) ECO</span>
+                                    </a>
+                                    <a href="#" class="swiper-slide video_swiper-item">
+                                        <div class="video_swiper-img">
+                                            <img src="./images/cat-details-1.png" alt="video image">
+                                            <div class="play-btn"><svg class="icon"><use xlink:href="./images/sprite.svg#play-btn"></use></svg></div>
+                                        </div>
+                                        <span class="video_swiper-title">Відеоогляд процесу горіння в чавунній печі KAWMET P7 (10.5 kW) ECO</span>
+                                    </a>
+                                    <a href="#" class="swiper-slide video_swiper-item">
+                                        <div class="video_swiper-img">
+                                            <img src="./images/cat-details-1.png" alt="video image">
+                                            <div class="play-btn"><svg class="icon"><use xlink:href="./images/sprite.svg#play-btn"></use></svg></div>
+                                        </div>
+                                        <span class="video_swiper-title">Відеоогляд процесу горіння в чавунній печі KAWMET P7 (10.5 kW) ECO</span>
+                                    </a>
+                                </div>
+                                <div class="slider_arrow arrow-next"></div>
+                                <div class="slider_arrow arrow-prev"></div>
+                                <div class="custom-scrollbar"></div>
+                            </div>
+                            <a href="#" class="btn outline medium"><svg class="icon"><use xlink:href="./images/sprite.svg#youtube"></use></svg><span>Більше відео на kawmet.ua </span></a>
+                        </div>
+                        <div class="details_spec">
+                            <div class="details_spec-header">
+                                <span class="details_desc-title">Характеристики</span>
+                                <span class="details_desc-subtitle">Чавунна піч KAWMET P7 PB (10.5 kW) ECO</span>
+                            </div>
+                            <span class="details_spec-section">Основні розміри</span>
+                            <ul>
+                                <li>
+                                    <span>Діаметр димоходу</span>
+                                    <b>150 мм</b>
+                                </li>
+                                <li>
+                                    <span>Діаметр димоходу</span>
+                                    <b>150 мм</b>
+                                </li>
+                                <li>
+                                    <span>Діаметр димоходу</span>
+                                    <b>150 мм</b>
+                                </li>
+                                <li>
+                                    <span>Діаметр димоходу</span>
+                                    <b>150 мм</b>
+                                </li>
+                            </ul>
+                            <span class="details_spec-section">Основні розміри</span>
+                            <ul>
+                                <li>
+                                    <span>Діаметр димоходу</span>
+                                    <b>150 мм</b>
+                                </li>
+                                <li>
+                                    <span>Діаметр димоходу</span>
+                                    <b>150 мм</b>
+                                </li>
+                                <li>
+                                    <span>Діаметр димоходу</span>
+                                    <b>150 мм</b>
+                                </li>
+                                <li>
+                                    <span>Діаметр димоходу</span>
+                                    <b>150 мм</b>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--MAIN ARTICLE-->
+                        <section class="main_article">
+                            <div class="cat_article-header">
+                                <span class="details_desc-title">Опис</span>
+                                <span class="details_desc-subtitle">Чавунна піч KAWMET P7 PB (10.5 kW) ECO</span>
+                            </div>
+                            <article>
+                                <p>Ливарне виробництво KAWMET — це багаторічна сімейна компанія, де досвід накопичений на практиці і
+                                    передається з покоління в покоління, починаючи з 1981 року.
+                                    Уже кілька років основою виробництва є чавунні камінні топки, окремо стоячі печі й універсальні печі.
+                                    Вироби нашої марки, завдяки своєму естетичному зовнішньому вигляду, високій ефективності та надійності при
+                                    відносно низькій ціні, дуже популярні як у Польщі, так і за кордоном.</p>
+                                <img src="./images/article.png" style="width: 100%; height: auto" alt="article">
+                                <h4>Переваги чавунних топок і печей на дровах KAWMET</h4>
+                                <p>Всі камінні топки і печі Kaw-met виготовлені з вермикулярного чавуну, який є міцнішим, екологічнішим, продуктивнішим і сприяє меншому споживанню палива.
+                                    Печі-каміни і топки з вермикулярного чавуну мають кращу теплопровідність (на 30%), що дає можливість збільшити ККД. При цьому витрати деревини зменшуються на 30%. Крім того такі пристрої мають велику стійкість до перепаду температур.</p>
+                                <h6>Високоякісний чавун</h6>
+                                <p>Якщо правильно розрахувати потужність печі або камінної топки, енергії від неї вистачить для обігріву всіх приміщень в будинку, яким би великим він не був.</p>
+                                <ol>
+                                    <li>test test test</li>
+                                    <li>test test test</li>
+                                    <li>test test test</li>
+                                    <li>test test test</li>
+                                </ol>
+                                <ul>
+                                    <li>test test test</li>
+                                    <li>test test test</li>
+                                    <li>test test test</li>
+                                    <li>test test test</li>
+                                </ul>
+                            </article>
+                        </section>
+                        <div class="video_slider big_video-slider">
+                            <div class="video_slider-header">
+                                <div class="col">
+                                    <span class="details_desc-title">Відеоогляд</span>
+                                    <span class="video_slider-subtitle">Чавунна піч KAWMET P7 PB (10.5 kW) ECO</span>
+                                </div>
+                                <a href="#" class="btn outline medium"><svg class="icon"><use xlink:href="./images/sprite.svg#youtube"></use></svg><span>Більше відео на kawmet.ua </span></a>
+                                <svg class="icon swipe_icon"><use xlink:href="./images/sprite.svg#swipe"></use></svg>
+                            </div>
+                            <div class="swiper video_swiper big_video">
+                                <div class="swiper-wrapper">
+                                    <a href="#" class="swiper-slide video_swiper-item">
+                                        <div class="video_swiper-img">
+                                            <img src="./images/cat-details-1.png" alt="video image">
+                                            <div class="play-btn"><svg class="icon"><use xlink:href="./images/sprite.svg#play-btn"></use></svg></div>
+                                        </div>
+                                        <span class="video_swiper-title">Відеоогляд процесу горіння в чавунній печі KAWMET P7 (10.5 kW) ECO</span>
+                                    </a>
+                                    <a href="#" class="swiper-slide video_swiper-item">
+                                        <div class="video_swiper-img">
+                                            <img src="./images/cat-details-1.png" alt="video image">
+                                            <div class="play-btn"><svg class="icon"><use xlink:href="./images/sprite.svg#play-btn"></use></svg></div>
+                                        </div>
+                                        <span class="video_swiper-title">Відеоогляд процесу горіння в чавунній печі KAWMET P7 (10.5 kW) ECO</span>
+                                    </a>
+                                    <a href="#" class="swiper-slide video_swiper-item">
+                                        <div class="video_swiper-img">
+                                            <img src="./images/cat-details-1.png" alt="video image">
+                                            <div class="play-btn"><svg class="icon"><use xlink:href="./images/sprite.svg#play-btn"></use></svg></div>
+                                        </div>
+                                        <span class="video_swiper-title">Відеоогляд процесу горіння в чавунній печі KAWMET P7 (10.5 kW) ECO</span>
+                                    </a>
+                                    <a href="#" class="swiper-slide video_swiper-item">
+                                        <div class="video_swiper-img">
+                                            <img src="./images/cat-details-1.png" alt="video image">
+                                            <div class="play-btn"><svg class="icon"><use xlink:href="./images/sprite.svg#play-btn"></use></svg></div>
+                                        </div>
+                                        <span class="video_swiper-title">Відеоогляд процесу горіння в чавунній печі KAWMET P7 (10.5 kW) ECO</span>
+                                    </a>
+                                    <a href="#" class="swiper-slide video_swiper-item">
+                                        <div class="video_swiper-img">
+                                            <img src="./images/cat-details-1.png" alt="video image">
+                                            <div class="play-btn"><svg class="icon"><use xlink:href="./images/sprite.svg#play-btn"></use></svg></div>
+                                        </div>
+                                        <span class="video_swiper-title">Відеоогляд процесу горіння в чавунній печі KAWMET P7 (10.5 kW) ECO</span>
+                                    </a>
+                                </div>
+                                <div class="slider_arrow arrow-next"></div>
+                                <div class="slider_arrow arrow-prev"></div>
+                                <div class="custom-scrollbar"></div>
+                            </div>
+                            <a href="#" class="btn outline medium"><svg class="icon"><use xlink:href="./images/sprite.svg#youtube"></use></svg><span>Більше відео на kawmet.ua </span></a>
+                        </div>
+                        <div class="interior_details">
+                            <div class="interior_details-header">
+                                <div class="col">
+                                    <span class="details_desc-title">Піч камін в інтер'єрі</span>
+                                </div>
+                                <svg class="icon swipe_icon"><use xlink:href="./images/sprite.svg#swipe"></use></svg>
+                            </div>
+                            <div class="swiper interior_swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide interior_image">
+                                        <img src="./images/interior-1.png" alt="interior image"> <!-- 870х520 -->
+                                    </div>
+                                    <div class="swiper-slide interior_image">
+                                        <img src="./images/interior-2.png" alt="interior image">
+                                    </div>
+                                    <div class="swiper-slide interior_image">
+                                        <img src="./images/interior-1.png" alt="interior image">
+                                    </div>
+                                    <div class="swiper-slide interior_image">
+                                        <img src="./images/interior-2.png" alt="interior image">
+                                    </div>
+                                </div>
+                                <div class="slider_arrow arrow-next"></div>
+                                <div class="slider_arrow arrow-prev"></div>
+                                <div class="swiper-pagination slider_pag"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <figure class="product_item mini_product">
+                            <div class="product_photo-wrap">
+                                <a href="#" class="compare_btn"> <!--compare_active-->
+                                    <svg class="icon compare_icon"><use xlink:href="./images/sprite.svg#compare"></use></svg>
+                                    <svg class="icon compare_added"><use xlink:href="./images/sprite.svg#success-filled"></use></svg>
+                                </a>
+                                <a href="#" class="product_photo"><img src="./images/product-mini-photo.png" width="283" height="247" alt="product photo"></a>
+                                <ul class="status_list">
+                                    <li>-5%</li>
+                                    <li>Хіт</li>
+                                    <li>Знижка</li>
+                                </ul>
+                            </div>
+                            <figcaption>
+                                <a href="#" class="product_name">Камінна топка KAWMET Premium HERMES F23</a>
+                                <span class="product_available">В наявності</span> <!--not-available-->
+                                <div class="product_bottom">
+                                    <div class="product_price">
+                                        <del>42 107 грн</del>
+                                        <span><b>40 002</b> грн</span>
+                                        <span class="saving_money">Економія: <br><b>2000 грн</b></span>
+                                    </div>
+                                    <a href="#" class="btn medium"><span>Замовити</span></a>
+                                    <a href="#" class="btn medium outline"><span>Знайти продавця</span></a>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
 
-
+        </section>
+        <!--DOCUMENTATIONS-->
+        <section class="documentations">
+            <div class="centre">
+                <div class="col-1">
+                    <div class="sketch">
+                        <div class="sketch-header">
+                            <span class="details_desc-title">Креслення печі</span>
+                            <span class="details_desc-subtitle">Чавунна піч KAWMET P7 PB (10.5 kW) ECO</span>
+                        </div>
+                        <ul>
+                            <li><img src="./images/sketch.png" alt="sketch"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="download_doc">
+                        <div class="download_doc-header">
+                            <span class="details_desc-title">Документація</span>
+                            <svg class="icon swipe_icon"><use xlink:href="./images/sprite.svg#swipe"></use></svg>
+                        </div>
+                        <div class="swiper download_doc-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide doc_item">
+                                    <span class="doc_item-title">Інструкція з монтажу та обслуговування,  гарантійний талон печей KAWMET</span>
+                                    <div class="doc_item-bottom">
+                                        <span class="doc_item-size">PDF, 9.65 Мб</span>
+                                        <a href="#" class="btn outline medium"><svg class="icon"><use xlink:href="./images/sprite.svg#download"></use></svg><span>Завантажити</span></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide doc_item">
+                                    <span class="doc_item-title">Інструкція з монтажу та обслуговування,  гарантійний талон печей KAWMET</span>
+                                    <div class="doc_item-bottom">
+                                        <span class="doc_item-size">PDF, 9.65 Мб</span>
+                                        <a href="#" class="btn outline medium"><svg class="icon"><use xlink:href="./images/sprite.svg#download"></use></svg><span>Завантажити</span></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide doc_item">
+                                    <span class="doc_item-title">Інструкція з монтажу та обслуговування,  гарантійний талон печей KAWMET</span>
+                                    <div class="doc_item-bottom">
+                                        <span class="doc_item-size">PDF, 9.65 Мб</span>
+                                        <a href="#" class="btn outline medium"><svg class="icon"><use xlink:href="./images/sprite.svg#download"></use></svg><span>Завантажити</span></a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide doc_item">
+                                    <span class="doc_item-title">Інструкція з монтажу та обслуговування,  гарантійний талон печей KAWMET</span>
+                                    <div class="doc_item-bottom">
+                                        <span class="doc_item-size">PDF, 9.65 Мб</span>
+                                        <a href="#" class="btn outline medium"><svg class="icon"><use xlink:href="./images/sprite.svg#download"></use></svg><span>Завантажити</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="custom-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!--PRODUCT SLIDER-->
         <section class="product_slider">
             <div class="centre">
                 <div class="product_slider-header">
-                    <span class="sub_title_2">Популярні топки</span>
+                    <span class="sub_title_2">Комплектуючі</span>
                     <svg class="icon swipe_icon"><use xlink:href="./images/sprite.svg#swipe"></use></svg>
                 </div>
                 <div class="swiper product_swiper">
@@ -698,7 +1010,7 @@
         <section class="product_slider">
             <div class="centre">
                 <div class="product_slider-header">
-                    <span class="sub_title_2">популярні Печі</span>
+                    <span class="sub_title_2">Схожі товари</span>
                     <svg class="icon swipe_icon"><use xlink:href="./images/sprite.svg#swipe"></use></svg>
                 </div>
                 <div class="swiper product_swiper">
@@ -1128,7 +1440,7 @@
     <div class="shadow hidden"></div>
     <a href="#" class="to_up">нагору<svg class="icon"><use xlink:href="./images/sprite.svg#mini-arrow-right"></use></svg></a>
 
-    <div class="styleguide" style="display: flex; flex-direction: column">
+    <div class="styleguide hidden" style="display: flex; flex-direction: column">
         <figure class="product_item">
             <div class="product_photo-wrap">
                 <a href="#" class="compare_btn"> <!--compare_active-->

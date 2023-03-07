@@ -1,0 +1,80 @@
+@mixin documentations-480 {
+    /*DOCUMENTATIONS*/
+
+}
+
+@mixin documentations-640 {
+    /*DOCUMENTATIONS*/
+
+}
+
+@mixin documentations-768 {
+    /*DOCUMENTATIONS*/
+    .documentations > .centre {
+        display: flex;
+    }
+
+    .documentations > .centre > .col-1 {
+        width: calc(100% - 370px);
+        padding-right: 30px;
+    }
+
+    .documentations > .centre > .col-2 {
+        width: 370px;
+    }
+
+    .download_doc-header .details_desc-title::before {
+        width: 100%;
+    }
+
+    .download_doc-header .swipe_icon {
+        display: none;
+    }
+
+    .download_doc-swiper {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .download_doc-swiper .swiper-wrapper {
+        overflow: unset;
+        flex-direction: column;
+        padding-top: 32px;
+    }
+
+    .doc_item {
+        width: 100%;
+    }
+
+    .doc_item + .doc_item {
+        margin-top: 10px;
+    }
+
+    .doc_item-title {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .doc_item-size {
+        font-size: 16px;
+    }
+
+    .doc_item-bottom .btn {
+        font-size: 12px;
+        padding: 15px 22px;
+    }
+
+    .download_doc-swiper .custom-scrollbar {
+        display: none;
+    }
+}
+
+@mixin documentations-1024 {
+    /*DOCUMENTATIONS*/
+
+}
+
+@mixin documentations-1190 {
+    /*DOCUMENTATIONS*/
+
+}
