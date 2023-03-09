@@ -740,4 +740,9 @@
     .desk-top_menu.active_fixed .menu-1_lvl {
         margin-right: 30px;
     }
+
+    .compare_popup-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
 }

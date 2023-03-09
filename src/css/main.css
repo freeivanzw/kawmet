@@ -2624,7 +2624,8 @@ a:not([class]):active {
   width: 100%;
 }
 
-.site_header.is_searching {
+.site_header.is_searching,
+.site_header.compare_popup-opened {
   z-index: 12;
 }
 
@@ -3260,6 +3261,94 @@ li.active > .mobile_item-link {
 
 .search-loading_list li + li {
   margin-top: 20px;
+}
+
+.compare_popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--base-color-1);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  top: 127px;
+  z-index: 12;
+  box-shadow: 0px 60px 80px rgba(0, 0, 0, 0.4);
+}
+
+body.header_fixed .compare_popup {
+  position: fixed;
+  top: 67px;
+  left: 0;
+}
+
+.compare_popup.active {
+  display: block;
+}
+
+.compare_popup .become_partner {
+  margin-bottom: 40px;
+}
+
+.compare_popup .centre {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.close-compare_popup {
+  position: absolute;
+  top: -15px;
+  right: 15px;
+  z-index: 1;
+}
+
+.compare_popup-grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 20px;
+  padding-right: 45px;
+  max-height: 284px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.compare_popup-grid .top_product {
+  padding: 10px;
+  border: 1px solid var(--base-color-3);
+  border-radius: var(--border-radius);
+}
+
+.compare_popup-grid .top_product-image {
+  height: 70px;
+}
+
+.compare_popup-grid .top_product-info a {
+  font-size: 11px;
+  margin-bottom: 5px;
+  height: auto;
+}
+
+.compare_popup-grid .top_product-price del {
+  font-size: 11px;
+  height: auto;
+}
+
+.compare_popup-grid .top_product-price {
+  height: auto;
+}
+
+.compare_popup-grid .top_product-price span {
+  font-size: 11px;
+  height: auto;
+}
+
+.compare_popup-grid .top_product-price span b {
+  font-size: 16px;
+  height: auto;
 }
 
 /*FOOTER*/
@@ -6321,6 +6410,7 @@ li.active > .mobile_item-link {
 .compare_toggle label {
   position: relative;
   width: 50%;
+  cursor: pointer;
 }
 
 .compare_toggle label input {
@@ -6379,6 +6469,51 @@ li.active > .mobile_item-link {
 
 .compare_buttons .btn {
   width: calc(50% - 14px);
+}
+
+.fixed_compare {
+  display: none;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: var(--base-color-1);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  z-index: 5;
+}
+
+.fixed_compare.active {
+  display: block;
+}
+
+.fixed_compare .centre {
+  padding: 0;
+}
+
+.fixed_compare .compare_control {
+  display: none;
+}
+
+.fixed_compare .swiper-slide {
+  width: 160px;
+}
+
+.fixed_compare .top_product-image {
+  height: 44px;
+}
+
+.fixed_compare .top_product-info a {
+  font-size: 11px;
+  -webkit-line-clamp: 2;
+  height: 28px;
+}
+
+.fixed_compare .top_product-price {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
 }
 
 .compare_inner {

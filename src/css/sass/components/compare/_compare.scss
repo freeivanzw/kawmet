@@ -38,6 +38,7 @@
 .compare_toggle label {
     position: relative;
     width: 50%;
+    cursor: pointer;
 }
 
 .compare_toggle label input {
@@ -96,6 +97,51 @@
 
 .compare_buttons .btn {
     width: calc(50% - 14px);
+}
+
+.fixed_compare {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--base-color-1);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    z-index: 5;
+}
+
+.fixed_compare.active {
+    display: block;
+}
+
+.fixed_compare .centre {
+    padding: 0;
+}
+
+.fixed_compare .compare_control {
+    display: none;
+}
+
+.fixed_compare .swiper-slide {
+    width: 160px;
+}
+
+.fixed_compare .top_product-image {
+    height: 44px;
+}
+
+.fixed_compare .top_product-info a {
+    font-size: 11px;
+    -webkit-line-clamp: 2;
+    height: 28px;
+}
+
+.fixed_compare .top_product-price {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
 }
 
 .compare_inner {

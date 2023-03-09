@@ -260,6 +260,52 @@ $(function () {
         }
     })
 
+    function toggleComparePopup ($elem) {
+        if ($elem === $dark) {
+            $elem.on('click', function (e) {
+                e.preventDefault();
+
+                $('.site_header').removeClass('compare_popup-opened');
+                $('.compare_popup').removeClass('active');
+                $elem.addClass('hidden');
+            })
+            return;
+        }
+
+        $elem.on('click', function (e) {
+            e.preventDefault();
+
+            $('.site_header').toggleClass('compare_popup-opened');
+            $('.compare_popup').toggleClass('active');
+            $dark.toggleClass('hidden');
+        })
+    }
+
+    toggleComparePopup($('.compare_near-menu'));
+    toggleComparePopup($('.compare_header'));
+    toggleComparePopup($dark);
+    toggleComparePopup($('.close-compare_popup'));
+
+    let startShowSlider = $('.compare_slider').offset().top + $('.compare_slider').find('.top_product').height();
+
+    let finishShowSlider = ($('.compare_slider').offset().top + $('.compare_slider').height() - $('.compare_slider').find('.bottom_product').height()) - $(window).height()
+
+    function showingSlider (start, finish) {
+        let topScreen = $(window).scrollTop();
+        if (topScreen > start && topScreen < finish) {
+            $('.fixed_compare').addClass('active');
+        } else {
+            $('.fixed_compare').removeClass('active');
+        }
+    }
+
+    $(window).on('scroll', function () {
+        showingSlider(startShowSlider, finishShowSlider);
+    })
+
+    showingSlider(startShowSlider, finishShowSlider);
+
+
     var $certificateSlider = new Swiper(".certificate_slider", {
         spaceBetween: 20,
         mousewheel: true,
@@ -489,5 +535,16 @@ $(function () {
             draggable: true,
         },
     });
+
+    var $fixedCompareSlider = new Swiper(".fixed_compare-slider", {
+        spaceBetween: 0,
+        mousewheel: true,
+        cssMode: true,
+        keyboard: true,
+        slidesPerView: "auto",
+    });
+
+
+
 })
 

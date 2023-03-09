@@ -1719,6 +1719,72 @@
     justify-content: flex-start;
     border-right: none;
   }
+
+  .bottom_product-btns .btn {
+    padding: 15px;
+    font-size: 12px;
+  }
+
+  .fixed_compare {
+    border-bottom: 1px solid var(--base-color-3);
+  }
+
+  .fixed_compare .centre {
+    display: flex;
+  }
+
+  .fixed_compare .compare_control {
+    display: flex;
+    flex: 0 0 270px;
+    border-right: 1px solid var(--base-color-3);
+    margin-bottom: 0;
+    padding-top: 10px;
+  }
+
+  .fixed_compare .compare_control b {
+    margin-bottom: 10px;
+  }
+
+  .fixed_compare .compare_toggle {
+    margin-bottom: 0;
+  }
+
+  .fixed_compare .swiper-slide {
+    width: 225px;
+    border-right: 1px solid var(--base-color-3);
+  }
+
+  .fixed_compare .compare_toggle label + label {
+    margin-top: 5px;
+  }
+
+  .fixed_compare .top_product {
+    flex-direction: row;
+    border-bottom: none;
+  }
+
+  .fixed_compare .top_product-image {
+    flex: 0 0 50px;
+    margin-bottom: 0;
+    margin-right: 5px;
+  }
+
+  .fixed_compare .top_product-info a {
+    padding-right: 15px;
+  }
+
+  .fixed_compare .top_product-price {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .fixed_compare .top_product .top_product-price span {
+    font-size: 11px;
+  }
+
+  .fixed_compare .top_product .top_product-price span b {
+    font-size: 16px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   /*BASE*/
@@ -3170,6 +3236,10 @@
   .compare {
     margin-bottom: 120px;
   }
+
+  .fixed_compare {
+    top: 66px;
+  }
 }
 @media only screen and (min-width: 1190px) {
   /*BASE*/
@@ -3210,6 +3280,10 @@
 
   .desk-top_menu.active_fixed .menu-1_lvl {
     margin-right: 30px;
+  }
+
+  .compare_popup-grid {
+    grid-template-columns: repeat(6, 1fr);
   }
 
   /*FOOTER*/
@@ -3485,6 +3559,13 @@
 
   /*COMPARE*/
   .compare > .centre {
+    margin: 0 0 0 auto;
+    padding: 0 0 0 15px;
+    max-width: none;
+    width: calc(50% + 595px);
+  }
+
+  .fixed_compare .centre {
     margin: 0 0 0 auto;
     padding: 0 0 0 15px;
     max-width: none;
