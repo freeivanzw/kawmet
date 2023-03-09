@@ -1,0 +1,197 @@
+@mixin photo-prefer-480 {
+    /*PHOTO PREFER*/
+
+}
+
+@mixin photo-prefer-640 {
+    /*PHOTO PREFER*/
+
+}
+
+@mixin photo-prefer-768 {
+    /*PHOTO PREFER*/
+
+}
+
+@mixin photo-prefer-1024 {
+    /*PHOTO PREFER*/
+    .photo_prefer {
+        margin-bottom: 120px;
+    }
+
+
+}
+
+@mixin photo-prefer-1190 {
+    /*PHOTO PREFER*/
+    .photo_prefer {
+        margin-bottom: 254px;
+    }
+
+    .photo_prefer .headline_2 {
+        text-align: center;
+        margin-bottom: 130px;
+    }
+
+    .mobile_info {
+        display: none;
+    }
+
+    .plus_icon {
+        width: 24px;
+        height: 24px;
+        z-index: 2;
+    }
+
+    .plus_icon::before {
+        width: 40px;
+        height: 40px;
+    }
+
+    .plus_icon .icon {
+        display: none;
+    }
+
+    .popup_prefer {
+        transform: none;
+        width: 260px;
+        box-shadow: none;
+        padding: 0 0 10px 0;
+        border-radius: 0;
+        background-color: transparent;
+        border-bottom: 1px solid var(--main-color-5);
+        opacity: 1;
+        z-index: 1;
+        visibility: visible;
+    }
+
+    .popup_prefer::before {
+        display: none;
+    }
+
+    .popup_prefer::after {
+        content: "";
+        height: 1px;
+        background-color: var(--main-color-5);
+        position: absolute;
+        bottom: -1px;
+    }
+
+    .fireplace_prefer.deck-left .popup_prefer::after {
+        right: 100%;
+        transform-origin: right;
+    }
+
+
+    .fireplace_prefer.deck-right .popup_prefer::after {
+        left: 100%;
+        transform-origin: left;
+    }
+
+    .fireplace_prefer:nth-child(2) .popup_prefer::after {
+        width: 116px;
+        transform: rotate(8deg);
+    }
+
+    .fireplace_prefer:nth-child(3) .popup_prefer::after {
+        width: 142px;
+        transform: rotate(-21deg);
+    }
+
+    .fireplace_prefer:nth-child(4) .popup_prefer::after {
+        width: 116px;
+        transform: rotate(32deg);
+    }
+
+    .fireplace_prefer:nth-child(5) .popup_prefer::after {
+        width: 61px;
+        transform: rotate(-12deg);
+    }
+
+    .fireplace_prefer:nth-child(6) .popup_prefer::after {
+        width: 99px;
+        transform: rotate(-66deg);
+    }
+
+    .fireplace_prefer:nth-child(7) .popup_prefer::after {
+        width: 126px;
+        transform: rotate(-26deg);
+    }
+
+    .fireplace_prefer:nth-child(8) .popup_prefer::after {
+        width: 238px;
+        transform: rotate(-91deg)
+    }
+
+    .fireplace_prefer:nth-child(9) .popup_prefer::after {
+        width: 217px;
+        transform: rotate(72deg);
+    }
+
+    .fireplace_prefer:nth-child(10) .popup_prefer::after {
+        width: 155px;
+        transform: rotate(39deg);
+    }
+
+    .fireplace_prefer:nth-child(11) .popup_prefer::after {
+        width: 276px;
+        transform: rotate(6deg);
+    }
+
+    .fireplace_prefer:nth-child(12) .popup_prefer::after {
+        width: 251px;
+        transform: rotate(-7deg);
+    }
+
+    .fireplace_prefer:nth-child(13) .popup_prefer::after {
+        width: 176px;
+        transform: rotate(-22deg);
+    }
+
+    .fireplace_prefer:nth-child(14) .popup_prefer::after {
+        width: 107px;
+        transform: rotate(16deg);
+    }
+
+    .fireplace_prefer:nth-child(15) .popup_prefer::after {
+        width: 160px;
+        transform: rotate(-64deg);
+    }
+
+    .fireplace_prefer:nth-child(16) .popup_prefer::after {
+        width: 286px;
+        transform: rotate(-57deg);
+    }
+
+    .popup_prefer img {
+        flex: 0 0 50px;
+    }
+
+    .popup_prefer-text {
+        padding-left: 15px;
+    }
+
+    .popup_prefer-text b {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .popup_prefer-text span {
+        font-size: 13px;
+    }
+
+    .fireplace_prefer.deck-right .popup_prefer {
+        top: auto;
+        right: var(--desk-x);
+        bottom: var(--desk-y);
+        left: auto;
+    }
+
+    .fireplace_prefer.deck-left .popup_prefer {
+        top: auto;
+        right: auto;
+        bottom: var(--desk-y);
+        left: var(--desk-x);
+    }
+
+}

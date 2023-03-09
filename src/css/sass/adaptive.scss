@@ -19,6 +19,8 @@
 @import "components/catalog/catalog-adaptive";
 @import "components/catalog-details/catalog-details-adaptive";
 @import "components/documentation/documentations-adaptive";
+@import "components/photo-prefer/photo-prefer-adaptive";
+@import "components/compare/compare-adaptive";
 
 @media only screen and (min-width : 480px)  {
     @include base-480;
@@ -42,6 +44,8 @@
     @include catalog-480;
     @include catalog-details-480;
     @include documentations-480;
+    @include photo-prefer-480;
+    @include compare-480;
 }
 
 @media only screen and (min-width : 640px)  {
@@ -66,6 +70,8 @@
     @include catalog-640;
     @include catalog-details-640;
     @include documentations-640;
+    @include photo-prefer-640;
+    @include compare-640;
 }
 
 @media only screen and (min-width : 768px)  {
@@ -90,6 +96,8 @@
     @include catalog-768;
     @include catalog-details-768;
     @include documentations-768;
+    @include photo-prefer-768;
+    @include compare-768;
 }
 
 @media only screen and (min-width : 1024px) {
@@ -114,6 +122,8 @@
     @include catalog-1024;
     @include catalog-details-1024;
     @include documentations-1024;
+    @include photo-prefer-1024;
+    @include compare-1024;
 }
 
 @media only screen and (min-width : 1190px) {
@@ -137,6 +147,8 @@
     @include catalog-1190;
     @include catalog-details-1190;
     @include documentations-1190;
+    @include photo-prefer-1190;
+    @include compare-1190;
 }
 
 @media only screen and (min-width : 1264px) {

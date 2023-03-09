@@ -1,0 +1,297 @@
+/*COMPARE*/
+.compare {
+    margin-bottom: 80px;
+}
+
+.compare > .centre {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.compare .headline_1 {
+    padding: 0 15px;
+}
+
+.compare .become_partner .centre {
+    margin: 0;
+}
+
+.compare_control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    padding: 0 15px;
+}
+
+.compare_toggle {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.compare_control b {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.compare_toggle label {
+    position: relative;
+    width: 50%;
+}
+
+.compare_toggle label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    padding: 0;
+    opacity: 0;
+}
+
+.compare_toggle label span {
+    font-size: 13px;
+    position: relative;
+    padding: 0 10px 0 25px;
+}
+
+.compare_toggle label span::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--base-color-4);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.compare_toggle label input[type=radio]:checked + span::before {
+    border-color: var(--main-color-1);
+}
+
+.compare_toggle label span::after {
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-color: var(--main-color-1);
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    opacity: 0;
+}
+
+.compare_toggle label input[type=radio]:checked + span::after {
+    opacity: 1;
+}
+
+.compare_buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.compare_buttons .btn {
+    width: calc(50% - 14px);
+}
+
+.compare_inner {
+    position: relative;
+}
+
+.compare_inner aside {
+    position: absolute;
+    top: 257px;
+    left: 0;
+    width: 100%;
+}
+
+.compare_inner .characteristics > b {
+    height: 57px;
+    font-size: 16px;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0 10px 0;
+}
+
+.compare_inner .characteristics ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.compare_inner .characteristics ul li {
+    font-size: 13px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    padding: 0 8px;
+    border-bottom: 1px solid var(--base-color-3);
+}
+
+.compare_inner .characteristics ul li + li {
+    margin-top: 35px;
+}
+
+.compare_inner .characteristics ul li:nth-child(2n + 1) {
+    background-color: var(--base-color-2);
+}
+
+.compare_inner .characteristics ul li span {
+    height: 19px;
+    overflow: hidden;
+    text-align: center;
+    color: var(--base-color-7);
+}
+
+.compare_inner aside .compare_control {
+    display: none;
+}
+
+.compare_slider .swiper-slide {
+    position: relative;
+    width: 160px;
+    border-top: 1px solid var(--base-color-3);
+}
+
+.compare_slider .custom-scrollbar {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.delete_compare-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    border-radius: var(--border-radius);
+}
+
+.delete_compare-item .icon {
+    width: 16px;
+    height: 16px;
+    fill: var(--danger);
+}
+
+.top_product,
+.bottom_product {
+    display: flex;
+    flex-direction: column;
+    padding: 6px 6px 10px 6px;
+    border-right: 1px solid var(--base-color-3);
+    border-bottom: 1px solid var(--base-color-3);
+}
+
+.top_product-image,
+.bottom_product-image {
+    display: block;
+    width: 100%;
+    height: 140px;
+}
+
+.top_product-image img,
+.bottom_product-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.top_product-info,
+.bottom_product-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.top_product-info a,
+.bottom_product-info a {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-color);
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 6px;
+    height: 54px;
+}
+
+
+.top_product-price,
+.bottom_product-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 40px;
+}
+
+.top_product-price del,
+.bottom_product-price del {
+    height: 16px;
+    overflow: hidden;
+    font-size: 11px;
+    color: var(--base-color-5);
+}
+
+.top_product-price span,
+.bottom_product-price span {
+    font-size: 11px;
+    font-weight: 600;
+    height: 23px;
+    overflow: hidden;
+}
+
+.top_product-price span b,
+.bottom_product-price span b {
+    font-size: 16px;
+    margin-right: 3px;
+}
+
+.compare_slider .swiper-slide ul {
+    padding-top: 56px;
+    display: flex;
+    flex-direction: column;
+}
+
+.compare_slider .swiper-slide ul li {
+    font-size: 13px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    padding: 8px;
+    z-index: 1;
+    border-right: 1px solid var(--base-color-3);
+}
+
+.bottom_product-btns {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom_product-btns .btn + .btn {
+    margin-top: 6px;
+}
+
+.compare_slider .swiper-slide ul li:nth-child(2n + 1) {
+    background-color: var(--base-color-2);
+}
+
+.compare_slider .swiper-slide ul li span {
+    height: 19px;
+    overflow: hidden;
+    text-align: center;
+}
