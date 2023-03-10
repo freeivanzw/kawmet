@@ -7,6 +7,10 @@
     color: var(--text-contrast);
 }
 
+.two_col_form.temp-2 {
+    margin-bottom: 0;
+}
+
 .interior + .two_col_form {
     margin-top: -80px;
 }
@@ -33,6 +37,10 @@
     z-index: -1;
 }
 
+.two_col_form.temp-2 .two_form-bg {
+    max-width: none;
+}
+
 .two_form-bg img {
     display: block;
     width: 100%;
@@ -40,6 +48,10 @@
     filter: brightness(0.8);
     border-radius: 40px;
     object-fit: cover;
+}
+
+.two_col_form.temp-2 .two_form-bg img {
+    border-radius: 0;
 }
 
 .two_col_form .centre > .col-1{

@@ -143,6 +143,15 @@
   /*DOCUMENTATIONS*/
   /*PHOTO PREFER*/
   /*COMPARE*/
+  /*BLOG TEM 1*/
+  .blog_1-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /*BLOG TEM 2*/
+  /*BLOG DETAILS*/
+  /*GALLERY*/
+  /*DEALER LIST*/
 }
 @media only screen and (min-width: 640px) {
   /*BASE*/
@@ -510,7 +519,7 @@
     padding-top: 40px;
   }
 
-  .pagination {
+  .catalog_navigation .pagination {
     margin: 0 0 0 auto;
   }
 
@@ -518,6 +527,39 @@
   /*DOCUMENTATIONS*/
   /*PHOTO PREFER*/
   /*COMPARE*/
+  /*BLOG TEM 1*/
+  /*BLOG TEM 2*/
+  .blog_2-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*BLOG DETAILS*/
+  /*GALLERY*/
+  /*DEALER LIST*/
+  .dealer_list-header {
+    flex-direction: row;
+  }
+
+  .dealer_list-header .col-1 {
+    flex: 1 1 50%;
+    margin-bottom: 0;
+    padding-right: 10px;
+  }
+
+  .select_city {
+    font-size: 16px;
+  }
+
+  .dealer_list-header .col-2 {
+    flex: 0 1 50%;
+    max-width: 480px;
+    padding-left: 10px;
+  }
+
+  .dealer_grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
 }
 @media only screen and (min-width: 768px) {
   /*BASE*/
@@ -1785,6 +1827,73 @@
   .fixed_compare .top_product .top_product-price span b {
     font-size: 16px;
   }
+
+  /*BLOG TEM 1*/
+  .blog_1-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /*BLOG TEM 2*/
+  /*BLOG DETAILS*/
+  .blog_details .centre {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .blog_details-header {
+    flex: 0 1 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+
+  .blog_details-header time {
+    flex: 0 1 330px;
+    order: -1;
+  }
+
+  .blog_details-header h1 {
+    flex: 0 1 calc(100% - 330px);
+    margin-bottom: 0;
+    padding-left: 20px;
+  }
+
+  .blog_details .centre aside {
+    flex: 0 1 330px;
+    order: 0;
+  }
+
+  .blog_details article {
+    margin-bottom: 0;
+    padding-left: 20px;
+    flex: 0 1 calc(100% - 330px);
+  }
+
+  /*GALLERY*/
+  /*DEALER LIST*/
+  .verify_code {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  .verify_code .input_wrap {
+    flex: 1 1 auto;
+    margin: 0 10px 0 0;
+  }
+
+  .verify_code .input_wrap input {
+    font-size: 14px;
+  }
+
+  .dealer_grid {
+    font-size: 16px;
+  }
+
+  .dealer_grid-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   /*BASE*/
@@ -1794,6 +1903,15 @@
 
   body {
     padding-top: 0;
+  }
+
+  article {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  article > * {
+    margin-bottom: 40px;
   }
 
   h1,
@@ -3240,6 +3358,180 @@
   .fixed_compare {
     top: 66px;
   }
+
+  /*BLOG TEM 1*/
+  .blog_temp-1 {
+    margin-bottom: 120px;
+  }
+
+  .blog_1-grid {
+    grid-gap: 30px;
+  }
+
+  .blog_1-item {
+    font-size: 20px;
+  }
+
+  .blog_1-item span {
+    width: calc(100% - 40px);
+    top: 20px;
+    left: 20px;
+  }
+
+  .blog_1-item span::after {
+    margin-left: 8px;
+    margin-bottom: 2px;
+  }
+
+  /*BLOG TEM 2*/
+  .blog_temp-2 {
+    margin-bottom: 120px;
+  }
+
+  .blog_2-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+
+  .blog_2-item {
+    padding: 0;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .blog_2-image {
+    flex: 0 1 auto;
+    height: 280px;
+  }
+
+  .blog_2-image img {
+    border-radius: 0;
+  }
+
+  .blog_2-item figcaption {
+    flex: 0 1 auto;
+    padding: 25px 20px;
+  }
+
+  .blog_2-title {
+    order: 0;
+    font-size: 20px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+  }
+
+  .blog_2-title:hover {
+    color: var(--main-color-1);
+  }
+
+  .blog_2-item figcaption time {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .blog_2-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+    max-height: 66px;
+  }
+
+  .blog_2-read_more {
+    font-size: 16px;
+    transition: 0.3s;
+  }
+
+  .blog_2-read_more:hover {
+    color: var(--main-color-2);
+  }
+
+  .blog_2-read_more::after {
+    transition: 0.3s;
+  }
+
+  .blog_2-read_more:hover::after {
+    border-color: var(--main-color-2);
+  }
+
+  .blog_temp-2 .pagination {
+    margin-top: 60px;
+  }
+
+  /*BLOG DETAILS*/
+  .blog_details {
+    margin-bottom: 120px;
+  }
+
+  /*GALLERY*/
+  .gallery {
+    margin-bottom: 120px;
+  }
+
+  .gallery_item img {
+    height: 700px;
+  }
+
+  .gallery_bottom {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+
+  .gallery_bottom span {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .gallery_bottom a {
+    font-size: 16px;
+  }
+
+  .gallery_bottom a::after {
+    width: 8px;
+    height: 8px;
+  }
+
+  .gallery_slider .slider_arrow {
+    display: flex;
+    margin-top: -25px;
+  }
+
+  .gallery_slider .slider_arrow.arrow-prev {
+    left: 15px;
+  }
+
+  .gallery_slider .slider_arrow.arrow-next {
+    right: auto;
+    left: 1080px;
+  }
+
+  /*DEALER LIST*/
+  .dealer_list .centre {
+    padding: 0 15px;
+  }
+
+  .dealer_list .headline_1 {
+    padding: 0;
+  }
+
+  .dealer_list {
+    margin-bottom: 120px;
+  }
+
+  .dealer_list-header {
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  .dealer_list > .centre > iframe {
+    height: 775px;
+    margin-bottom: 30px;
+  }
+
+  .dealer_phone ul a,
+.dealer_email ul a {
+    font-size: 16px;
+  }
 }
 @media only screen and (min-width: 1190px) {
   /*BASE*/
@@ -3571,6 +3863,16 @@
     max-width: none;
     width: calc(50% + 595px);
   }
+
+  /*BLOG TEM 1*/
+  /*BLOG TEM 2*/
+  /*BLOG DETAILS*/
+  /*GALLERY*/
+  .gallery .centre {
+    width: calc(50% + 595px);
+  }
+
+  /*DEALER LIST*/
 }
 @media only screen and (min-width: 1264px) {
   .popup.video_popup .close_btn {

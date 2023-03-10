@@ -1,0 +1,50 @@
+@mixin blog-temp-1-480 {
+    /*BLOG TEM 1*/
+    .blog_1-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@mixin blog-temp-1-640 {
+    /*BLOG TEM 1*/
+
+}
+
+@mixin blog-temp-1-768 {
+    /*BLOG TEM 1*/
+    .blog_1-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@mixin blog-temp-1-1024 {
+    /*BLOG TEM 1*/
+    .blog_temp-1 {
+        margin-bottom: 120px;
+    }
+
+    .blog_1-grid {
+        grid-gap: 30px;
+    }
+
+    .blog_1-item {
+        font-size: 20px;
+    }
+
+    .blog_1-item span {
+        width: calc(100% - 40px);
+        top: 20px;
+        left: 20px;
+    }
+
+    .blog_1-item span::after {
+        margin-left: 8px;
+        margin-bottom: 2px;
+    }
+
+}
+
+@mixin blog-temp-1-1190 {
+    /*BLOG TEM 1*/
+
+}

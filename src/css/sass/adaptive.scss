@@ -21,6 +21,11 @@
 @import "components/documentation/documentations-adaptive";
 @import "components/photo-prefer/photo-prefer-adaptive";
 @import "components/compare/compare-adaptive";
+@import "components/blog-temp-1/blog-temp-1-adaptive";
+@import "components/blog-temp-2/blog-temp-2-adaptive";
+@import "components/blog-details/blog-details-adaptive";
+@import "components/gallery/gallery-adaptive";
+@import "components/dealer-list/dealer-list-adaptive";
 
 @media only screen and (min-width : 480px)  {
     @include base-480;
@@ -46,6 +51,11 @@
     @include documentations-480;
     @include photo-prefer-480;
     @include compare-480;
+    @include blog-temp-1-480;
+    @include blog-temp-2-480;
+    @include blog-details-480;
+    @include gallery-480;
+    @include dealer-list-480;
 }
 
 @media only screen and (min-width : 640px)  {
@@ -72,6 +82,11 @@
     @include documentations-640;
     @include photo-prefer-640;
     @include compare-640;
+    @include blog-temp-1-640;
+    @include blog-temp-2-640;
+    @include blog-details-640;
+    @include gallery-640;
+    @include dealer-list-640;
 }
 
 @media only screen and (min-width : 768px)  {
@@ -98,6 +113,11 @@
     @include documentations-768;
     @include photo-prefer-768;
     @include compare-768;
+    @include blog-temp-1-768;
+    @include blog-temp-2-768;
+    @include blog-details-768;
+    @include gallery-768;
+    @include dealer-list-768;
 }
 
 @media only screen and (min-width : 1024px) {
@@ -124,6 +144,11 @@
     @include documentations-1024;
     @include photo-prefer-1024;
     @include compare-1024;
+    @include blog-temp-1-1024;
+    @include blog-temp-2-1024;
+    @include blog-details-1024;
+    @include gallery-1024;
+    @include dealer-list-1024;
 }
 
 @media only screen and (min-width : 1190px) {
@@ -149,6 +174,11 @@
     @include documentations-1190;
     @include photo-prefer-1190;
     @include compare-1190;
+    @include blog-temp-1-1190;
+    @include blog-temp-2-1190;
+    @include blog-details-1190;
+    @include gallery-1190;
+    @include dealer-list-1190;
 }
 
 @media only screen and (min-width : 1264px) {

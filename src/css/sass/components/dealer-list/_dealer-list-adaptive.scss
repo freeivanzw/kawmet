@@ -1,0 +1,94 @@
+@mixin dealer-list-480 {
+    /*DEALER LIST*/
+
+}
+
+@mixin dealer-list-640 {
+    /*DEALER LIST*/
+    .dealer_list-header {
+        flex-direction: row;
+    }
+
+    .dealer_list-header .col-1 {
+        flex: 1 1 50%;
+        margin-bottom: 0;
+        padding-right: 10px;
+    }
+
+    .select_city {
+        font-size: 16px;
+    }
+
+    .dealer_list-header .col-2 {
+        flex: 0 1 50%;
+        max-width: 480px;
+        padding-left: 10px;
+    }
+
+    .dealer_grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+}
+
+@mixin dealer-list-768 {
+    /*DEALER LIST*/
+    .verify_code {
+        align-items: flex-start;
+        flex-direction: row;
+    }
+
+    .verify_code .input_wrap {
+        flex: 1 1 auto;
+        margin: 0 10px 0 0;
+    }
+
+    .verify_code .input_wrap input {
+        font-size: 14px;
+    }
+
+    .dealer_grid {
+        font-size: 16px;
+    }
+
+    .dealer_grid-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+
+@mixin dealer-list-1024 {
+    /*DEALER LIST*/
+
+    .dealer_list .centre {
+        padding: 0 15px;
+    }
+
+    .dealer_list .headline_1 {
+        padding: 0;
+    }
+
+    .dealer_list {
+        margin-bottom: 120px;
+    }
+
+    .dealer_list-header {
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+    .dealer_list > .centre > iframe {
+        height: 775px;
+        margin-bottom: 30px;
+    }
+
+    .dealer_phone ul a,
+    .dealer_email ul a {
+        font-size: 16px;
+    }
+}
+
+@mixin dealer-list-1190 {
+    /*DEALER LIST*/
+
+}
