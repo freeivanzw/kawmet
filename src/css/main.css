@@ -7204,3 +7204,86 @@ body.header_fixed .compare_popup {
 .dealer_email ul a:hover {
   color: var(--main-color-1);
 }
+
+/*FOR CUSTOMERS*/
+.for_customers {
+  margin-bottom: 80px;
+}
+
+.for_customers-aside {
+  display: none;
+  flex-direction: column;
+  padding: 34px 15px 30px 15px;
+  border-radius: var(--border-radius);
+  background-color: var(--base-color-2);
+}
+
+.for_customers-aside.active {
+  display: flex;
+}
+
+.for_customers-menu {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--base-color-3);
+}
+
+.for_customers-menu a {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.for_customers-menu a.active {
+  font-weight: 600;
+}
+
+.for_customers-menu a:hover {
+  color: var(--main-color-1);
+}
+
+.for_customers-menu a .icon {
+  margin-right: 14px;
+}
+
+.for_customers-contacts {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--base-color-3);
+}
+
+.for_customers-contacts > b {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.for_customers-contacts > ul > li + li {
+  margin-top: 10px;
+}
+
+.for_customers-contacts .info_list > .icon {
+  margin-right: 14px;
+}
+
+.for_customers-contacts .info_list ul a {
+  color: var(--text-color);
+}
+
+.for_customers-contacts .info_list ul a:hover {
+  color: var(--main-color-1);
+}
+
+.for_customers-bottom {
+  font-size: 13px;
+  color: var(--base-color-7);
+}
+
+.customers_menu {
+  display: none;
+}

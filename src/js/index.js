@@ -261,6 +261,22 @@ $(function () {
         }
     })
 
+    $('.open-customers_aside').on('click', function (e) {
+        e.preventDefault();
+
+        $(this).addClass('hidden');
+        $('.close-customers_aside').removeClass('hidden');
+        $('.for_customers-aside').addClass('active');
+    })
+
+    $('.close-customers_aside').on('click', function (e) {
+        e.preventDefault();
+
+        $(this).addClass('hidden');
+        $('.open-customers_aside').removeClass('hidden');
+        $('.for_customers-aside').removeClass('active');
+    })
+
     var $certificateSlider = new Swiper(".certificate_slider", {
         spaceBetween: 20,
         mousewheel: true,

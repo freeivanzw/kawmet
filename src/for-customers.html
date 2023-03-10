@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawmet</title>
+    <link rel="apple-touch-icon" sizes="76x76" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
+</head>
+<body>
+    <!--HEADER-->
+    <header class="site_header"> <!-- is_searching -->
+        <div class="top_header"> <!-- top_header-search -->
+            <div class="centre">
+                <div class="col-1">
+                    <a href="#" class="header_logo">
+                        <img src="./images/desktop-logo.svg" width="143" height="38" class="desktop" alt="header logo">
+                        <img src="./images/mobile-logo.svg" width="40" height="40" class="mobile" alt="header logo">
+                    </a>
+                    <span class="header_slogan">Камінні топки та печі від офіційного представника в Україні</span>
+                    <a href="#" class="btn medium header_catalog-btn"><svg class="icon"><use xlink:href="./images/sprite.svg#grid-1"></use></svg>Каталог товарів</a>
+                    <div class="search_box dark"> <!-- search_opened not_active-->
+                        <form class="search_form">
+                            <div class="search_text">
+                                <svg class="icon search_icon"><use xlink:href="./images/sprite.svg#search"></use></svg>
+                                <input type="text" class="small" placeholder="Пошук по сайту">
+                                <a href="#" class="delete_content"><svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg></a>
+                            </div>
+                            <button type="submit" class="btn medium">Пошук</button>
+                        </form>
+                        <div class="result_box">
+                            <ul class="search-loading_list">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <span class="empty_result">Немає результатів. <br>Спробуйте інакше сформолювати свій запит</span>
+                            <div class="result_list">
+                                <ul class="result_items">
+                                    <li><a href="#">Камінна топка</a></li>
+                                    <li><a href="#">Камінна топка</a></li>
+                                    <li><a href="#">Камінна топка</a></li>
+                                    <li><a href="#">Камінна топка</a></li>
+                                    <li><a href="#">Камінна топка</a></li>
+                                </ul>
+                                <div class="popular-result_items">
+                                    <span class="popular-result_title">Популярні товари</span>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="popular-result_item">
+                                                <img src="./images/product-mini-photo.png" alt="product">
+                                                <span class="popular-item_title">Камінна топка KAWMET W3 (16.7 kW)</span>
+                                                <div class="popular-price">
+                                                    <del>42 107 грн</del>
+                                                    <span><b>40 002</b> грн</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="popular-result_item">
+                                                <img src="./images/product-mini-photo.png" alt="product">
+                                                <span class="popular-item_title">Камінна топка KAWMET W3 (16.7 kW)</span>
+                                                <div class="popular-price">
+                                                    <del>42 107 грн</del>
+                                                    <span><b>40 002</b> грн</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="popular-result_item">
+                                                <img src="./images/product-mini-photo.png" alt="product">
+                                                <span class="popular-item_title">Камінна топка KAWMET W3 (16.7 kW)</span>
+                                                <div class="popular-price">
+                                                    <del>42 107 грн</del>
+                                                    <span><b>40 002</b> грн</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#" class="btn medium show_more-result">Показати всі результати</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <a href="#" class="header_btn-icon compare_header">
+                        <svg class="icon"><use xlink:href="./images/sprite.svg#compare"></use></svg>
+                        <span class="counter">2</span>
+                    </a>
+                    <div class="header_dropdown choose_language">
+                        <a href="#" class="selected_box"><svg class="icon"><use xlink:href="./images/sprite.svg#ua"></use></svg>UA</a>
+                        <ul>
+                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#ua"></use></svg>UA</a></li>
+                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#ru"></use></svg>RU</a></li>
+                        </ul>
+                    </div>
+                    <div class="header_dropdown choose_city">
+                        <a href="#" class="selected_box"><svg class="icon"><use xlink:href="./images/sprite.svg#placeholder"></use></svg>Львів</a>
+                        <ul>
+                            <li><a href="#">Львів</a></li>
+                            <li><a href="#">Київ</a></li>
+                            <li><a href="#">Одеса</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="info_list header_phones">
+                        <svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>
+                        <ul>
+                            <li><a href="tel:+380674827941">+38 067 482 79 41</a></li>
+                            <li><a href="tel:+380674827941">+38 067 482 79 41</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn medium outline callback_btn">Передзвоніть мені</a>
+                    <a href="#" class="header_btn-icon user_header"><svg class="icon"><use xlink:href="./images/sprite.svg#user"></use></svg></a>
+                </div>
+                <a href="#" class="mob_menu-btn"><svg class="icon"><use xlink:href="./images/sprite.svg#menu"></use></svg>menu</a>
+            </div>
+        </div>
+        <div class="menu_header"> <!-- menu_header-search -->
+            <div class="centre">
+                <nav class="col-1 top_menu-1lvl">
+                    <ul>
+                        <li><a href="#" class="active">Каміни та печі</a></li>
+                        <li><a href="#" class="has_drop">Комплектуючі та аксесуари</a></li>
+                        <li><a href="#" class="has_drop opened_submenu">Блог</a></li>
+                        <li><a href="#" class="has_drop active">Галерея</a></li>
+                        <li><a href="#">Де купити</a></li>
+                        <li><a href="#">Гарантія</a></li>
+                        <li><a href="#">Стати партнером</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                </nav>
+                <div class="col-2">
+                    <div class="search_box"> <!-- search_opened not_active-->
+                        <form class="search_form">
+                            <div class="search_text">
+                                <svg class="icon search_icon"><use xlink:href="./images/sprite.svg#search"></use></svg>
+                                <input type="text" class="small" placeholder="Пошук по сайту">
+                                <a href="#" class="delete_content"><svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg></a>
+                            </div>
+                            <button type="submit" class="btn medium">Пошук</button>
+                        </form>
+                        <div class="result_box">
+                            <span class="empty_result">Немає результатів. <br>Спробуйте інакше сформолювати свій запит</span>
+                            <div class="result_list">
+                                <ul class="result_items">
+                                    <li><a href="#">Камінна топка</a></li>
+                                    <li><a href="#">Камінна топка</a></li>
+                                    <li><a href="#">Камінна топка</a></li>
+                                    <li><a href="#">Камінна топка</a></li>
+                                    <li><a href="#">Камінна топка</a></li>
+                                </ul>
+                                <div class="popular-result_items">
+                                    <span class="popular-result_title">Популярні товари</span>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="popular-result_item">
+                                                <img src="./images/product-mini-photo.png" alt="product">
+                                                <span class="popular-item_title">Камінна топка KAWMET W3 (16.7 kW)</span>
+                                                <div class="popular-price">
+                                                    <del>42 107 грн</del>
+                                                    <span><b>40 002</b> грн</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="popular-result_item">
+                                                <img src="./images/product-mini-photo.png" alt="product">
+                                                <span class="popular-item_title">Камінна топка KAWMET W3 (16.7 kW)</span>
+                                                <div class="popular-price">
+                                                    <del>42 107 грн</del>
+                                                    <span><b>40 002</b> грн</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="popular-result_item">
+                                                <img src="./images/product-mini-photo.png" alt="product">
+                                                <span class="popular-item_title">Камінна топка KAWMET W3 (16.7 kW)</span>
+                                                <div class="popular-price">
+                                                    <del>42 107 грн</del>
+                                                    <span><b>40 002</b> грн</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#" class="btn medium show_more-result">Показати всі результати</a>
+                        </div>
+                    </div>
+                    <a href="#" class="header_btn-icon compare_near-menu">
+                        <svg class="icon"><use xlink:href="./images/sprite.svg#compare"></use></svg>
+                        <span class="counter">2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="desk-top_menu">
+            <div class="centre">
+                <a href="#" class="close_btn close-top_menu"><svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg>close</a>
+                <ul class="menu-1_lvl">
+                    <li><a href="#">Каміни та печі</a></li>
+                    <li><a href="#" class="active">Комплектуючі та аксесуари</a></li>
+                    <li><a href="#" class="has_drop">Блог</a></li>
+                    <li><a href="#" class="has_drop active">Галерея</a></li>
+                    <li><a href="#">Де купити</a></li>
+                    <li><a href="#">Гарантія</a></li>
+                    <li><a href="#">Стати партнером</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+                <ul class="menu-2_lvl">
+                    <li>
+                        <a href="#" class="active"><img src="./images/product-mini-photo.png"><span>Дверцята</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/product-mini-photo.png"><span>Димоходи для печей і камінів</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/product-mini-photo.png"><span>Підставки</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="mobile_menu">
+            <div class="mobile_menu-header">
+                <a href="#" class="mobile_menu-logo"><img src="./images/desktop-logo.svg" width="120" height="32" alt="site logo"></a>
+                <span class="header_slogan">Камінні топки та печі від офіційного представника в Україні</span>
+                <a href="#" class="close-mobile_menu"><svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg>close</a>
+            </div>
+            <nav class="mobile_menu-body">
+                <ul class="mob-choose_lang">
+                    <li><a href="#" class="active"><svg class="icon"><use xlink:href="./images/sprite.svg#ua"></use></svg><span>UA</span></a></li>
+                    <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#ru"></use></svg><span>RU</span></a></li>
+                </ul>
+                <hr>
+                <a href="#" class="mobile_item-link has_drop mob-choose_city"><svg class="icon"><use xlink:href="./images/sprite.svg#placeholder"></use></svg><span>Виберіть місто</span></a>
+                <hr>
+                <div class="mobile_menu-phone">
+                    <svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>
+                    <ul>
+                        <li><a href="tel: +380985811613">+38 098 581 16 13</a></li>
+                        <li><a href="tel: +380985811613">+38 098 581 16 13</a></li>
+                    </ul>
+                    <a href="#" class="btn outline small"><span>Передзвоніть мені</span></a>
+                </div>
+                <hr>
+                <ul>
+                    <li><a href="#" class="mobile_item-link has_drop"><span>Каміни та печі</span></a></li>
+                    <li class="active"> <!-- active -->
+                        <a href="#" class="mobile_item-link has_drop"><span>Комплектуючі і аксесуари</span></a>
+                        <div class="sub_menu-box">
+                            <a href="#" class="back_mob-top">Комплектуючі та аксесуари</a>
+                            <ul class="mob_grid-photo">
+                                <li class="active">
+                                    <a href="#"><img src="./images/product-mini-photo.png"><span>Дверцята</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./images/product-mini-photo.png"><span>Димоходи для печей і камінів</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="./images/product-mini-photo.png"><span>Підставки</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#" class="mobile_item-link"><span>Блог</span></a></li>
+                    <li><a href="#" class="mobile_item-link"><span>Галерея</span></a></li>
+                    <li><a href="#" class="mobile_item-link"><span>Де купити</span></a></li>
+                    <li><a href="#" class="mobile_item-link"><span>Гарантія</span></a></li>
+                    <li><a href="#" class="mobile_item-link"><span>Стати пртнером</span></a></li>
+                    <li><a href="#" class="mobile_item-link"><span>Контакти</span></a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="#" class="mobile_item-link has_drop"><span>Для клієнтів</span></a></li>
+                    <li><a href="#" class="mobile_item-link has_drop"><span>Корисні матеріали</span></a></li>
+                    <li><a href="#" class="mobile_item-link has_drop"><span>Співпраця</span></a></li>
+                </ul>
+                <hr>
+                <a href="#" class="mobile_item-link has_drop"><svg class="icon"><use xlink:href="./images/sprite.svg#compare"></use></svg><span>Порівняння</span></a>
+                <a href="#" class="mobile_item-link has_drop"><svg class="icon"><use xlink:href="./images/sprite.svg#user"></use></svg><span>Увійти в кабінет</span></a>
+                <hr>
+                <ul class="mobile_social">
+                    <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#facebook"></use></svg></a></li>
+                    <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#youtube"></use></svg></a></li>
+                    <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#instagram"></use></svg></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="compare_popup">
+            <div class="centre">
+                <a href="#" class="close_btn close-compare_popup"><svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg>close</a>
+                <section class="become_partner hidden">
+                    <div class="centre">
+                        <div class="become_header">
+                            <div class="become_icon">
+                                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M93.9428 27.4451C93.8926 23.1803 90.4074 19.7266 86.1309 19.7266H54.8809V16.7969C54.8809 14.1045 52.6904 11.9141 49.998 11.9141C47.3057 11.9141 45.1152 14.1045 45.1152 16.7969V19.7266H13.8652C9.55723 19.7266 6.05273 23.2312 6.05273 27.5391C6.05273 28.0783 6.48984 28.5156 7.0293 28.5156H23.1135L13.8742 55.8594H9.95898C9.41953 55.8594 8.98242 56.2965 8.98242 56.8359C8.98242 65.4516 15.9918 72.4609 24.6074 72.4609C33.223 72.4609 40.2324 65.4516 40.2324 56.8359C40.2324 56.2965 39.7953 55.8594 39.2559 55.8594H35.0738L25.8348 28.5156H45.1152V68.6437C40.9408 70.5504 38.2793 74.6617 38.2793 79.2969C38.2793 80.9945 38.6447 82.6551 39.3453 84.1797H30.1738C26.5658 84.1797 23.6309 87.1148 23.6309 90.7227V92.9688H20.7012C20.1617 92.9688 19.7246 93.4059 19.7246 93.9453C19.7246 94.4848 20.1617 94.9219 20.7012 94.9219H79.2949C79.8344 94.9219 80.2715 94.4848 80.2715 93.9453C80.2715 93.4059 79.8344 92.9688 79.2949 92.9688H76.3652V90.7227C76.3652 87.1148 73.4301 84.1797 69.8223 84.1797H60.6508C63.2859 78.4451 60.9254 71.4045 54.8809 68.6437V28.5156H74.1611L64.9221 55.8594H60.7402C60.2008 55.8594 59.7637 56.2965 59.7637 56.8359C59.7637 65.4516 66.773 72.4609 75.3887 72.4609C84.0043 72.4609 91.0137 65.4516 91.0137 56.8359C91.0137 56.2965 90.5766 55.8594 90.0371 55.8594H86.1217L76.8828 28.5156H92.9668C92.9682 28.5158 92.9697 28.5158 92.9707 28.5156C93.5102 28.5156 93.9473 28.0783 93.9473 27.5391C93.9473 27.5074 93.9459 27.476 93.9428 27.4451ZM24.6074 70.5078C17.3973 70.5078 11.4727 64.8969 10.9701 57.8125H38.2447C37.7422 64.8969 31.8176 70.5078 24.6074 70.5078ZM15.9359 55.8594L24.4742 30.5898L33.0123 55.8594H15.9359ZM75.3887 70.5078C68.1785 70.5078 62.2539 64.8969 61.7514 57.8125H89.026C88.5234 64.8969 82.5988 70.5078 75.3887 70.5078ZM66.9838 55.8594L75.5221 30.5898L84.0603 55.8594H66.9838ZM8.08711 26.5625C8.55371 23.7949 10.967 21.6797 13.8652 21.6797H45.1152V26.5625H8.08711ZM74.4121 90.7227V92.9688H25.584V90.7227C25.584 88.1918 27.643 86.1328 30.1738 86.1328H69.8223C72.3531 86.1328 74.4121 88.1918 74.4121 90.7227ZM59.7637 79.2969C59.7637 81.0203 59.3123 82.6975 58.4541 84.1797H41.5418C40.6836 82.6977 40.2324 81.0203 40.2324 79.2969C40.2324 75.2459 42.6719 71.6752 46.4473 70.2C46.8219 70.0537 47.0684 69.6926 47.0684 69.2904C47.0684 61.9711 47.0684 24.3072 47.0684 16.7969C47.0684 15.1814 48.3824 13.8672 49.998 13.8672C51.6135 13.8672 52.9277 15.1814 52.9277 16.7969V69.2904C52.9277 69.6928 53.1744 70.0537 53.549 70.2C57.3242 71.6752 59.7637 75.2459 59.7637 79.2969ZM54.8809 26.5625V21.6797H86.1309C89.0291 21.6797 91.4426 23.7949 91.9088 26.5625H54.8809Z" fill="#FF6E00"/>
+                                    <path d="M83.2012 14.8438C85.8936 14.8438 88.084 12.6533 88.084 9.96094C88.084 7.26855 85.8936 5.07812 83.2012 5.07812C80.5088 5.07812 78.3184 7.26855 78.3184 9.96094C78.3184 12.6533 80.5088 14.8438 83.2012 14.8438ZM83.2012 7.03125C84.8166 7.03125 86.1309 8.34551 86.1309 9.96094C86.1309 11.5764 84.8166 12.8906 83.2012 12.8906C81.5855 12.8906 80.2715 11.5764 80.2715 9.96094C80.2715 8.34551 81.5857 7.03125 83.2012 7.03125Z" fill="#F7C398"/>
+                                    <path d="M12.8887 75.3906C9.11934 75.3906 6.05273 78.4572 6.05273 82.2266C6.05273 85.9959 9.11934 89.0625 12.8887 89.0625C16.658 89.0625 19.7246 85.9959 19.7246 82.2266C19.7246 78.4572 16.658 75.3906 12.8887 75.3906ZM12.8887 87.1094C10.1963 87.1094 8.00586 84.9189 8.00586 82.2266C8.00586 79.5342 10.1963 77.3438 12.8887 77.3438C15.5811 77.3438 17.7715 79.5342 17.7715 82.2266C17.7715 84.9189 15.5811 87.1094 12.8887 87.1094Z" fill="#F7C398"/>
+                                    <path d="M90.0371 35.3516C90.8461 35.3516 91.502 34.6957 91.502 33.8867C91.502 33.0777 90.8461 32.4219 90.0371 32.4219C89.2281 32.4219 88.5723 33.0777 88.5723 33.8867C88.5723 34.6957 89.2281 35.3516 90.0371 35.3516Z" fill="#F7C398"/>
+                                    <path d="M62.2051 11.9141C63.0141 11.9141 63.6699 11.2582 63.6699 10.4492C63.6699 9.64021 63.0141 8.98438 62.2051 8.98438C61.3961 8.98438 60.7402 9.64021 60.7402 10.4492C60.7402 11.2582 61.3961 11.9141 62.2051 11.9141Z" fill="#F7C398"/>
+                                    <path d="M23.1426 13.8672C23.9516 13.8672 24.6074 13.2114 24.6074 12.4023C24.6074 11.5933 23.9516 10.9375 23.1426 10.9375C22.3336 10.9375 21.6777 11.5933 21.6777 12.4023C21.6777 13.2114 22.3336 13.8672 23.1426 13.8672Z" fill="#F7C398"/>
+                                    <path d="M89.5488 80.2734C90.3578 80.2734 91.0137 79.6176 91.0137 78.8086C91.0137 77.9996 90.3578 77.3438 89.5488 77.3438C88.7398 77.3438 88.084 77.9996 88.084 78.8086C88.084 79.6176 88.7398 80.2734 89.5488 80.2734Z" fill="#F7C398"/>
+                                    <path d="M39.7441 42.1875C40.5532 42.1875 41.209 41.5317 41.209 40.7227C41.209 39.9136 40.5532 39.2578 39.7441 39.2578C38.9351 39.2578 38.2793 39.9136 38.2793 40.7227C38.2793 41.5317 38.9351 42.1875 39.7441 42.1875Z" fill="#F7C398"/>
+                                    <path d="M28.0254 79.2969C28.8344 79.2969 29.4902 78.641 29.4902 77.832C29.4902 77.023 28.8344 76.3672 28.0254 76.3672C27.2164 76.3672 26.5605 77.023 26.5605 77.832C26.5605 78.641 27.2164 79.2969 28.0254 79.2969Z" fill="#F7C398"/>
+                                    <path d="M9.4707 46.0938C10.2797 46.0938 10.9355 45.4379 10.9355 44.6289C10.9355 43.8199 10.2797 43.1641 9.4707 43.1641C8.66169 43.1641 8.00586 43.8199 8.00586 44.6289C8.00586 45.4379 8.66169 46.0938 9.4707 46.0938Z" fill="#F7C398"/>
+                                </svg>
+                            </div>
+                            <span>У вас немає товарів для порівняння</span>
+                        </div>
+                        <span class="headline_2">Додайте товари для порівняння</span>
+                        <a href="#" class="btn big"><span>Додати товари</span></a>
+                    </div>
+                </section>
+                <div class="compare_popup-grid">
+                    <div class="top_product">
+                        <a href="#" class="top_product-image"><img src="./images/catalog.png" alt="top product"></a>
+                        <div class="top_product-info">
+                            <a href="#">Камінна топка KAWMET W8 (17.5 kW) EСO</a>
+                            <div class="top_product-price">
+                                <del>42 107 грн</del>
+                                <span><b>55 380</b>грн</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top_product">
+                        <a href="#" class="top_product-image"><img src="./images/catalog.png" alt="top product"></a>
+                        <div class="top_product-info">
+                            <a href="#">Камінна топка KAWMET W8 (17.5 kW) EСO</a>
+                            <div class="top_product-price">
+                                <del>42 107 грн</del>
+                                <span><b>55 380</b>грн</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top_product">
+                        <a href="#" class="top_product-image"><img src="./images/catalog.png" alt="top product"></a>
+                        <div class="top_product-info">
+                            <a href="#">Камінна топка KAWMET W8 (17.5 kW) EСO</a>
+                            <div class="top_product-price">
+                                <del>42 107 грн</del>
+                                <span><b>55 380</b>грн</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <a href="#" class="btn medium"><span>Порівняти</span></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <nav class="breadcrumbs">
+            <ul class="centre">
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Для клієнтів</a></li>
+            </ul>
+        </nav>
+        <!--FOR CUSTOMERS-->
+        <section class="for_customers">
+            <div class="centre">
+                <a href="#" class="btn medium close-customers_aside hidden"><svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg><span>Для клієнтів: меню</span></a>
+                <a href="#" class="btn outline medium open-customers_aside"><svg class="icon"><use xlink:href="./images/sprite.svg#list"></use></svg><span>Для клієнтів: меню</span></a>
+                <aside class="for_customers-aside">
+                    <ul class="for_customers-menu">
+                        <li><a href="#" class="active"><svg class="icon"><use xlink:href="./images/sprite.svg#card"></use></svg>Як купити?</a></li>
+                        <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#payment-method"></use></svg>Способи оплати</a></li>
+                        <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#delivery-truck"></use></svg>Доставка</a></li>
+                        <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#guarantee"></use></svg>Гарантія</a></li>
+                        <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#building"></use></svg>Про компанію</a></li>
+                        <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#paper"></use></svg>Угода користувача</a></li>
+                        <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#privacy"></use></svg>Політика конфіденціальності</a></li>
+                    </ul>
+                    <div class="for_customers-contacts">
+                        <b>Наші контакти</b>
+                        <ul>
+                            <li>
+                                <div class="info_list">
+                                    <svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>
+                                    <ul>
+                                        <li><a href="tel:+380674827941">+38 067 482 79 41</a></li>
+                                        <li><a href="tel:+380674827941">+38 067 482 79 41</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info_list">
+                                    <svg class="icon"><use xlink:href="./images/sprite.svg#email"></use></svg>
+                                    <ul>
+                                        <li><a href="mailto:info@kawmet.ua">info@kawmet.ua</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="info_list">
+                                    <svg class="icon"><use xlink:href="./images/sprite.svg#placeholder"></use></svg>
+                                    <ul>
+                                        <li><a href="https://goo.gl/maps/V9bQLUzWjdUmWgaL8" target="_blank">м. Львів, вул. Луганська 1Б</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="for_customers-bottom">Ексклюзивний дистриб’ютор KAWMET в Україні</span>
+                </aside>
+                <div class="for_customers-content">
+                    <div class="customers_menu">
+                        <span class="headline_1">Для клієнтів</span>
+                        <ul>
+                            <li><a href="#" class="active"><svg class="icon"><use xlink:href="./images/sprite.svg#card"></use></svg>Як купити?</a></li>
+                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#payment-method"></use></svg>Способи оплати</a></li>
+                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#delivery-truck"></use></svg>Доставка</a></li>
+                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#guarantee"></use></svg>Гарантія</a></li>
+                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#building"></use></svg>Про компанію</a></li>
+                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#paper"></use></svg>Угода користувача</a></li>
+                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#privacy"></use></svg>Політика конфіденціальності</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="site_footer">
+        <div class="centre">
+            <div class="footer_text">
+                <span class="footer_title">Ексклюзивний дистриб’ютор KAWMET в Україні</span>
+                <span class="footer_subtitle">© ТМ використовується на підставі ліцензії З правовласником Kawiński Marek Odlewnia Kaw-Met</span>
+                <ul class="footer_social">
+                    <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#facebook"></use></svg></a></li>
+                    <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#youtube"></use></svg></a></li>
+                    <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#instagram"></use></svg></a></li>
+                </ul>
+            </div>
+            <nav class="footer_menu">
+                <div class="footer_menu-item">
+                    <span class="footer_menu-title">Контакти</span>
+                    <ul class="footer_menu-list">
+                        <li>
+                            <div class="info_list">
+                                <svg class="icon"><use xlink:href="./images/sprite.svg#placeholder"></use></svg>
+                                <ul>
+                                    <li><a href="https://goo.gl/maps/V9bQLUzWjdUmWgaL8" target="_blank">м. Львів, вул. Луганська 1Б</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info_list">
+                                <svg class="icon"><use xlink:href="./images/sprite.svg#email"></use></svg>
+                                <ul>
+                                    <li><a href="mailto:info@kawmet.ua">info@kawmet.ua</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info_list">
+                                <svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>
+                                <ul>
+                                    <li><a href="tel:+380674827941">+38 067 482 79 41</a></li>
+                                    <li><a href="tel:+380674827941">+38 067 482 79 41</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn outline medium callback_footer"><span>Передзвоніть мені</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_menu-item">
+                    <a href="#" class="footer_menu-title">Для клієнтів</a>
+                    <ul class="footer_menu-list">
+                        <li><a href="#">Як купити</a></li>
+                        <li><a href="#">Про компанію</a></li>
+                        <li><a href="#">Гарантія</a></li>
+                        <li><a href="#">Угода користувача</a></li>
+                        <li><a href="#">Політика конфіденційності</a></li>
+                    </ul>
+                </div>
+                <div class="footer_menu-item">
+                    <a href="#" class="footer_menu-title">Корисні матеріали</a>
+                    <ul class="footer_menu-list">
+                        <li><a href="#">Акції</a></li>
+                        <li><a href="#">Каталоги продукції</a></li>
+                        <li><a href="#">Сертифікати</a></li>
+                        <li><a href="#">Блог</a></li>
+                    </ul>
+                </div>
+                <div class="footer_menu-item">
+                    <a href="#" class="footer_menu-title">Співпраця</a>
+                    <ul class="footer_menu-list">
+                        <li><a href="#">Для архітекторів</a></li>
+                        <li><a href="#">Для B2B</a></li>
+                        <li><a href="#">Кар’єра</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="footer_bottom">
+                <ul class="footer_social">
+                    <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#facebook"></use></svg></a></li>
+                    <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#youtube"></use></svg></a></li>
+                    <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#instagram"></use></svg></a></li>
+                </ul>
+                <div class="footer_confident">
+                    <span class="copyright">Всі права захищені. COPYRIGHT © 2022 <br><a href="#">kawmet.ua</a> - ексклюзивний дистрибютор KAWMET в Україні</span>
+                    <span class="dev"><a href="https://websufix.com/website" title="Створення сайту">Створення сайту</a> <a href="https://websufix.com" title="веб студія">веб студія</a> SUFIX</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cookie hidden">
+        <svg class="cookie_img" width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.7">
+                <path d="M65.0623 52.9237C68.2409 47.5924 69.9445 41.5118 69.9987 35.3052C70.0528 29.0986 68.4554 22.9892 65.3703 17.6033C62.2852 12.2175 57.8233 7.74893 52.4421 4.65576C47.0609 1.56259 40.9539 -0.0439221 34.7472 0.000913405C28.5405 0.0457489 22.4573 1.74032 17.1213 4.91091C11.7854 8.08149 7.38852 12.614 4.38153 18.0439C1.37455 23.4738 -0.13439 29.6056 0.0093946 35.8108C0.15318 42.016 1.94452 48.0714 5.19978 53.3561L15.3319 47.115C13.1834 43.6271 12.0011 39.6306 11.9062 35.5351C11.8113 31.4397 12.8072 27.3927 14.7918 23.809C16.7764 20.2253 19.6783 17.2338 23.2001 15.1412C26.7218 13.0486 30.7367 11.9302 34.8331 11.9006C38.9296 11.871 42.9602 12.9313 46.5118 14.9728C50.0634 17.0143 53.0082 19.9635 55.0444 23.5182C57.0806 27.0729 58.1348 31.1051 58.0991 35.2014C58.0634 39.2978 56.939 43.311 54.8411 46.8296L65.0623 52.9237Z" fill="#F7F7F7"/>
+                <path d="M6.35498 55.1115C9.59416 59.7252 13.8998 63.4882 18.9057 66.0804C23.9116 68.6726 29.4695 70.0174 35.1067 70.0002C40.744 69.983 46.2936 68.6044 51.2836 65.9817C56.2736 63.359 60.5562 59.5698 63.7672 54.9365L53.9864 48.1582C51.8671 51.2162 49.0406 53.7171 45.7472 55.4481C42.4538 57.179 38.791 58.0889 35.0705 58.1002C31.3499 58.1116 27.6817 57.2241 24.3778 55.5132C21.0739 53.8023 18.2322 51.3187 16.0943 48.2737L6.35498 55.1115Z" fill="#FFEFE2"/>
+                <path d="M27.5 35L35.9375 21.875H42.5L35 35L42.5 48.125H35.9375L27.5 35Z" fill="#F7F7F7"/>
+            </g>
+            <path d="M56.1046 38.0401C56.9935 36.866 56.5333 35.1751 55.1851 34.6062C55.7391 33.2449 54.8594 31.7277 53.407 31.5278C53.5892 30.0712 52.3509 28.8314 50.8936 29.0144C50.6936 27.5609 49.1755 26.6828 47.8147 27.2364C47.2445 25.8826 45.5501 25.4313 44.3809 26.3164C43.4805 25.1578 41.7287 25.1574 40.8266 26.3162C40.5791 26.1281 40.294 25.9933 39.9877 25.9205C39.6842 25.1433 38.9881 24.6191 38.1989 24.5093C38.3809 23.0611 37.15 21.8106 35.6855 21.9956C35.4856 20.545 33.9702 19.6626 32.6069 20.2179C32.0348 18.8625 30.3399 18.4115 29.1726 19.2973C28.2725 18.1395 26.5203 18.1389 25.6186 19.2973C24.4564 18.4145 22.7588 18.8571 22.1844 20.2181C20.8254 19.6643 19.3072 20.5399 19.1057 21.9956C17.6423 21.8105 16.4106 23.0596 16.592 24.5093C15.9104 24.6042 15.2988 25.0093 14.9494 25.6138C14.5962 26.2266 14.5582 26.9562 14.8149 27.5875C13.4618 28.1586 13.0075 29.8513 13.8946 31.0214C12.7365 31.9226 12.7354 33.6752 13.8946 34.576C13.0079 35.7469 13.4615 37.4389 14.8146 38.01C14.5578 38.6411 14.596 39.3708 14.9496 39.9844C15.299 40.5886 15.9107 40.9936 16.5921 41.0881C16.4106 42.5402 17.6443 43.7871 19.1057 43.6016C19.3067 45.0572 20.8258 45.9331 22.1844 45.3796C22.756 46.7345 24.4539 47.1851 25.6187 46.3002C26.5201 47.458 28.2715 47.4593 29.1725 46.3002C29.4206 46.4885 29.7058 46.6227 30.0099 46.695C30.3103 47.4645 31.001 47.9966 31.8 48.1073C31.6177 49.5642 32.8556 50.8027 34.3138 50.6211C34.5154 52.076 36.0324 52.952 37.3924 52.3982C37.9625 53.7496 39.6529 54.2067 40.826 53.318C41.7275 54.4772 43.4805 54.4786 44.3812 53.3186C45.5523 54.205 47.2446 53.7514 47.8147 52.3985C49.1753 52.9517 50.6931 52.0759 50.8935 50.6211C52.3606 50.8041 53.5886 49.5548 53.4071 48.1073C54.8612 47.9058 55.7381 46.3895 55.1847 45.0287C56.5387 44.4574 56.9903 42.7634 56.1046 41.5949C57.2632 40.6938 57.2647 38.9415 56.1046 38.0401V38.0401ZM29.4653 45.2296C29.3632 45.079 29.1847 44.9986 29.0043 45.0226C28.8239 45.0465 28.6723 45.1701 28.6129 45.3421C28.4339 45.8601 27.9447 46.2081 27.3959 46.2081C26.8471 46.2081 26.3575 45.8598 26.1775 45.3415C26.1178 45.1696 25.9662 45.0461 25.7857 45.0225C25.6063 44.9991 25.4275 45.0784 25.325 45.23C25.0223 45.6779 24.4666 45.8961 23.9253 45.7509C23.3953 45.6092 23.0125 45.1464 22.9729 44.5992C22.9598 44.4177 22.8454 44.2594 22.6773 44.1896C22.5092 44.1201 22.3163 44.1515 22.1788 44.2704C21.7741 44.6206 21.1791 44.6933 20.6911 44.4112C20.216 44.1373 19.9661 43.5911 20.0692 43.0518C20.1034 42.8731 20.0338 42.6904 19.8894 42.5798C19.745 42.4692 19.5505 42.4496 19.3869 42.5291C19.2136 42.6133 19.0191 42.6578 18.8248 42.6579C17.8765 42.6579 17.2507 41.6631 17.6651 40.806C17.7442 40.6422 17.7242 40.4477 17.6134 40.3036C17.5025 40.1594 17.3196 40.0899 17.1412 40.1246C16.6 40.2289 16.054 39.9735 15.7825 39.5038C15.5083 39.0281 15.5652 38.4303 15.924 38.0164C16.0433 37.8789 16.0746 37.6858 16.005 37.5176C15.9355 37.3495 15.7769 37.235 15.5954 37.2219C15.0485 37.1823 14.5853 36.7994 14.4429 36.2694C14.301 35.7392 14.5109 35.1762 14.9652 34.8685C15.1159 34.7663 15.1961 34.5879 15.1722 34.4074C15.1484 34.227 15.0246 34.0754 14.8525 34.016C14.3347 33.8371 13.9867 33.3481 13.9867 32.799C13.9867 32.25 14.3349 31.7604 14.8531 31.5807C15.0251 31.521 15.1487 31.3694 15.1722 31.1889C15.1959 31.0084 15.1156 30.83 14.9647 30.7281C14.5106 30.4213 14.3009 29.8588 14.4427 29.329C14.5852 28.7984 15.0485 28.4155 15.5954 28.376C15.7768 28.3629 15.9353 28.2485 16.0049 28.0805C16.0745 27.9124 16.0434 27.7196 15.9243 27.582C15.5656 27.1672 15.5086 26.5694 15.7822 26.0946C16.0546 25.6234 16.6014 25.369 17.1417 25.4723C17.5295 25.5467 17.837 25.146 17.6649 24.7906C17.4258 24.2969 17.5259 23.7049 17.9145 23.3171C18.318 22.9127 18.9141 22.8389 19.3873 23.0682C19.5509 23.1474 19.7452 23.1275 19.8896 23.017C20.0339 22.9063 20.1034 22.7237 20.0691 22.5451C19.9166 21.7486 20.5314 21.0131 21.3331 21.0131C21.644 21.0131 21.9443 21.1248 22.1787 21.3276C22.3162 21.4467 22.5091 21.4778 22.6772 21.4083C22.8453 21.3387 22.9597 21.1801 22.9728 20.9988C23.0215 20.3257 23.5841 19.802 24.2593 19.802C24.6871 19.802 25.0854 20.0136 25.3249 20.368C25.5465 20.6959 26.048 20.63 26.1775 20.2564C26.3572 19.7382 26.8467 19.39 27.3958 19.39C27.9449 19.39 28.434 19.7379 28.6128 20.2558C28.7417 20.6294 29.2434 20.6962 29.4653 20.3685C29.7698 19.919 30.3277 19.7021 30.8658 19.8461C31.3963 19.9886 31.7792 20.4519 31.8188 20.9988C31.8318 21.1803 31.9464 21.3389 32.1145 21.4084C32.2828 21.4778 32.4757 21.4465 32.6133 21.3273C33.016 20.9782 33.6124 20.9043 34.1002 21.1855C34.5758 21.4603 34.8255 22.0065 34.7217 22.5445C34.6872 22.723 34.7564 22.9058 34.9007 23.0167C35.0448 23.1275 35.2392 23.1477 35.4031 23.0684C35.5773 22.9842 35.7721 22.9396 35.9666 22.9396C36.9107 22.9396 37.5431 23.9316 37.126 24.7901C37.0464 24.9538 37.0662 25.1482 37.1767 25.2926C37.2873 25.4371 37.4704 25.5066 37.6487 25.4724C38.184 25.37 38.7337 25.6181 39.0086 26.0947C39.283 26.5696 39.2264 27.1672 38.8674 27.582C38.6089 27.8804 38.8019 28.3476 39.1963 28.3761C39.7432 28.4157 40.2061 28.7984 40.348 29.3294C40.4906 29.8592 40.2814 30.4213 39.8271 30.7283C39.6764 30.8302 39.5961 31.0085 39.6196 31.189C39.6432 31.3695 39.7666 31.5211 39.9386 31.5808C40.4568 31.7609 40.8051 32.2505 40.8051 32.7992C40.8051 33.348 40.4571 33.8371 39.9391 34.0163C39.7671 34.0758 39.6436 34.2272 39.6197 34.4077C39.5959 34.5882 39.6761 34.7666 39.8266 34.8686C40.2812 35.1765 40.4906 35.7393 40.3478 36.2697C40.2061 36.7998 39.7433 37.1825 39.1962 37.2221C38.8024 37.2506 38.6086 37.7177 38.8677 38.0166C39.2266 38.4307 39.2833 39.0282 39.0082 39.504C38.7375 39.9736 38.1918 40.2291 37.6493 40.1248C37.4704 40.0899 37.2878 40.1598 37.177 40.3041C37.0663 40.4484 37.0464 40.6429 37.1258 40.8068C37.3652 41.3004 37.2655 41.8928 36.8775 42.2808C36.4721 42.6863 35.8755 42.7581 35.4037 42.5291C35.2398 42.4497 35.0452 42.4696 34.901 42.5803C34.7566 42.6911 34.6872 42.874 34.7217 43.0526C34.8769 43.8585 34.2503 44.5849 33.4574 44.5849C33.1466 44.5849 32.8468 44.4734 32.6134 44.2709C32.3146 44.012 31.8473 44.2051 31.8189 44.5994C31.7697 45.2779 31.2023 45.7957 30.5309 45.7957C30.1038 45.7955 29.7055 45.584 29.4653 45.2296V45.2296ZM55.1464 41.0357C54.9745 41.0954 54.8511 41.247 54.8274 41.4273C54.8038 41.6077 54.884 41.786 55.0346 41.888C55.4888 42.1954 55.6983 42.7578 55.5558 43.288C55.414 43.8181 54.9513 44.2008 54.4041 44.2403C54.2227 44.2535 54.0643 44.3678 53.9946 44.5359C53.925 44.704 53.9564 44.897 54.0754 45.0346C54.4341 45.4492 54.4909 46.0468 54.2163 46.5221C53.9423 46.9972 53.3961 47.2473 52.8566 47.1441C52.678 47.1102 52.4953 47.1796 52.3847 47.3239C52.274 47.4683 52.2544 47.6627 52.3339 47.8265C52.5734 48.3192 52.4736 48.911 52.0853 49.2994C51.698 49.6871 51.1056 49.7871 50.6109 49.5482C50.4471 49.4689 50.2527 49.489 50.1084 49.5999C49.9642 49.7108 49.8949 49.8936 49.9295 50.0721C50.0335 50.61 49.7838 51.1561 49.3086 51.4308C48.8331 51.7048 48.2348 51.648 47.8199 51.2889C47.5213 51.0301 47.0538 51.2241 47.0258 51.6185C46.987 52.165 46.6045 52.6279 46.0744 52.7703C45.5439 52.9119 44.9811 52.7022 44.6734 52.248C44.4514 51.9201 43.9498 51.987 43.821 52.3607C43.642 52.8788 43.1539 53.2265 42.6057 53.2265C42.605 53.2265 42.6044 53.2265 42.6039 53.2265C42.0548 53.2265 41.5652 52.8783 41.3855 52.3601C41.2565 51.9878 40.7557 51.9199 40.5333 52.2479C40.2255 52.7021 39.6627 52.9118 39.133 52.7705C38.603 52.6279 38.2204 52.1646 38.181 51.6179C38.1678 51.4364 38.0535 51.2779 37.8854 51.2083C37.7175 51.1387 37.5244 51.17 37.3868 51.2889C36.9721 51.6478 36.3744 51.7047 35.8994 51.431C35.4241 51.1563 35.1739 50.6098 35.2771 50.0714C35.3113 49.8928 35.2418 49.7102 35.0976 49.5996C34.9535 49.489 34.759 49.4691 34.5953 49.5483C34.1016 49.7871 33.5093 49.6872 33.1211 49.2991C32.7335 48.9115 32.6338 48.3195 32.8728 47.8259C32.952 47.6622 32.9322 47.4678 32.8215 47.3236C32.7109 47.1793 32.5279 47.1099 32.3497 47.1441C31.8757 47.2348 31.3964 47.0521 31.1007 46.683C31.8119 46.4944 32.346 45.998 32.6069 45.3798C33.967 45.9338 35.4857 45.0547 35.6855 43.6017C37.1521 43.7863 38.3802 42.5371 38.1989 41.0881C39.6599 40.8858 40.5281 39.364 39.9769 38.01C41.33 37.439 41.7824 35.745 40.8968 34.5758C42.0554 33.6754 42.0558 31.9236 40.8968 31.0216C41.7845 29.8511 41.3272 28.1574 39.9766 27.5875C40.0529 27.4001 40.1025 27.2039 40.1262 27.0047C40.287 27.1008 40.4275 27.2305 40.5333 27.3868C40.6354 27.5372 40.8134 27.617 40.9939 27.5938C41.1742 27.57 41.3258 27.4467 41.3855 27.2748C41.5655 26.7565 42.0551 26.4083 42.6039 26.4083C43.1526 26.4083 43.6417 26.7564 43.8209 27.2744C43.8804 27.4464 44.0319 27.57 44.2124 27.5938C44.393 27.6176 44.5712 27.5374 44.6733 27.3868C44.9809 26.9324 45.5438 26.7231 46.0743 26.8656C46.6045 27.0073 46.9868 27.4698 47.0257 28.0165C47.0386 28.198 47.1528 28.3568 47.321 28.4265C47.4889 28.4962 47.682 28.465 47.8198 28.346C48.2345 27.987 48.8326 27.9302 49.3085 28.2051C49.7837 28.4792 50.0333 29.0252 49.9293 29.5639C49.8546 29.9516 50.2552 30.2604 50.6113 30.0875C51.1047 29.8483 51.6974 29.9478 52.0853 30.3358C52.4733 30.7239 52.5731 31.3162 52.3336 31.8098C52.2542 31.9736 52.274 32.1681 52.3848 32.3124C52.4956 32.4567 52.6783 32.5266 52.8571 32.4918C53.396 32.3879 53.9419 32.6374 54.2163 33.1131C54.491 33.5885 54.4344 34.1861 54.0755 34.6C53.9563 34.7375 53.9249 34.9306 53.9944 35.0988C54.0639 35.267 54.2225 35.3814 54.404 35.3946C54.9511 35.4341 55.4138 35.8168 55.5557 36.3474C55.6979 36.8771 55.4883 37.4398 55.0339 37.7481C54.8835 37.8503 54.8035 38.0287 54.8273 38.2091C54.8513 38.3895 54.9749 38.5409 55.1468 38.6003C55.6649 38.7794 56.0129 39.2685 56.0129 39.8173C56.0131 40.3662 55.6648 40.8557 55.1464 41.0357V41.0357Z" fill="#FF6E00"/>
+            <path d="M53.8012 22.9808C54.1995 22.9808 54.5224 22.6579 54.5224 22.2596C54.5224 21.8613 54.1995 21.5385 53.8012 21.5385C53.4029 21.5385 53.0801 21.8613 53.0801 22.2596C53.0801 22.6579 53.4029 22.9808 53.8012 22.9808Z" fill="#F7C398"/>
+            <path d="M54.2819 54.7115C54.6802 54.7115 55.0031 54.3886 55.0031 53.9903C55.0031 53.592 54.6802 53.2692 54.2819 53.2692C53.8837 53.2692 53.5608 53.592 53.5608 53.9903C53.5608 54.3886 53.8837 54.7115 54.2819 54.7115Z" fill="#F7C398"/>
+            <path d="M32.6472 54.2308C33.0455 54.2308 33.3683 53.9079 33.3683 53.5096C33.3683 53.1113 33.0455 52.7885 32.6472 52.7885C32.2489 52.7885 31.926 53.1113 31.926 53.5096C31.926 53.9079 32.2489 54.2308 32.6472 54.2308Z" fill="#F7C398"/>
+            <path d="M15.8203 47.9808C16.2186 47.9808 16.5414 47.6579 16.5414 47.2596C16.5414 46.8613 16.2186 46.5385 15.8203 46.5385C15.422 46.5385 15.0991 46.8613 15.0991 47.2596C15.0991 47.6579 15.422 47.9808 15.8203 47.9808Z" fill="#F7C398"/>
+            <path d="M41.7819 22.0192C42.1802 22.0192 42.5031 21.6963 42.5031 21.2981C42.5031 20.8998 42.1802 20.5769 41.7819 20.5769C41.3837 20.5769 41.0608 20.8998 41.0608 21.2981C41.0608 21.6963 41.3837 22.0192 41.7819 22.0192Z" fill="#F7C398"/>
+            <path d="M26.8779 25.1442C27.2762 25.1442 27.599 24.8213 27.599 24.4231C27.599 24.0248 27.2762 23.7019 26.8779 23.7019C26.4796 23.7019 26.1567 24.0248 26.1567 24.4231C26.1567 24.8213 26.4796 25.1442 26.8779 25.1442Z" fill="#FF6E00"/>
+            <path d="M20.1472 36.4423C20.5455 36.4423 20.8683 36.1194 20.8683 35.7212C20.8683 35.3229 20.5455 35 20.1472 35C19.7489 35 19.426 35.3229 19.426 35.7212C19.426 36.1194 19.7489 36.4423 20.1472 36.4423Z" fill="#FF6E00"/>
+            <path d="M32.6472 37.4039C33.0455 37.4039 33.3683 37.081 33.3683 36.6827C33.3683 36.2844 33.0455 35.9615 32.6472 35.9615C32.2489 35.9615 31.926 36.2844 31.926 36.6827C31.926 37.081 32.2489 37.4039 32.6472 37.4039Z" fill="#FF6E00"/>
+            <path d="M45.1474 44.6154C45.5457 44.6154 45.8686 44.2925 45.8686 43.8942C45.8686 43.496 45.5457 43.1731 45.1474 43.1731C44.7491 43.1731 44.4263 43.496 44.4263 43.8942C44.4263 44.2925 44.7491 44.6154 45.1474 44.6154Z" fill="#FF6E00"/>
+            <path d="M14.3779 21.5385C14.7762 21.5385 15.099 21.2156 15.099 20.8173C15.099 20.4191 14.7762 20.0962 14.3779 20.0962C13.9796 20.0962 13.6567 20.4191 13.6567 20.8173C13.6567 21.2156 13.9796 21.5385 14.3779 21.5385Z" fill="#F7C398"/>
+            <path d="M25.9165 16.7308C26.3147 16.7308 26.6376 16.4079 26.6376 16.0096C26.6376 15.6113 26.3147 15.2885 25.9165 15.2885C25.5182 15.2885 25.1953 15.6113 25.1953 16.0096C25.1953 16.4079 25.5182 16.7308 25.9165 16.7308Z" fill="#F7C398"/>
+            <path d="M26.6376 35.9615C24.7819 35.9615 23.2722 37.4713 23.2722 39.3269C23.2722 41.1826 24.7819 42.6923 26.6376 42.6923C28.4933 42.6923 30.003 41.1826 30.003 39.3269C30.003 37.4713 28.4933 35.9615 26.6376 35.9615ZM26.6376 41.7308C25.3121 41.7308 24.2338 40.6524 24.2338 39.3269C24.2338 38.0015 25.3121 36.9231 26.6376 36.9231C27.9631 36.9231 29.0414 38.0015 29.0414 39.3269C29.0414 40.6524 27.9631 41.7308 26.6376 41.7308Z" fill="#FF6E00"/>
+            <path d="M19.9068 50.3846C18.5813 50.3846 17.5029 51.463 17.5029 52.7885C17.5029 54.114 18.5813 55.1923 19.9068 55.1923C21.2323 55.1923 22.3106 54.114 22.3106 52.7885C22.3106 51.463 21.2323 50.3846 19.9068 50.3846V50.3846ZM19.9068 54.2308C19.1115 54.2308 18.4645 53.5838 18.4645 52.7885C18.4645 51.9932 19.1115 51.3462 19.9068 51.3462C20.7021 51.3462 21.3491 51.9932 21.3491 52.7885C21.3491 53.5838 20.7021 54.2308 19.9068 54.2308Z" fill="#F7C398"/>
+            <path d="M24.7144 30.1923C24.7144 28.8668 23.6361 27.7885 22.3106 27.7885C20.9851 27.7885 19.9067 28.8668 19.9067 30.1923C19.9067 31.5178 20.9851 32.5961 22.3106 32.5961C23.6361 32.5961 24.7144 31.5178 24.7144 30.1923ZM22.3106 31.6346C21.5153 31.6346 20.8683 30.9876 20.8683 30.1923C20.8683 29.397 21.5153 28.75 22.3106 28.75C23.1059 28.75 23.7529 29.397 23.7529 30.1923C23.7529 30.9876 23.1059 31.6346 22.3106 31.6346Z" fill="#FF6E00"/>
+            <path d="M32.8875 32.5961C34.2131 32.5961 35.2914 31.5178 35.2914 30.1923C35.2914 28.8668 34.2131 27.7885 32.8875 27.7885C31.562 27.7885 30.4836 28.8668 30.4836 30.1923C30.4836 31.5178 31.562 32.5961 32.8875 32.5961ZM32.8875 28.75C33.6828 28.75 34.3299 29.397 34.3299 30.1923C34.3299 30.9876 33.6829 31.6346 32.8875 31.6346C32.0922 31.6346 31.4452 30.9876 31.4452 30.1923C31.4452 29.397 32.0922 28.75 32.8875 28.75Z" fill="#FF6E00"/>
+            <path d="M48.2723 35C46.9468 35 45.8684 36.0784 45.8684 37.4038C45.8684 38.7293 46.9468 39.8077 48.2723 39.8077C49.5977 39.8077 50.6761 38.7293 50.6761 37.4038C50.6761 36.0784 49.5977 35 48.2723 35ZM48.2723 38.8462C47.477 38.8462 46.8299 38.1991 46.8299 37.4038C46.8299 36.6086 47.477 35.9615 48.2723 35.9615C49.0675 35.9615 49.7146 36.6086 49.7146 37.4038C49.7146 38.1991 49.0676 38.8462 48.2723 38.8462Z" fill="#FF6E00"/>
+            <path d="M41.0608 44.1346C40.0004 44.1346 39.1377 44.9973 39.1377 46.0577C39.1377 47.1181 40.0004 47.9808 41.0608 47.9808C42.1212 47.9808 42.9838 47.1181 42.9838 46.0577C42.9838 44.9973 42.1213 44.1346 41.0608 44.1346ZM41.0608 47.0193C40.5306 47.0193 40.0992 46.5879 40.0992 46.0577C40.0992 45.5275 40.5306 45.0962 41.0608 45.0962C41.591 45.0962 42.0223 45.5275 42.0223 46.0577C42.0223 46.5879 41.591 47.0193 41.0608 47.0193Z" fill="#FF6E00"/>
+            <path d="M48.7532 20.0962C49.8135 20.0962 50.6762 19.2335 50.6762 18.1731C50.6762 17.1127 49.8135 16.25 48.7532 16.25C47.6928 16.25 46.8301 17.1127 46.8301 18.1731C46.8301 19.2335 47.6928 20.0962 48.7532 20.0962ZM48.7532 17.2115C49.2833 17.2115 49.7147 17.6429 49.7147 18.1731C49.7147 18.7033 49.2833 19.1346 48.7532 19.1346C48.223 19.1346 47.7916 18.7033 47.7916 18.1731C47.7916 17.6429 48.2231 17.2115 48.7532 17.2115Z" fill="#F7C398"/>
+        </svg>
+        <div class="cookie_content">
+            <span class="cookie_text">Для покращення роботи сайту та персоналізації інформації ми використовуємо файли cookie. Продовжуючи користуватися сайтом, ви погоджуєтесь <a href="#">з умовами користування</a>.</span>
+            <a href="#" class="btn small outline"><span>Чудово</span></a>
+        </div>
+        <a href="#" class="close_btn"><svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg>close</a>
+    </div>
+
+    <div class="shadow hidden"></div>
+    <a href="#" class="to_up">нагору<svg class="icon"><use xlink:href="./images/sprite.svg#mini-arrow-right"></use></svg></a>
+
+    <div class="styleguide" style="display: flex; flex-direction: column">
+        <figure class="product_item">
+            <div class="product_photo-wrap">
+                <a href="#" class="compare_btn"> <!--compare_active-->
+                    <svg class="icon compare_icon"><use xlink:href="./images/sprite.svg#compare"></use></svg>
+                    <svg class="icon compare_added"><use xlink:href="./images/sprite.svg#success-filled"></use></svg>
+                </a>
+                <a href="#" class="product_photo"><img src="./images/product-mini-photo.png" width="283" height="247" alt="product photo"></a>
+                <ul class="status_list">
+                    <li>-5%</li>
+                    <li>Хіт</li>
+                    <li>Знижка</li>
+                </ul>
+            </div>
+            <figcaption>
+                <a href="#" class="product_name">Камінна топка KAWMET Premium HERMES F23</a>
+                <span class="product_available">В наявності</span> <!--not-available-->
+                <div class="product_bottom">
+                    <div class="product_price">
+                        <del>42 107 грн</del>
+                        <span><b>40 002</b> грн</span>
+                    </div>
+                    <a href="#" class="btn small outline"><span>Докладніше</span></a>
+                </div>
+            </figcaption>
+        </figure>
+        <figure class="product_item loading">
+            <div class="product_photo-wrap">
+                <a href="#" class="compare_btn"> <!--compare_active-->
+                    <svg class="icon compare_icon"><use xlink:href="./images/sprite.svg#compare"></use></svg>
+                    <svg class="icon compare_added"><use xlink:href="./images/sprite.svg#success-filled"></use></svg>
+                </a>
+                <a href="#" class="product_photo"><img src="./images/product-mini-photo.png" width="283" height="247" alt="product photo"></a>
+                <ul class="status_list">
+                    <li>-5%</li>
+                    <li>Хіт</li>
+                    <li>Знижка</li>
+                </ul>
+            </div>
+            <figcaption>
+                <a href="#" class="product_name">Камінна топка KAWMET Premium HERMES F23</a>
+                <span class="product_available">В наявності</span> <!--not-available-->
+                <div class="product_bottom">
+                    <div class="product_price">
+                        <del>42 107 грн</del>
+                        <span><b>40 002</b> грн</span>
+                    </div>
+                    <a href="#" class="btn small outline"><span>Докладніше</span></a>
+                </div>
+            </figcaption>
+        </figure>
+
+        <a href="#">test link</a>
+        <a href="#" class="site_link disabled">test link</a>
+        <a href="#" class="site_link black">test link</a>
+        <a href="#" class="site_link black disabled">test link</a>
+        <a href="#" class="site_link gray">test link</a>
+        <a href="#" class="site_link gray disabled">test link</a>
+        <label class="input_wrap">
+            <span class="label_text">Ім'я користувача</span>
+            <input type="text" placeholder="Ім'я користувача">
+            <div class="input_message">Повідомлення під інпуторм</div>
+        </label>
+        <label class="input_wrap">
+            <span class="label_text">Ім'я користувача</span>
+            <input type="text" class="small" placeholder="Ім'я користувача">
+            <div class="input_message">Повідомлення під інпуторм</div>
+        </label>
+        <label class="input_wrap">
+            <span class="label_text">Ім'я користувача</span>
+            <input type="text" class="small error" placeholder="Ім'я користувача">
+            <div class="input_message">Повідомлення під інпуторм</div>
+        </label>
+        <label class="input_wrap">
+            <span class="label_text">Ім'я користувача</span>
+            <input type="text" disabled placeholder="Ім'я користувача">
+            <div class="input_message success"><svg class="icon"><use xlink:href="./images/sprite.svg#success-filled"></use></svg>Повідомлення під інпуторм</div>
+        </label>
+        <label class="input_wrap">
+            <span class="label_text">Ім'я користувача</span>
+            <input type="text" class="error" placeholder="Ім'я користувача">
+            <div class="input_message error"><svg class="icon"><use xlink:href="./images/sprite.svg#warning-filled"></use></svg>Повідомлення під інпуторм</div>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#warning"></use></svg>
+        </label>
+        <label class="input_wrap small">
+            <span class="label_text">Ім'я користувача</span>
+            <input type="text" placeholder="Ім'я користувача">
+        </label>
+        <label class="input_wrap small">
+            <span class="label_text">Текст користувача</span>
+            <textarea placeholder="Текст користувача"></textarea>
+        </label>
+        <label class="input_wrap small">
+            <span class="label_text">Текст користувача</span>
+            <textarea placeholder="Текст користувача" class="error"></textarea>
+            <div class="input_message error"><svg class="icon"><use xlink:href="./images/sprite.svg#warning-filled"></use></svg>Повідомлення під інпуторм</div>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#warning"></use></svg>
+        </label>
+        <div class="input_wrap">
+            <span class="label_text">Спосіб оплати</span>
+            <div class="dropdown order_payment">
+                <div class="overflow"><span>Спосіб оплати</span><button type="button" class="drop_arrow"></button></div>
+                <ul>
+                    <li><a href="#">test test test 1</a></li>
+                    <li><a href="#">test test test 2</a></li>
+                    <li><a href="#">test test test 3</a></li>
+                    <li><a href="#">test test test 4</a></li>
+                    <li><a href="#">test test test 5</a></li>
+                </ul>
+                <input type="hidden" name="payment" value="">
+            </div>
+        </div>
+        <div class="input_wrap">
+            <span class="label_text">Спосіб оплати</span>
+            <div class="dropdown order_payment2 error">
+                <div class="overflow"><span>Спосіб оплати</span><button type="button" class="drop_arrow"></button></div>
+                <ul>
+                    <li><a href="#">test test test 1</a></li>
+                    <li><a href="#">test test test 2</a></li>
+                    <li><a href="#">test test test 3</a></li>
+                    <li><a href="#">test test test 4</a></li>
+                    <li><a href="#">test test test 5</a></li>
+                </ul>
+                <input type="hidden" name="payment" value="">
+            </div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap">
+            <label class="checkbox_styled">
+                <input type="radio" name="rb1">
+                <span>checkbox</span>
+            </label>
+            <label class="checkbox_styled">
+                <input type="radio" name="rb1">
+                <span>checkbox</span>
+            </label>
+            <label class="checkbox_styled">
+                <input type="radio" name="rb1" disabled>
+                <span>checkbox</span>
+            </label>
+        </div>
+        <div style="display: flex; flex-wrap: wrap">
+            <label class="checkbox_styled">
+                <input type="checkbox">
+                <span>checkbox</span>
+            </label>
+            <label class="checkbox_styled">
+                <input type="checkbox" disabled>
+                <span>checkbox</span>
+            </label>
+        </div>
+        <a href="#" class="close_btn"><svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg>close</a>
+        <div style="display: flex; flex-wrap: wrap; margin: 0 0 10px 0">
+            <a href="#" class="btn_text">Кнопка з текстом</a>
+            <a href="#" class="btn_text"><span>Кнопка з текстом</span><svg class="icon"><use xlink:href="./images/sprite.svg#filter-outline"></use></svg></a>
+            <a href="#" class="btn_text disabled"><svg class="icon"><use xlink:href="./images/sprite.svg#filter-outline"></use></svg><span>Кнопка з текстом</span></a>
+        </div>
+        <hr>
+        <div style="display: flex; flex-wrap: wrap; margin: 0 0 10px 0">
+            <a href="#" class="btn"><span>Тест кнопки</span></a>
+            <a href="#" class="btn"><svg class="icon"><use xlink:href="./images/sprite.svg#filter-outline"></use></svg><span>Тест кнопки</span></a>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; margin: 0 0 10px 0">
+            <a href="#" class="btn loading"><span>Тест кнопки</span></a>
+            <a href="#" class="btn loading"><svg class="icon"><use xlink:href="./images/sprite.svg#user"></use></svg><span>Тест кнопки</span></a>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; margin: 0 0 10px 0">
+            <a href="#" class="btn disabled"><span>Тест кнопки</span></a>
+            <button class="btn" disabled><span>Тест кнопки</span></button>
+            <a href="#" class="btn disabled"><svg class="icon"><use xlink:href="./images/sprite.svg#user"></use></svg><span>Тест кнопки</span></a>
+        </div>
+        <hr style="width: 100%">
+        <div style="display: flex; flex-wrap: wrap; margin: 0 0 10px 0">
+            <a href="#" class="btn outline"><span>Тест кнопки</span></a>
+            <a href="#" class="btn outline"><svg class="icon"><use xlink:href="./images/sprite.svg#user"></use></svg><span>Тест кнопки</span></a>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; margin: 0 0 10px 0">
+            <a href="#" class="btn outline loading"><span>Тест кнопки</span></a>
+            <a href="#" class="btn outline loading"><svg class="icon"><use xlink:href="./images/sprite.svg#user"></use></svg><span>Тест кнопки</span></a>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; margin: 0 0 10px 0">
+            <a href="#" class="btn outline disabled"><span>Тест кнопки</span></a>
+            <button class="btn outline" disabled><span>Тест кнопки</span></button>
+            <a href="#" class="btn outline disabled"><svg class="icon"><use xlink:href="./images/sprite.svg#user"></use></svg><span>Тест кнопки</span></a>
+        </div>
+        <hr style="width: 100%">
+        <div style="display: flex; flex-wrap: wrap; margin: 0 0 10px 0">
+            <a href="#" class="btn big"><span>Тест кнопки</span></a>
+            <a href="#" class="btn big"><svg class="icon"><use xlink:href="./images/sprite.svg#filter-outline"></use></svg><span>Тест кнопки</span></a>
+        </div>
+        <hr style="width: 100%">
+        <div style="display: flex; flex-wrap: wrap; margin: 0 0 10px 0">
+            <a href="#" class="btn medium"><span>Тест кнопки</span></a>
+            <a href="#" class="btn medium"><svg class="icon"><use xlink:href="./images/sprite.svg#filter-outline"></use></svg><span>Тест кнопки</span></a>
+        </div>
+        <hr style="width: 100%">
+        <div style="display: flex; flex-wrap: wrap; margin: 0 0 10px 0">
+            <a href="#" class="btn small"><span>Тест кнопки</span></a>
+            <a href="#" class="btn small"><svg class="icon"><use xlink:href="./images/sprite.svg#filter-outline"></use></svg><span>Тест кнопки</span></a>
+        </div>
+        <div style="display: flex;flex-wrap: wrap">
+            <svg class="icon"><use xlink:href="./images/sprite.svg#ua"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#ru"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#placeholder"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#search"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#user"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#compare"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#plus"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#youtube"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#email"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#menu"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#zoom-in"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#swipe"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#click"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#pdf"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#clock"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#trash"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#add"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#confirm"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#mini-arrow-right"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#mini-arrow-up"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#mini-arrow-down"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#mini-arrow-move"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#download"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#loader"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#list"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#card"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#payment-method"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#privacy"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#building"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#delivery-truck"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#hidden"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#show"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#left-bold"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#right-bold"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#up-bold"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#down-bold"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#grid-1"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#grid-2"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#left"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#right"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#up"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#down"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#placeholder-2"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#warning"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#warning-filled"></use></svg>
+            <svg class="icon"><use xlink:href="./images/sprite.svg#success-filled"></use></svg>
+        </div>
+        <div class="search_box">
+            <form class="search_form">
+                <div class="search_text">
+                    <svg class="icon search_icon"><use xlink:href="./images/sprite.svg#search"></use></svg>
+                    <input type="text" class="small" placeholder="Пошук по сайту">
+                    <a href="#" class="delete_content"><svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg></a>
+                </div>
+                <button type="submit" class="btn medium">Пошук</button>
+            </form>
+            <div class="result_box">
+                <span class="empty_result">Немає результатів. <br>Спробуйте інакше сформолювати свій запит</span>
+                <div class="result_list">
+                    <ul class="result_items">
+                        <li><a href="#">Камінна топка</a></li>
+                        <li><a href="#">Камінна топка</a></li>
+                        <li><a href="#">Камінна топка</a></li>
+                        <li><a href="#">Камінна топка</a></li>
+                        <li><a href="#">Камінна топка</a></li>
+                    </ul>
+                    <div class="popular-result_items">
+                        <span class="popular-result_title">Популярні товари</span>
+                        <ul>
+                            <li>
+                                <a href="#" class="popular-result_item">
+                                    <img src="./images/product-mini-photo.png" alt="product">
+                                    <span class="popular-item_title">Камінна топка KAWMET W3 (16.7 kW)</span>
+                                    <div class="popular-price">
+                                        <del>42 107 грн</del>
+                                        <span><b>40 002</b> грн</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="popular-result_item">
+                                    <img src="./images/product-mini-photo.png" alt="product">
+                                    <span class="popular-item_title">Камінна топка KAWMET W3 (16.7 kW)</span>
+                                    <div class="popular-price">
+                                        <del>42 107 грн</del>
+                                        <span><b>40 002</b> грн</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="popular-result_item">
+                                    <img src="./images/product-mini-photo.png" alt="product">
+                                    <span class="popular-item_title">Камінна топка KAWMET W3 (16.7 kW)</span>
+                                    <div class="popular-price">
+                                        <del>42 107 грн</del>
+                                        <span><b>40 002</b> грн</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="#" class="btn medium show_more-result">Показати всі результати</a>
+            </div>
+        </div>
+        <h1>h1</h1>
+        <span class="headline_1">Headline 1</span>
+        <span class="headline_2">Headline 2</span>
+        <h2>h2</h2>
+        <span class="sub_title_1">Subtitle 1</span>
+        <span class="sub_title_2">Subtitle caps 2</span>
+        <h3>h3</h3>
+        <span class="sub_title_3">Subtitle 3</span>
+        <h4>h4</h4>
+        <span class="sub_title_4">Subtitle 4</span>
+        <h5>h5</h5>
+        <span class="sub_title_5">Subtitle 5</span>
+        <h6>h6</h6>
+        <span class="sub_title_6">Subtitle 6</span>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga nulla ratione ut voluptates! Ab assumenda autem cum dolores eaque earum magni necessitatibus, pariatur, perferendis quod quos recusandae, repellendus sunt suscipit!</p>
+
+
+    </div>
+
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/plugins/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

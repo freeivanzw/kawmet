@@ -26,6 +26,7 @@
 @import "components/blog-details/blog-details-adaptive";
 @import "components/gallery/gallery-adaptive";
 @import "components/dealer-list/dealer-list-adaptive";
+@import "components/for-customers/for-customers-adaptive";
 
 @media only screen and (min-width : 480px)  {
     @include base-480;
@@ -56,6 +57,7 @@
     @include blog-details-480;
     @include gallery-480;
     @include dealer-list-480;
+    @include for-customers-480;
 }
 
 @media only screen and (min-width : 640px)  {
@@ -87,6 +89,7 @@
     @include blog-details-640;
     @include gallery-640;
     @include dealer-list-640;
+    @include for-customers-640;
 }
 
 @media only screen and (min-width : 768px)  {
@@ -118,6 +121,7 @@
     @include blog-details-768;
     @include gallery-768;
     @include dealer-list-768;
+    @include for-customers-768;
 }
 
 @media only screen and (min-width : 1024px) {
@@ -149,6 +153,7 @@
     @include blog-details-1024;
     @include gallery-1024;
     @include dealer-list-1024;
+    @include for-customers-1024;
 }
 
 @media only screen and (min-width : 1190px) {
@@ -179,6 +184,7 @@
     @include blog-details-1190;
     @include gallery-1190;
     @include dealer-list-1190;
+    @include for-customers-1190;
 }
 
 @media only screen and (min-width : 1264px) {
