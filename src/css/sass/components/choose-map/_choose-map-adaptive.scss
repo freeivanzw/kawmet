@@ -1,0 +1,35 @@
+@mixin choose-map-480 {
+    /*CHOOSE MAP*/
+
+}
+
+@mixin choose-map-640 {
+    /*CHOOSE MAP*/
+
+}
+
+@mixin choose-map-768 {
+    /*CHOOSE MAP*/
+
+}
+
+@mixin choose-map-1024 {
+    /*CHOOSE MAP*/
+    .choose_map {
+        padding: 120px 0;
+    }
+
+    .choose_map-bg {
+        top: 30px;
+        height: calc(100% - 60px);
+    }
+
+    .choose_map .headline_2 {
+        margin-bottom: 60px;
+    }
+}
+
+@mixin choose-map-1190 {
+    /*CHOOSE MAP*/
+
+}

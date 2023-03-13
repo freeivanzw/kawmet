@@ -153,6 +153,9 @@
   /*GALLERY*/
   /*DEALER LIST*/
   /*FOR CUSTOMERS*/
+  /*CONTACTS*/
+  /*CHOOSE MAP*/
+  /*FEEDBACK*/
 }
 @media only screen and (min-width: 640px) {
   /*BASE*/
@@ -563,6 +566,29 @@
   }
 
   /*FOR CUSTOMERS*/
+  .for_customers-content .one_col_form .centre {
+    padding: 50px;
+  }
+
+  .for_customers-content .phone_form {
+    max-width: 420px;
+  }
+
+  .for_customers-content .phone_form-inner {
+    flex-direction: column;
+  }
+
+  .for_customers-content .phone_form-inner .input_wrap {
+    margin: 0 0 10px 0;
+  }
+
+  .for_customers-content .phone_form-inner .input_wrap input {
+    height: 60px;
+  }
+
+  /*CONTACTS*/
+  /*CHOOSE MAP*/
+  /*FEEDBACK*/
 }
 @media only screen and (min-width: 768px) {
   /*BASE*/
@@ -1899,6 +1925,119 @@
   }
 
   /*FOR CUSTOMERS*/
+  .for_customers-content .one_col_form .sub_title_1 {
+    font-size: 24px;
+    max-width: 475px;
+  }
+
+  .for_customers-content .one_form-text {
+    font-size: 16px;
+  }
+
+  /*CONTACTS*/
+  .contacts {
+    padding-top: 75px;
+    padding-bottom: 120px;
+  }
+
+  .breadcrumbs + .contacts {
+    margin-top: -70px;
+  }
+
+  .contacts .headline_1 {
+    margin-bottom: 40px;
+  }
+
+  .contacts_row {
+    display: flex;
+    max-width: 650px;
+    margin-bottom: 50px;
+  }
+
+  .contacts_row > .col-1 {
+    width: 50%;
+    padding-right: 22px;
+    margin-bottom: 0;
+  }
+
+  .contacts_info {
+    margin-bottom: 15px;
+    padding-left: 30px;
+  }
+
+  .contacts_info .icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .contacts_info ul a {
+    font-size: 20px;
+  }
+
+  .store_info li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+  }
+
+  .store_info li .icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .store_info li small {
+    font-size: 16px;
+  }
+
+  .store_info li span {
+    font-size: 20px;
+  }
+
+  .store_info-link {
+    font-size: 16px;
+  }
+
+  .store_info-link::after {
+    width: 8px;
+    height: 8px;
+  }
+
+  .contacts_row > .col-2 {
+    width: 50%;
+    padding-left: 22px;
+  }
+
+  .contacts_social {
+    margin-bottom: 0;
+  }
+
+  .contacts_social > b {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+
+  .contacts_btns {
+    flex-direction: row;
+  }
+
+  .contacts_btns .btn + .btn {
+    margin: 0 0 0 30px;
+  }
+
+  /*CHOOSE MAP*/
+  /*FEEDBACK*/
+  .feedback .centre {
+    display: flex;
+  }
+
+  .feedback .centre > .col-1 {
+    width: 50%;
+    padding-right: 15px;
+  }
+
+  .feedback .centre > .col-2 {
+    width: 50%;
+    padding-left: 15px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   /*BASE*/
@@ -3545,6 +3684,7 @@
 
   .for_customers .centre {
     display: flex;
+    align-items: flex-start;
   }
 
   .close-customers_aside,
@@ -3611,6 +3751,141 @@
     margin-right: 16px;
     width: 22px;
     height: 22px;
+  }
+
+  .for_customers-aside.main_page .for_customers-menu {
+    display: none;
+  }
+
+  .delivery_list li + li {
+    margin-top: 30px;
+  }
+
+  .delivery_list li b {
+    font-size: 16px;
+  }
+
+  .delivery_list li > span {
+    font-size: 16px;
+  }
+
+  .delivery_list .btn {
+    width: max-content;
+  }
+
+  .payment_list > li + li {
+    margin-top: 60px;
+  }
+
+  .payment_icon {
+    flex: 0 0 140px;
+    width: 140px;
+    height: 140px;
+  }
+
+  .payment_list li > .payment_icon {
+    display: flex;
+  }
+
+  .payment_icon img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .payment_column {
+    padding-left: 20px;
+  }
+
+  .payment_title .payment_icon {
+    display: none;
+  }
+
+  .payment_title {
+    margin-bottom: 15px;
+  }
+
+  .payment_title > span {
+    font-size: 20px;
+  }
+
+  .payment_text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .payment_percent {
+    font-size: 16px;
+  }
+
+  .payment_percent ul li {
+    padding-left: 30px;
+  }
+
+  .payment_percent ul li::before {
+    left: 15px;
+    top: 8px;
+  }
+
+  .how_buy-subtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .how_buy-list {
+    font-size: 16px;
+  }
+
+  /*CONTACTS*/
+  /*CHOOSE MAP*/
+  .choose_map {
+    padding: 120px 0;
+  }
+
+  .choose_map-bg {
+    top: 30px;
+    height: calc(100% - 60px);
+  }
+
+  .choose_map .headline_2 {
+    margin-bottom: 60px;
+  }
+
+  /*FEEDBACK*/
+  .feedback {
+    padding: 120px 0;
+  }
+
+  .feedback .centre > .col-1 {
+    width: 54%;
+    padding-right: 60px;
+  }
+
+  .feedback_text {
+    font-size: 24px;
+  }
+
+  .feedback .centre > .col-2 {
+    width: 46%;
+    padding-left: 60px;
+  }
+
+  .feedback_form .checkbox_styled {
+    margin-top: 10px;
+    margin-bottom: 48px;
+  }
+
+  .feedback_bottom {
+    flex-direction: row;
+  }
+
+  .feedback_bottom > span {
+    text-align: start;
+    margin-right: 25px;
+    flex: 1 1 auto;
+  }
+
+  .feedback_bottom .btn {
+    margin-bottom: 0;
   }
 }
 @media only screen and (min-width: 1190px) {
@@ -3954,6 +4229,9 @@
 
   /*DEALER LIST*/
   /*FOR CUSTOMERS*/
+  /*CONTACTS*/
+  /*CHOOSE MAP*/
+  /*FEEDBACK*/
 }
 @media only screen and (min-width: 1264px) {
   .popup.video_popup .close_btn {

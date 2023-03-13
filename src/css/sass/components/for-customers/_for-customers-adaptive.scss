@@ -5,12 +5,37 @@
 
 @mixin for-customers-640 {
     /*FOR CUSTOMERS*/
-    
+    .for_customers-content  .one_col_form .centre {
+        padding: 50px;
+    }
+
+    .for_customers-content .phone_form {
+        max-width: 420px;
+    }
+
+    .for_customers-content .phone_form-inner {
+        flex-direction: column;
+    }
+
+    .for_customers-content .phone_form-inner .input_wrap {
+        margin: 0 0 10px 0;
+    }
+
+    .for_customers-content .phone_form-inner .input_wrap input {
+        height: 60px;
+    }
 }
 
 @mixin for-customers-768 {
     /*FOR CUSTOMERS*/
-    
+    .for_customers-content .one_col_form .sub_title_1 {
+        font-size: 24px;
+        max-width: 475px;
+    }
+
+    .for_customers-content .one_form-text {
+        font-size: 16px;
+    }
 }
 
 @mixin for-customers-1024 {
@@ -21,6 +46,7 @@
 
     .for_customers .centre {
         display: flex;
+        align-items: flex-start;
     }
 
     .close-customers_aside,
@@ -87,6 +113,88 @@
         margin-right: 16px;
         width: 22px;
         height: 22px;
+    }
+
+    .for_customers-aside.main_page .for_customers-menu {
+        display: none;
+    }
+
+    .delivery_list li + li {
+        margin-top: 30px;
+    }
+
+    .delivery_list li b {
+        font-size: 16px;
+    }
+
+    .delivery_list li > span {
+        font-size: 16px;
+    }
+
+    .delivery_list .btn {
+        width: max-content;
+    }
+
+    .payment_list > li + li {
+        margin-top: 60px;
+    }
+
+    .payment_icon {
+        flex: 0 0 140px;
+        width: 140px;
+        height: 140px;
+    }
+
+    .payment_list li > .payment_icon {
+        display: flex;
+    }
+
+    .payment_icon img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .payment_column {
+        padding-left: 20px;
+    }
+
+    .payment_title .payment_icon {
+        display: none;
+    }
+
+    .payment_title {
+        margin-bottom: 15px;
+    }
+
+    .payment_title > span {
+        font-size: 20px;
+    }
+
+    .payment_text {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .payment_percent {
+        font-size: 16px;
+    }
+
+    .payment_percent ul li {
+        padding-left: 30px;
+    }
+
+    .payment_percent ul li::before {
+        left: 15px;
+        top: 8px;
+    }
+
+    .how_buy-subtitle {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .how_buy-list {
+        font-size: 16px;
     }
 }
 

@@ -1,0 +1,111 @@
+@mixin contacts-480 {
+    /*CONTACTS*/
+
+}
+
+@mixin contacts-640 {
+    /*CONTACTS*/
+
+}
+
+@mixin contacts-768 {
+    /*CONTACTS*/
+
+    .contacts {
+        padding-top: 75px;
+        padding-bottom: 120px;
+    }
+
+    .breadcrumbs + .contacts {
+        margin-top: -70px;
+    }
+
+    .contacts .headline_1 {
+        margin-bottom: 40px;
+    }
+
+    .contacts_row {
+        display: flex;
+        max-width: 650px;
+        margin-bottom: 50px;
+    }
+
+    .contacts_row > .col-1 {
+        width: 50%;
+        padding-right: 22px;
+        margin-bottom: 0;
+    }
+
+    .contacts_info {
+        margin-bottom: 15px;
+        padding-left: 30px;
+    }
+
+    .contacts_info .icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .contacts_info ul a {
+        font-size: 20px;
+    }
+
+    .store_info li {
+        margin-bottom: 15px;
+        padding-left: 30px;
+    }
+
+    .store_info li .icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .store_info li small {
+        font-size: 16px;
+    }
+
+    .store_info li span {
+        font-size: 20px;
+    }
+
+    .store_info-link {
+        font-size: 16px;
+    }
+
+    .store_info-link::after {
+        width: 8px;
+        height: 8px;
+    }
+
+    .contacts_row > .col-2 {
+        width: 50%;
+        padding-left: 22px;
+    }
+
+    .contacts_social {
+        margin-bottom: 0;
+    }
+
+    .contacts_social > b {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .contacts_btns {
+        flex-direction: row;
+    }
+
+    .contacts_btns .btn + .btn {
+        margin: 0 0 0 30px;
+    }
+}
+
+@mixin contacts-1024 {
+    /*CONTACTS*/
+
+}
+
+@mixin contacts-1190 {
+    /*CONTACTS*/
+
+}

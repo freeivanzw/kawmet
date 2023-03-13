@@ -372,15 +372,18 @@
             <ul class="centre">
                 <li><a href="#">Головна</a></li>
                 <li><a href="#">Для клієнтів</a></li>
+                <li><a href="#">Способи оплати</a></li>
             </ul>
         </nav>
         <!--FOR CUSTOMERS-->
         <section class="for_customers">
             <div class="centre">
-                <aside class="for_customers-aside main_page">
+                <a href="#" class="btn medium close-customers_aside hidden"><svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg><span>Для клієнтів: меню</span></a>
+                <a href="#" class="btn outline medium open-customers_aside"><svg class="icon"><use xlink:href="./images/sprite.svg#list"></use></svg><span>Для клієнтів: меню</span></a>
+                <aside class="for_customers-aside">
                     <ul class="for_customers-menu">
-                        <li><a href="#" class="active"><svg class="icon"><use xlink:href="./images/sprite.svg#card"></use></svg>Як купити?</a></li>
-                        <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#payment-method"></use></svg>Способи оплати</a></li>
+                        <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#card"></use></svg>Як купити?</a></li>
+                        <li><a href="#" class="active"><svg class="icon"><use xlink:href="./images/sprite.svg#payment-method"></use></svg>Способи оплати</a></li>
                         <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#delivery-truck"></use></svg>Доставка</a></li>
                         <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#guarantee"></use></svg>Гарантія</a></li>
                         <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#building"></use></svg>Про компанію</a></li>
@@ -420,18 +423,115 @@
                     <span class="for_customers-bottom">Ексклюзивний дистриб’ютор KAWMET в Україні</span>
                 </aside>
                 <div class="for_customers-content">
-                    <div class="customers_menu">
-                        <span class="headline_1">Для клієнтів</span>
-                        <ul>
-                            <li><a href="#" class="active"><svg class="icon"><use xlink:href="./images/sprite.svg#card"></use></svg>Як купити?</a></li>
-                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#payment-method"></use></svg>Способи оплати</a></li>
-                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#delivery-truck"></use></svg>Доставка</a></li>
-                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#guarantee"></use></svg>Гарантія</a></li>
-                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#building"></use></svg>Про компанію</a></li>
-                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#paper"></use></svg>Угода користувача</a></li>
-                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#privacy"></use></svg>Політика конфіденціальності</a></li>
+                    <div class="payment_methods">
+                        <span class="headline_1">Способи оплати</span>
+                        <ul class="payment_list">
+                            <li>
+                                <div class="payment_icon">
+                                    <img src="./images/payment-1.svg" width="80" height="80" alt="payment icon">
+                                </div>
+                                <div class="payment_column">
+                                    <div class="payment_title">
+                                        <div class="payment_icon">
+                                            <img src="./images/payment-1.svg" width="80" height="80" alt="payment icon">
+                                        </div>
+                                        <span>Оплата по Рахунку-фактурі з р/р покупця на р/р продавця</span>
+                                    </div>
+                                    <span class="payment_text">Після оформлення замовлення менеджер виставляє Рахунок на оплату, який можна оплатити з розрахункового рахунку покупця на розрахунковий рахунок продавця</span>
+                                    <div class="payment_percent">
+                                        <b><span>%</span>Комісія</b>
+                                        <ul>
+                                            <li>згідно з умовами банківського обслуговування покупця</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="payment_icon">
+                                    <img src="./images/payment-2.svg" width="80" height="80" alt="payment icon">
+                                </div>
+                                <div class="payment_column">
+                                    <div class="payment_title">
+                                        <div class="payment_icon">
+                                            <img src="./images/payment-2.svg" width="80" height="80" alt="payment icon">
+                                        </div>
+                                        <span>Оплата по Рахунку-фактурі в касі банку</span>
+                                    </div>
+                                    <span class="payment_text">Після оформлення замовлення менеджер виставляє Рахунок на оплату, який можна оплатити в будь-якому зручному для Вас відділенні банку;</span>
+                                    <div class="payment_percent">
+                                        <b><span>%</span>Комісія</b>
+                                        <ul>
+                                            <li>в касі ПриватБанку 1 %, але не більше 200 грн.</li>
+                                            <li>в касі іншого банку – згідно з умовами цього банку (як правило 1%)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="payment_icon">
+                                    <img src="./images/payment-3.png" width="80" height="80" alt="payment icon">
+                                </div>
+                                <div class="payment_column">
+                                    <div class="payment_title">
+                                        <div class="payment_icon">
+                                            <img src="./images/payment-3.png" width="80" height="80" alt="payment icon">
+                                        </div>
+                                        <span>Оплата через сервіс «Приват24» за назвою/реквізитами</span>
+                                    </div>
+                                    <span class="payment_text">Після оформлення замовлення менеджер виставляє Рахунок на оплату, який можна оплатити через сервіс «Приват24»</span>
+                                    <div class="payment_percent">
+                                        <b><span>%</span>Комісія</b>
+                                        <ul>
+                                            <li>1 грн</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="payment_icon">
+                                    <img src="./images/payment-4.svg" width="80" height="80" alt="payment icon">
+                                </div>
+                                <div class="payment_column">
+                                    <div class="payment_title">
+                                        <div class="payment_icon">
+                                            <img src="./images/payment-4.svg" width="80" height="80" alt="payment icon">
+                                        </div>
+                                        <span>Оплата в терміналах самообслуговування ПриватБанку за назвою/реквізитами</span>
+                                    </div>
+                                    <span class="payment_text">Після оформлення замовлення менеджер виставляє Рахунок на оплату, який можна оплатити в терміналах самообслуговування ПриватБанку</span>
+                                    <div class="payment_percent">
+                                        <b><span>%</span>Комісія</b>
+                                        <ul>
+                                            <li>до 500 грн — 3 грн</li>
+                                            <li>від 500 грн до 1000 грн — 5 грн</li>
+                                            <li>від 1000 грн — 0,5%, але не менше 10 грн і не більше 50 грн</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
                     </div>
+                    <!--ONE COL FORM-->
+                    <section class="one_col_form">
+                        <picture class="one_form-bg">
+                            <source media="(max-width: 639px)" srcset="./images/one-form-mob.png">
+                            <source media="(min-width: 640px)" srcset="./images/one-form-desk.png">
+                            <img src="./images/one-form-desk.png" alt="slide image">
+                        </picture>
+                        <div class="centre">
+                            <span class="one_form-text">Вже обрали піч? Не знаєте як оформити замовлення?</span>
+                            <span class="sub_title_1">Залиште заявку і наш менеджер зв’яжеться з вами найближчим часом і відповість на всі ваші питання</span>
+                            <form class="phone_form">
+                                <div class="phone_form-inner">
+                                    <label class="input_wrap">
+                                        <input type="text" placeholder="Введіть ваш номер телефону">
+                                    </label>
+                                    <a href="#" class="btn"><span>дізнатись деталі у менеджера</span></a>
+                                </div>
+                                <span class="privacy_policy">Натискаючи на кнопку, ви даєте згоду на обробку персональних даних та погоджуєтесь з <a href="#">політикою конфіденційності</a></span>
+                            </form>
+                        </div>
+                    </section>
                 </div>
             </div>
         </section>
@@ -559,7 +659,7 @@
     <div class="shadow hidden"></div>
     <a href="#" class="to_up">нагору<svg class="icon"><use xlink:href="./images/sprite.svg#mini-arrow-right"></use></svg></a>
 
-    <div class="styleguide hidden" style="display: flex; flex-direction: column">
+    <div class="styleguide" style="display: flex; flex-direction: column">
         <figure class="product_item">
             <div class="product_photo-wrap">
                 <a href="#" class="compare_btn"> <!--compare_active-->

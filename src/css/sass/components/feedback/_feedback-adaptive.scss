@@ -1,0 +1,72 @@
+@mixin feedback-480 {
+    /*FEEDBACK*/
+
+}
+
+@mixin feedback-640 {
+    /*FEEDBACK*/
+
+}
+
+@mixin feedback-768 {
+    /*FEEDBACK*/
+    .feedback .centre {
+        display: flex;
+    }
+
+    .feedback .centre > .col-1 {
+        width: 50%;
+        padding-right: 15px;
+    }
+
+    .feedback .centre > .col-2 {
+        width: 50%;
+        padding-left: 15px;
+    }
+}
+
+@mixin feedback-1024 {
+    /*FEEDBACK*/
+
+    .feedback {
+        padding: 120px 0;
+    }
+
+    .feedback .centre > .col-1 {
+        width: 54%;
+        padding-right: 60px;
+    }
+
+    .feedback_text {
+        font-size: 24px;
+    }
+
+    .feedback .centre > .col-2 {
+        width: 46%;
+        padding-left: 60px;
+    }
+
+    .feedback_form .checkbox_styled {
+        margin-top: 10px;
+        margin-bottom: 48px;
+    }
+
+    .feedback_bottom {
+        flex-direction: row;
+    }
+
+    .feedback_bottom > span {
+        text-align: start;
+        margin-right: 25px;
+        flex: 1 1 auto;
+    }
+
+    .feedback_bottom .btn {
+        margin-bottom: 0;
+    }
+}
+
+@mixin feedback-1190 {
+    /*FEEDBACK*/
+
+}

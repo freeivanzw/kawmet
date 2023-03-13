@@ -27,6 +27,9 @@
 @import "components/gallery/gallery-adaptive";
 @import "components/dealer-list/dealer-list-adaptive";
 @import "components/for-customers/for-customers-adaptive";
+@import "components/contacts/contacts-adaptive";
+@import "components/choose-map/choose-map-adaptive";
+@import "components/feedback/feedback-adaptive";
 
 @media only screen and (min-width : 480px)  {
     @include base-480;
@@ -58,6 +61,9 @@
     @include gallery-480;
     @include dealer-list-480;
     @include for-customers-480;
+    @include contacts-480;
+    @include choose-map-480;
+    @include feedback-480;
 }
 
 @media only screen and (min-width : 640px)  {
@@ -90,6 +96,9 @@
     @include gallery-640;
     @include dealer-list-640;
     @include for-customers-640;
+    @include contacts-640;
+    @include choose-map-640;
+    @include feedback-640;
 }
 
 @media only screen and (min-width : 768px)  {
@@ -122,6 +131,9 @@
     @include gallery-768;
     @include dealer-list-768;
     @include for-customers-768;
+    @include contacts-768;
+    @include choose-map-768;
+    @include feedback-768;
 }
 
 @media only screen and (min-width : 1024px) {
@@ -154,6 +166,9 @@
     @include gallery-1024;
     @include dealer-list-1024;
     @include for-customers-1024;
+    @include contacts-1024;
+    @include choose-map-1024;
+    @include feedback-1024;
 }
 
 @media only screen and (min-width : 1190px) {
@@ -185,6 +200,9 @@
     @include gallery-1190;
     @include dealer-list-1190;
     @include for-customers-1190;
+    @include contacts-1190;
+    @include choose-map-1190;
+    @include feedback-1190;
 }
 
 @media only screen and (min-width : 1264px) {

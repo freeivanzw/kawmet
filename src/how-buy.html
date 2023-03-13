@@ -372,12 +372,15 @@
             <ul class="centre">
                 <li><a href="#">Головна</a></li>
                 <li><a href="#">Для клієнтів</a></li>
+                <li><a href="#">Способи оплати</a></li>
             </ul>
         </nav>
         <!--FOR CUSTOMERS-->
         <section class="for_customers">
             <div class="centre">
-                <aside class="for_customers-aside main_page">
+                <a href="#" class="btn medium close-customers_aside hidden"><svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg><span>Для клієнтів: меню</span></a>
+                <a href="#" class="btn outline medium open-customers_aside"><svg class="icon"><use xlink:href="./images/sprite.svg#list"></use></svg><span>Для клієнтів: меню</span></a>
+                <aside class="for_customers-aside">
                     <ul class="for_customers-menu">
                         <li><a href="#" class="active"><svg class="icon"><use xlink:href="./images/sprite.svg#card"></use></svg>Як купити?</a></li>
                         <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#payment-method"></use></svg>Способи оплати</a></li>
@@ -420,18 +423,37 @@
                     <span class="for_customers-bottom">Ексклюзивний дистриб’ютор KAWMET в Україні</span>
                 </aside>
                 <div class="for_customers-content">
-                    <div class="customers_menu">
-                        <span class="headline_1">Для клієнтів</span>
-                        <ul>
-                            <li><a href="#" class="active"><svg class="icon"><use xlink:href="./images/sprite.svg#card"></use></svg>Як купити?</a></li>
-                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#payment-method"></use></svg>Способи оплати</a></li>
-                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#delivery-truck"></use></svg>Доставка</a></li>
-                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#guarantee"></use></svg>Гарантія</a></li>
-                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#building"></use></svg>Про компанію</a></li>
-                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#paper"></use></svg>Угода користувача</a></li>
-                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#privacy"></use></svg>Політика конфіденціальності</a></li>
-                        </ul>
+                    <div class="how_buy">
+                        <span class="headline_1">Як купити?</span>
+                        <span class="how_buy-subtitle">Зробити замовлення можна у декілька простих способів</span>
+                        <ol class="how_buy-list">
+                            <li>Відправити повідомлення через форму зворотнтьго зв'язку у розділі <a href="#">«Контакти»</a>;</li>
+                            <li>Додати товар у кошик, перейти до нього, вибрати спосіб оплати і доставки і залишити свої контактні дані. Наш менеджер з продажу зв'яжеться з вами і уточнить склад і деталі замовлення;</li>
+                            <li>Зв'язатись із нами за телефоном: +38 (067) 482-79-41 чи +38 (050) 424-30-41 або відправити електронного листа на<a href="#">info@kawmet.ua</a>;</li>
+                            <li>Також оформити замовлення можна заповнити коротку форму нижче</li>
+                        </ol>
                     </div>
+                    <!--ONE COL FORM-->
+                    <section class="one_col_form">
+                        <picture class="one_form-bg">
+                            <source media="(max-width: 639px)" srcset="./images/one-form-mob.png">
+                            <source media="(min-width: 640px)" srcset="./images/one-form-desk.png">
+                            <img src="./images/one-form-desk.png" alt="slide image">
+                        </picture>
+                        <div class="centre">
+                            <span class="one_form-text">Вже обрали піч? Не знаєте як оформити замовлення?</span>
+                            <span class="sub_title_1">Залиште заявку і наш менеджер зв’яжеться з вами найближчим часом і відповість на всі ваші питання</span>
+                            <form class="phone_form">
+                                <div class="phone_form-inner">
+                                    <label class="input_wrap">
+                                        <input type="text" placeholder="Введіть ваш номер телефону">
+                                    </label>
+                                    <a href="#" class="btn"><span>дізнатись деталі у менеджера</span></a>
+                                </div>
+                                <span class="privacy_policy">Натискаючи на кнопку, ви даєте згоду на обробку персональних даних та погоджуєтесь з <a href="#">політикою конфіденційності</a></span>
+                            </form>
+                        </div>
+                    </section>
                 </div>
             </div>
         </section>
@@ -559,7 +581,7 @@
     <div class="shadow hidden"></div>
     <a href="#" class="to_up">нагору<svg class="icon"><use xlink:href="./images/sprite.svg#mini-arrow-right"></use></svg></a>
 
-    <div class="styleguide hidden" style="display: flex; flex-direction: column">
+    <div class="styleguide" style="display: flex; flex-direction: column">
         <figure class="product_item">
             <div class="product_photo-wrap">
                 <a href="#" class="compare_btn"> <!--compare_active-->

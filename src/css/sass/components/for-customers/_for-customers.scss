@@ -11,7 +11,8 @@
     background-color: var(--base-color-2);
 }
 
-.for_customers-aside.active {
+.for_customers-aside.active,
+.for_customers-aside.main_page {
     display: flex;
 }
 
@@ -28,6 +29,7 @@
     display: flex;
     align-items: center;
     padding: 5px 0;
+    transition: 0.3s;
 }
 
 .for_customers-menu a.active {
@@ -40,6 +42,10 @@
 
 .for_customers-menu a .icon {
     margin-right: 14px;
+}
+
+.for_customers-menu a.active .icon {
+    fill: var(--main-color-1);
 }
 
 .for_customers-contacts {
@@ -79,4 +85,176 @@
 
 .customers_menu {
     display: none;
+}
+
+.for_customers-content {
+    padding-top: 25px;
+}
+
+.delivery_methods {
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery_list {
+    padding-left: 25px;
+}
+
+.delivery_list li {
+    list-style: auto;
+}
+
+.delivery_list li + li {
+    margin-top: 20px;
+}
+
+.delivery_list li::marker {
+    color: var(--main-color-1);
+    font-weight: 600;
+}
+
+.delivery_list li b {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.delivery_list li > span {
+    font-size: 13px;
+}
+
+.delivery_list .btn {
+    margin-top: 10px;
+}
+
+.payment_methods {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment_list > li {
+    display: flex;
+}
+
+.payment_list > li + li {
+    margin-top: 40px;
+}
+
+.payment_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 50px;
+    width: 50px;
+    height: 50px;
+    background-image: url("../images/payment-item-bg.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.payment_icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.payment_list li > .payment_icon {
+    display: none;
+}
+
+.payment_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment_title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.payment_title .payment_icon {
+    margin-right: 12px;
+}
+
+.payment_title > span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.payment_text {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.payment_percent {
+    display: flex;
+}
+
+.payment_percent b {
+    flex: 0 0 auto;
+}
+
+.payment_percent b span {
+    color: var(--main-color-1);
+    margin-right: 6px;
+}
+
+.payment_percent ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment_percent ul li {
+    padding-left: 25px;
+    position: relative;
+}
+
+.payment_percent ul li::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: var(--main-color-1);
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
+
+.for_customers-content .one_col_form {
+    margin: 80px 0 0 0;
+}
+
+.for_customers-content .phone_form {
+    background-color: transparent;
+    padding: 0;
+}
+
+.how_buy {
+    display: flex;
+    flex-direction: column;
+}
+
+.how_buy-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.how_buy-list {
+    padding-left: 25px;
+    font-size: 14px;
+}
+
+.how_buy-list li {
+    list-style: auto;
+}
+
+.how_buy-list li + li {
+    margin-top: 15px;
+}
+
+.how_buy-list li::marker {
+    color: var(--main-color-1);
+    font-weight: 600;
 }

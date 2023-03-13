@@ -372,12 +372,15 @@
             <ul class="centre">
                 <li><a href="#">Головна</a></li>
                 <li><a href="#">Для клієнтів</a></li>
+                <li><a href="#">Способи доставки</a></li>
             </ul>
         </nav>
         <!--FOR CUSTOMERS-->
         <section class="for_customers">
             <div class="centre">
-                <aside class="for_customers-aside main_page">
+                <a href="#" class="btn medium close-customers_aside hidden"><svg class="icon"><use xlink:href="./images/sprite.svg#close"></use></svg><span>Для клієнтів: меню</span></a>
+                <a href="#" class="btn outline medium open-customers_aside"><svg class="icon"><use xlink:href="./images/sprite.svg#list"></use></svg><span>Для клієнтів: меню</span></a>
+                <aside class="for_customers-aside">
                     <ul class="for_customers-menu">
                         <li><a href="#" class="active"><svg class="icon"><use xlink:href="./images/sprite.svg#card"></use></svg>Як купити?</a></li>
                         <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#payment-method"></use></svg>Способи оплати</a></li>
@@ -420,17 +423,158 @@
                     <span class="for_customers-bottom">Ексклюзивний дистриб’ютор KAWMET в Україні</span>
                 </aside>
                 <div class="for_customers-content">
-                    <div class="customers_menu">
-                        <span class="headline_1">Для клієнтів</span>
-                        <ul>
-                            <li><a href="#" class="active"><svg class="icon"><use xlink:href="./images/sprite.svg#card"></use></svg>Як купити?</a></li>
-                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#payment-method"></use></svg>Способи оплати</a></li>
-                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#delivery-truck"></use></svg>Доставка</a></li>
-                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#guarantee"></use></svg>Гарантія</a></li>
-                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#building"></use></svg>Про компанію</a></li>
-                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#paper"></use></svg>Угода користувача</a></li>
-                            <li><a href="#"><svg class="icon"><use xlink:href="./images/sprite.svg#privacy"></use></svg>Політика конфіденціальності</a></li>
-                        </ul>
+                    <div class="delivery_methods">
+                        <span class="headline_1">Способи доставки</span>
+                        <ol class="delivery_list">
+                            <li>
+                                <b>Самовивіз зі складу чи магазину ексклюзивного дистрибютора продкуції ТМ KAWMET в Україні можлива за адресою</b>
+                                <span>місто Львів, вулиця Луганська 1Б <a href="#">Подивитись на мапі</a></span>
+                            </li>
+                            <li>
+                                <b>Самовивіз зі складу чи магазину офіційного дилера продкуції ТМ KAWMET в Україні</b>
+                                <span>для вибору офіційного дилера вашого регіону — натисніть на кнопку нижче</span>
+                                <a href="#" class="btn medium"><span>Магазини з продукцією ТМ KAWMET</span></a>
+                            </li>
+                            <li>
+                                <b>Доставка кур'єром</b>
+                                <span>Можлива доставка кур'єром під двері (деталі уточняйте у менеджера)</span>
+                            </li>
+                            <li>
+                                <b>Нова Пошта</b>
+                                <span>Якщо ви оплачуєте товар при отриманні на відділенні транспортної компанії (накладний платіж), пам'ятайте про плату за послуги транспортної компанії з повернення платежу: Нова Пошта +2% від суми оплати +20 грн за пересилку.</span>
+                            </li>
+                            <li>
+                                <b>SAT</b>
+                                <span>Якщо ви оплачуєте товар при отриманні на відділенні транспортної компанії (накладний платіж), пам'ятайте про плату за послуги транспортної компанії з повернення платежу: SAT +2% від суми оплати +15 грн за пересилку.</span>
+                            </li>
+                            <li>
+                                <b>Meest Express</b>
+                                <span>Якщо ви оплачуєте товар при отриманні на відділенні транспортної компанії (накладений платіж), пам'ятайте про плату за послуги транспортної компанії з повернення платежу: Міст-Експрес +2% від суми оплати +20 грн за пересилку.</span>
+                            </li>
+                            <li>
+                                <b>Delivery</b>
+                                <span>Деталі доставки уточнюйте у менеджерів.</span>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--DEALER LIST-->
+        <section class="dealer_list">
+            <div class="centre">
+                <div class="dealer_list-header">
+                    <div class="col-1">
+                        <span class="sub_title_3">Знайдіть магазин у вашому місті</span>
+                        <div class="select_city">
+                            <span>Місто</span>
+                            <a href="#" class="active">Львів</a>
+                            <a href="#">Київ</a>
+                            <a href="#">Івано-Франківськ</a>
+                            <a href="#">Одеса</a>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="dropdown city_list">
+                            <div class="overflow"><span>Виберіть місто</span><button type="button" class="drop_arrow"></button></div>
+                            <ul>
+                                <li><a href="#">Львів</a></li>
+                                <li><a href="#">Київ</a></li>
+                                <li><a href="#">Івано-Франківськ</a></li>
+                                <li><a href="#">Одеса</a></li>
+                            </ul>
+                        </div>
+                        <form class="verify_code">
+                            <label class="input_wrap">
+                                <input type="text" class="small error" placeholder="Перевірити дилера за кодом або назвою">
+                                <div class="input_message error"><svg class="icon"><use xlink:href="./images/sprite.svg#warning-filled"></use></svg>Код не знайдено</div>
+                            </label>
+                            <button class="btn outline medium"><span>Перевірити</span></button>
+                        </form>
+                    </div>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82352.48246594047!2d23.942196131620303!3d49.83277867709742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add7c09109a57%3A0x4223c517012378e2!2z0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!5e0!3m2!1suk!2sua!4v1678461542658!5m2!1suk!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="dealer_grid">
+                    <div class="dealer_grid-item">
+                        <div class="dealer_grid-title">Вершина комфорту (ПП Медвідь А.В.)</div>
+                        <div class="where_store">
+                            <svg class="icon"><use xlink:href="./images/sprite.svg#placeholder-2"></use></svg>
+                            <span class="where_store-title">м.Тернопіль, вул. Крушельницька 57</span>
+                            <a href="#" class="site_link where_store-link">Показати на мапі</a>
+                        </div>
+                        <div class="work_time">
+                            <svg class="icon"><use xlink:href="./images/sprite.svg#clock"></use></svg>
+                            <span class="work_time-title">Графік роботи</span>
+                            <span class="work_time-info">Пн-Пт: 09:00–18:00 <br>Суб: 10:00–16:00 <br>Нд: вихідний</span>
+                        </div>
+                        <div class="dealer_phone">
+                            <svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>
+                            <ul>
+                                <li><a href="tel:+380674827941">+38 067 482 79 41</a></li>
+                                <li><a href="tel:+380674827941">+38 067 482 79 41</a></li>
+                            </ul>
+                        </div>
+                        <div class="dealer_email">
+                            <svg class="icon"><use xlink:href="./images/sprite.svg#email"></use></svg>
+                            <ul>
+                                <li><a href="mailto:info@kawmet.ua">info@kawmet.ua</a></li>
+                                <li><a href="mailto:info@kawmet.ua">info@kawmet.ua</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dealer_grid-item">
+                        <div class="dealer_grid-title">Вершина комфорту (ПП Медвідь А.В.)</div>
+                        <div class="where_store">
+                            <svg class="icon"><use xlink:href="./images/sprite.svg#placeholder-2"></use></svg>
+                            <span class="where_store-title">м.Тернопіль, вул. Крушельницька 57</span>
+                            <a href="#" class="site_link where_store-link">Показати на мапі</a>
+                        </div>
+                        <div class="work_time">
+                            <svg class="icon"><use xlink:href="./images/sprite.svg#clock"></use></svg>
+                            <span class="work_time-title">Графік роботи</span>
+                            <span class="work_time-info">Пн-Пт: 09:00–18:00 <br>Суб: 10:00–16:00 <br>Нд: вихідний</span>
+                        </div>
+                        <div class="dealer_phone">
+                            <svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>
+                            <ul>
+                                <li><a href="tel:+380674827941">+38 067 482 79 41</a></li>
+                                <li><a href="tel:+380674827941">+38 067 482 79 41</a></li>
+                            </ul>
+                        </div>
+                        <div class="dealer_email">
+                            <svg class="icon"><use xlink:href="./images/sprite.svg#email"></use></svg>
+                            <ul>
+                                <li><a href="mailto:info@kawmet.ua">info@kawmet.ua</a></li>
+                                <li><a href="mailto:info@kawmet.ua">info@kawmet.ua</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="dealer_grid-item">
+                        <div class="dealer_grid-title">Вершина комфорту (ПП Медвідь А.В.)</div>
+                        <div class="where_store">
+                            <svg class="icon"><use xlink:href="./images/sprite.svg#placeholder-2"></use></svg>
+                            <span class="where_store-title">м.Тернопіль, вул. Крушельницька 57</span>
+                            <a href="#" class="site_link where_store-link">Показати на мапі</a>
+                        </div>
+                        <div class="work_time">
+                            <svg class="icon"><use xlink:href="./images/sprite.svg#clock"></use></svg>
+                            <span class="work_time-title">Графік роботи</span>
+                            <span class="work_time-info">Пн-Пт: 09:00–18:00 <br>Суб: 10:00–16:00 <br>Нд: вихідний</span>
+                        </div>
+                        <div class="dealer_phone">
+                            <svg class="icon"><use xlink:href="./images/sprite.svg#phone"></use></svg>
+                            <ul>
+                                <li><a href="tel:+380674827941">+38 067 482 79 41</a></li>
+                                <li><a href="tel:+380674827941">+38 067 482 79 41</a></li>
+                            </ul>
+                        </div>
+                        <div class="dealer_email">
+                            <svg class="icon"><use xlink:href="./images/sprite.svg#email"></use></svg>
+                            <ul>
+                                <li><a href="mailto:info@kawmet.ua">info@kawmet.ua</a></li>
+                                <li><a href="mailto:info@kawmet.ua">info@kawmet.ua</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -559,7 +703,7 @@
     <div class="shadow hidden"></div>
     <a href="#" class="to_up">нагору<svg class="icon"><use xlink:href="./images/sprite.svg#mini-arrow-right"></use></svg></a>
 
-    <div class="styleguide hidden" style="display: flex; flex-direction: column">
+    <div class="styleguide" style="display: flex; flex-direction: column">
         <figure class="product_item">
             <div class="product_photo-wrap">
                 <a href="#" class="compare_btn"> <!--compare_active-->
