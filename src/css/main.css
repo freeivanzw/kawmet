@@ -2945,6 +2945,10 @@ li.active > .mobile_item-link {
   margin: 0 15px;
 }
 
+.mobile_social li a {
+  font-size: 0;
+}
+
 .mobile_social .icon {
   display: block;
   width: 25px;
@@ -3479,6 +3483,7 @@ body.header_fixed .compare_popup {
 }
 
 .footer_social a {
+  font-size: 0;
   display: flex;
   align-items: center;
   justify-content: center;
