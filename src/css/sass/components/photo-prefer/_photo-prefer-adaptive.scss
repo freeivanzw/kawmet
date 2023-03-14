@@ -38,6 +38,7 @@
     }
 
     .plus_icon {
+        cursor: unset;
         width: 24px;
         height: 24px;
         z-index: 2;
@@ -165,6 +166,7 @@
 
     .popup_prefer img {
         flex: 0 0 50px;
+        max-width: 50px;
     }
 
     .popup_prefer-text {

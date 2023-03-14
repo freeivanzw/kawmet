@@ -891,6 +891,7 @@
 
   .interior .headline_2 {
     text-align: center;
+    margin-bottom: 42px;
     padding: 0;
   }
 
@@ -3091,7 +3092,7 @@
 
   .one_col_form ul li {
     font-size: 20px;
-    padding-left: 33px;
+    padding-left: 40px;
   }
 
   .one_col_form ul li + li {
@@ -3101,8 +3102,8 @@
   .one_col_form ul .icon {
     width: 13px;
     height: 13px;
-    left: 10px;
-    top: 10px;
+    left: 17px;
+    top: 8px;
   }
 
   .one_col_form .sub_title_1 b::before {
@@ -4232,6 +4233,7 @@
   }
 
   .plus_icon {
+    cursor: unset;
     width: 24px;
     height: 24px;
     z-index: 2;
@@ -4358,6 +4360,7 @@
 
   .popup_prefer img {
     flex: 0 0 50px;
+    max-width: 50px;
   }
 
   .popup_prefer-text {
