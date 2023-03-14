@@ -6321,6 +6321,7 @@ body.header_fixed .compare_popup {
 
 .popup_prefer {
   display: flex;
+  align-items: center;
   width: 190px;
   padding: 15px;
   border-radius: var(--border-radius);
