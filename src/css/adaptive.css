@@ -156,6 +156,8 @@
   /*CONTACTS*/
   /*CHOOSE MAP*/
   /*FEEDBACK*/
+  /*CATALOG DOWNLOAD*/
+  /*GET MAGAZINE*/
 }
 @media only screen and (min-width: 640px) {
   /*BASE*/
@@ -589,6 +591,12 @@
   /*CONTACTS*/
   /*CHOOSE MAP*/
   /*FEEDBACK*/
+  /*CATALOG DOWNLOAD*/
+  .catalog_download-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /*GET MAGAZINE*/
 }
 @media only screen and (min-width: 768px) {
   /*BASE*/
@@ -2038,6 +2046,55 @@
     width: 50%;
     padding-left: 15px;
   }
+
+  /*CATALOG DOWNLOAD*/
+  .catalog_download-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /*GET MAGAZINE*/
+  .get_magazine .centre {
+    display: flex;
+  }
+
+  .get_magazine .col-1 {
+    width: 51%;
+    padding-bottom: 0;
+    padding-right: 25px;
+  }
+
+  .get_magazine .col-1::before {
+    bottom: 0;
+    width: 635px;
+    height: 480px;
+  }
+
+  .get_magazine-subtitle {
+    font-size: 20px;
+  }
+
+  .get_magazine .col-2 {
+    width: 49%;
+  }
+
+  .get_magazine-form {
+    width: 100%;
+    margin: 0;
+    padding: 50px 40px 60px 40px;
+  }
+
+  .get_magazine-bottom {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .get_magazine-bottom > span {
+    text-align: start;
+  }
+
+  .get_magazine-bottom .btn {
+    margin: 0 0 0 45px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   /*BASE*/
@@ -2153,6 +2210,12 @@
     background-position: calc(100% - 22px) 20px;
     background-size: 26px;
     padding-right: 50px;
+  }
+
+  textarea {
+    font-size: 16px;
+    padding-top: 20px;
+    padding-left: 25px;
   }
 
   .close_btn {
@@ -3695,11 +3758,14 @@
   .for_customers-aside {
     flex: 0 0 270px;
     display: flex;
+    position: sticky;
+    top: 76px;
   }
 
   .for_customers-content {
     flex: 1 1 auto;
     padding-left: 30px;
+    padding-top: 0;
   }
 
   .customers_menu {
@@ -3835,6 +3901,113 @@
     font-size: 16px;
   }
 
+  .reg_guarantee {
+    padding: 40px 150px 60px 150px;
+    width: 100%;
+    margin: 0 0 120px 0;
+  }
+
+  .reg_guarantee .input_wrap {
+    margin-bottom: 20px;
+  }
+
+  .reg_guarantee .checkbox_styled {
+    margin-bottom: 16px;
+  }
+
+  .reg_guarantee button.btn {
+    margin-top: 30px;
+  }
+
+  .warning_info {
+    padding: 20px;
+  }
+
+  .warning_info .icon {
+    flex: 0 0 100px;
+    height: 100px;
+    margin-right: 10px;
+  }
+
+  .warning_info b {
+    font-size: 24px;
+  }
+
+  .register_process > li {
+    margin-bottom: 15px;
+    padding: 35px;
+  }
+
+  .register_process > li:nth-child(2) {
+    width: calc(50% - 7px);
+  }
+
+  .register_process > li:nth-child(3) {
+    width: calc(50% - 7px);
+    margin-left: 14px;
+  }
+
+  .process_image {
+    flex: 0 0 102px;
+    max-width: 102px;
+    margin-right: 30px;
+  }
+
+  .process_title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .process_text {
+    margin-bottom: 10px;
+  }
+
+  .process_list li + li {
+    margin-top: 8px;
+  }
+
+  .become_auth-subtitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .become_auth-text {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .become_auth-call {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 100px;
+    padding: 30px;
+  }
+
+  .become_auth-call > span {
+    font-size: 20px;
+    margin-bottom: 0;
+    padding-right: 36px;
+  }
+
+  .become_auth-call .btn {
+    flex: 0 0 auto;
+  }
+
+  .become_auth-form {
+    width: 100%;
+    max-width: 570px;
+  }
+
+  .become_auth-form .btn {
+    margin-top: 10px;
+    margin-left: auto;
+  }
+
+  .become_auth-form .show_pass {
+    right: 24px;
+    top: 52px;
+  }
+
   /*CONTACTS*/
   /*CHOOSE MAP*/
   .choose_map {
@@ -3886,6 +4059,16 @@
 
   .feedback_bottom .btn {
     margin-bottom: 0;
+  }
+
+  /*CATALOG DOWNLOAD*/
+  .catalog_download {
+    margin-bottom: 120px;
+  }
+
+  /*GET MAGAZINE*/
+  .get_magazine {
+    margin-bottom: 120px;
   }
 }
 @media only screen and (min-width: 1190px) {
@@ -4232,6 +4415,38 @@
   /*CONTACTS*/
   /*CHOOSE MAP*/
   /*FEEDBACK*/
+  /*CATALOG DOWNLOAD*/
+  .catalog_download-grid {
+    grid-gap: 30px;
+  }
+
+  .catalog_download-grid li img {
+    margin-bottom: 20px;
+    height: 320px;
+  }
+
+  .magazine_name {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .magazine_download {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .magazine_size {
+    font-size: 13px;
+    margin-bottom: 0;
+    padding-right: 10px;
+  }
+
+  /*GET MAGAZINE*/
+  .get_magazine-bottom .btn {
+    padding-left: 47px;
+    padding-right: 47px;
+  }
 }
 @media only screen and (min-width: 1264px) {
   .popup.video_popup .close_btn {

@@ -1,0 +1,59 @@
+/*GET MAGAZINE*/
+.get_magazine {
+    margin-bottom: 80px;
+    overflow: hidden;
+}
+
+.get_magazine .col-1 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.get_magazine .col-1::before {
+    content: "";
+    width: 280px;
+    height: 210px;
+    background-image: url("../images/magazine-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -30px;
+    right: -45px;
+    z-index: -1;
+}
+
+.get_magazine-subtitle {
+    font-size: 13px;
+    width: calc(100% - 122px);
+}
+
+.get_magazine-form {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% + 30px);
+    margin: 0 -15px;
+    padding: 30px 15px 40px 15px;
+    background-color: var(--base-color-2);
+    border-radius: 20px;
+}
+
+.get_magazine-form .input_wrap {
+    margin-bottom: 20px;
+}
+
+.get_magazine-bottom {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.get_magazine-bottom .btn {
+    margin-bottom: 15px;
+}
+
+.get_magazine-bottom > span {
+    text-align: center;
+    font-size: 11px;
+    color: var(--base-color-5);
+}

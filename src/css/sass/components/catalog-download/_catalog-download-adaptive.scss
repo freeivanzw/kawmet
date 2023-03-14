@@ -1,0 +1,54 @@
+@mixin catalog-download-480 {
+    /*CATALOG DOWNLOAD*/
+
+}
+
+@mixin catalog-download-640 {
+    /*CATALOG DOWNLOAD*/
+    .catalog_download-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@mixin catalog-download-768 {
+    /*CATALOG DOWNLOAD*/
+    .catalog_download-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@mixin catalog-download-1024 {
+    /*CATALOG DOWNLOAD*/
+    .catalog_download {
+        margin-bottom: 120px;
+    }
+}
+
+@mixin catalog-download-1190 {
+    /*CATALOG DOWNLOAD*/
+    .catalog_download-grid {
+        grid-gap: 30px;
+    }
+
+    .catalog_download-grid li img {
+        margin-bottom: 20px;
+        height: 320px;
+    }
+
+    .magazine_name {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .magazine_download {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .magazine_size {
+        font-size: 13px;
+        margin-bottom: 0;
+        padding-right: 10px;
+    }
+}

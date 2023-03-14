@@ -1,0 +1,70 @@
+@mixin get-magazine-480 {
+    /*GET MAGAZINE*/
+
+}
+
+@mixin get-magazine-640 {
+    /*GET MAGAZINE*/
+
+}
+
+@mixin get-magazine-768 {
+    /*GET MAGAZINE*/
+    .get_magazine .centre {
+        display: flex;
+    }
+
+    .get_magazine .col-1 {
+        width: 51%;
+        padding-bottom: 0;
+        padding-right: 25px;
+    }
+
+    .get_magazine .col-1::before {
+        bottom: 0;
+        width: 635px;
+        height: 480px;
+    }
+
+    .get_magazine-subtitle {
+        font-size: 20px;
+    }
+
+    .get_magazine .col-2 {
+        width: 49%;
+    }
+
+    .get_magazine-form {
+        width: 100%;
+        margin: 0;
+        padding: 50px 40px 60px 40px;
+    }
+
+    .get_magazine-bottom {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .get_magazine-bottom > span {
+        text-align: start;
+    }
+
+    .get_magazine-bottom .btn {
+        margin: 0 0 0 45px;
+    }
+}
+
+@mixin get-magazine-1024 {
+    /*GET MAGAZINE*/
+    .get_magazine {
+        margin-bottom: 120px;
+    }
+}
+
+@mixin get-magazine-1190 {
+    /*GET MAGAZINE*/
+    .get_magazine-bottom .btn {
+        padding-left: 47px;
+        padding-right: 47px;
+    }
+}

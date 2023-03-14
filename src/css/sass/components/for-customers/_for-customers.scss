@@ -258,3 +258,247 @@
     color: var(--main-color-1);
     font-weight: 600;
 }
+
+.reg_guarantee {
+    border-radius: 40px;
+    padding: 30px 15px 35px 15px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% + 30px);
+    margin: 0 -15px 80px -15px;
+    background-color: var(--base-color-2);
+    position: relative;
+    overflow: hidden;
+}
+
+.progress_line {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--main-color-6);
+    height: 8px;
+}
+
+.fill_line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-image: url("../images/fill-line.png");
+    background-size: contain;
+    border-radius: 4px;
+}
+
+.progress_info {
+    position: absolute;
+    top: -3px;
+    right: 40px;
+    font-size: 11px;
+    color: var(--main-color-3);
+}
+
+.reg_guarantee .headline_1 {
+    text-align: center;
+}
+
+.reg_guarantee .input_wrap {
+    margin-bottom: 15px;
+}
+
+.input_wrap.sms_code .input_message a {
+    margin-left: 6px;
+}
+
+.reg_guarantee .checkbox_styled {
+    margin-bottom: 10px;
+}
+
+.reg_guarantee .checkbox_styled span {
+    display: block;
+}
+
+.input_wrap.sms_code input{
+    text-align: center;
+}
+
+.reg_guarantee button.btn {
+    margin-top: 20px;
+}
+
+.warning_info {
+
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 15px 10px;
+    background-color: var(--main-color-6);
+    border-radius: var(--border-radius);
+}
+
+.warning_info .icon {
+    flex: 0 0 70px;
+    height: 70px;
+}
+
+.warning_info > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.warning_info b {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.register_process {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.register_process > li {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: var(--border-radius);
+    background-color: var(--base-color-2);
+    padding: 15px 15px 20px 15px;
+
+}
+
+.register_process > li::before {
+    display: none;
+}
+
+.process_image {
+    margin-right: 15px;
+    flex: 0 0 45px;
+    max-width: 45px;
+    height: auto;
+    display: block;
+}
+
+.process_content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.process_title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.process_title span {
+    color: var(--main-color-1);
+}
+
+.process_text {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.process_list {
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.process_list li {
+    padding-left: 15px;
+}
+
+.process_list li + li {
+    margin-top: 5px;
+}
+
+.process_list li::before {
+    background-color: var(--main-color-1);
+    width: 7px;
+    height: 7px;
+}
+
+.become_auth {
+    display: flex;
+    flex-direction: column;
+}
+
+.become_auth-subtitle {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: var(--base-color-6);
+}
+
+.become_auth-text {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.become_auth-call {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+    padding: 20px;
+    background-color: var(--base-color-2);
+    border-radius: var(--border-radius);
+}
+
+.become_auth-call > span {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.become_auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.become_auth-form .input_wrap {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.become_auth-form .btn {
+    margin-top: 5px;
+}
+
+.show_pass {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+
+.become_auth-form .show_pass {
+    right: 12px;
+    top: 34px;
+}
+
+.show_pass .icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--base-color-3);
+}
+
+.show_pass .icon.hidden_icon {
+    display: none;
+}
+
+.show_pass.active .icon.hidden_icon {
+    display: block;
+}
+
+.show_pass.active .icon.show_icon {
+    display: none;
+}
+
+.input_wrap.password_box input {
+    background-image: none;
+}

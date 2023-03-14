@@ -30,6 +30,8 @@
 @import "components/contacts/contacts-adaptive";
 @import "components/choose-map/choose-map-adaptive";
 @import "components/feedback/feedback-adaptive";
+@import "components/catalog-download/catalog-download-adaptive";
+@import "components/get-magazine/get-magazine-adaptive";
 
 @media only screen and (min-width : 480px)  {
     @include base-480;
@@ -64,6 +66,8 @@
     @include contacts-480;
     @include choose-map-480;
     @include feedback-480;
+    @include catalog-download-480;
+    @include get-magazine-480;
 }
 
 @media only screen and (min-width : 640px)  {
@@ -99,6 +103,8 @@
     @include contacts-640;
     @include choose-map-640;
     @include feedback-640;
+    @include catalog-download-640;
+    @include get-magazine-640;
 }
 
 @media only screen and (min-width : 768px)  {
@@ -134,6 +140,8 @@
     @include contacts-768;
     @include choose-map-768;
     @include feedback-768;
+    @include catalog-download-768;
+    @include get-magazine-768;
 }
 
 @media only screen and (min-width : 1024px) {
@@ -169,6 +177,8 @@
     @include contacts-1024;
     @include choose-map-1024;
     @include feedback-1024;
+    @include catalog-download-1024;
+    @include get-magazine-1024;
 }
 
 @media only screen and (min-width : 1190px) {
@@ -203,6 +213,8 @@
     @include contacts-1190;
     @include choose-map-1190;
     @include feedback-1190;
+    @include catalog-download-1190;
+    @include get-magazine-1190;
 }
 
 @media only screen and (min-width : 1264px) {

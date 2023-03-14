@@ -57,11 +57,14 @@
     .for_customers-aside {
         flex: 0 0 270px;
         display: flex;
+        position: sticky;
+        top: 76px;
     }
 
     .for_customers-content {
         flex: 1 1 auto;
         padding-left: 30px;
+        padding-top: 0;
     }
 
     .customers_menu {
@@ -195,6 +198,113 @@
 
     .how_buy-list {
         font-size: 16px;
+    }
+
+    .reg_guarantee {
+        padding: 40px 150px 60px 150px;
+        width: 100%;
+        margin: 0 0 120px 0;
+    }
+
+    .reg_guarantee .input_wrap {
+        margin-bottom: 20px;
+    }
+
+    .reg_guarantee .checkbox_styled {
+        margin-bottom: 16px;
+    }
+
+    .reg_guarantee button.btn {
+        margin-top: 30px;
+    }
+
+    .warning_info {
+        padding: 20px;
+    }
+
+    .warning_info .icon {
+        flex: 0 0 100px;
+        height: 100px;
+        margin-right: 10px;
+    }
+
+    .warning_info b {
+        font-size: 24px;
+    }
+
+    .register_process > li {
+        margin-bottom: 15px;
+        padding: 35px;
+    }
+
+    .register_process > li:nth-child(2) {
+        width: calc(50% - 7px);
+    }
+
+    .register_process > li:nth-child(3) {
+        width: calc(50% - 7px);
+        margin-left: 14px;
+    }
+
+    .process_image {
+        flex: 0 0 102px;
+        max-width: 102px;
+        margin-right: 30px;
+    }
+
+    .process_title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .process_text {
+        margin-bottom: 10px;
+    }
+
+    .process_list li + li {
+        margin-top: 8px;
+    }
+
+    .become_auth-subtitle {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .become_auth-text {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .become_auth-call {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 100px;
+        padding: 30px;
+    }
+
+    .become_auth-call > span {
+        font-size: 20px;
+        margin-bottom: 0;
+        padding-right: 36px;
+    }
+
+    .become_auth-call .btn {
+        flex: 0 0 auto;
+    }
+
+    .become_auth-form {
+        width: 100%;
+        max-width: 570px;
+    }
+
+    .become_auth-form .btn {
+        margin-top: 10px;
+        margin-left: auto;
+    }
+
+    .become_auth-form .show_pass {
+        right: 24px;
+        top: 52px;
     }
 }
 
