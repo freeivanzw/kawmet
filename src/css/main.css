@@ -2761,7 +2761,7 @@ a:not([class]):active {
 
 .mobile_menu {
   color: var(--base-color-1);
-  display: none;
+  display: flex;
   flex-direction: column;
   position: fixed;
   top: 0;
@@ -2772,10 +2772,14 @@ a:not([class]):active {
   overflow-x: hidden;
   background-color: var(--base-color-8);
   z-index: 12;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
 }
 
 .mobile_menu.active {
-  display: flex;
+  opacity: 1;
+  visibility: visible;
 }
 
 .mobile_menu-header {
@@ -5547,7 +5551,7 @@ body.header_fixed .compare_popup {
   z-index: 1;
   position: absolute;
   top: 15px;
-  left: 15px;
+  left: 0;
   max-width: calc(100% - 30px);
 }
 

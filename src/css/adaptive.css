@@ -1091,7 +1091,7 @@
   }
 
   .cat_details-banner .btn {
-    width: 300px;
+    width: 285px;
   }
 
   .cat_details-banner .btn + .btn {
@@ -1201,6 +1201,10 @@
     object-fit: cover;
   }
 
+  .cat_details-status {
+    left: 15px;
+  }
+
   .cat_details-status li {
     font-size: 14px;
     padding: 4px 10px;
@@ -1273,10 +1277,18 @@
 
   .energy_saving-icon {
     font-size: 20px;
+    height: 30px;
   }
 
   .energy_saving-icon.a-plus-plus {
     padding-right: 15px;
+  }
+
+  .energy_saving-icon::after {
+    height: 30px;
+    width: 16px;
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid transparent;
   }
 
   .energy_saving-icon.a-plus {

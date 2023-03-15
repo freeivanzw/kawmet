@@ -100,7 +100,7 @@
 
 .mobile_menu {
     color: var(--base-color-1);
-    display: none;
+    display: flex;
     flex-direction: column;
     position: fixed;
     top: 0;
@@ -111,10 +111,14 @@
     overflow-x: hidden;
     background-color: var(--base-color-8);
     z-index: 12;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
 }
 
 .mobile_menu.active {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
 }
 
 .mobile_menu-header {
