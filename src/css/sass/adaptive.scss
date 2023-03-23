@@ -32,6 +32,8 @@
 @import "components/feedback/feedback-adaptive";
 @import "components/catalog-download/catalog-download-adaptive";
 @import "components/get-magazine/get-magazine-adaptive";
+@import "components/login/login-adaptive";
+@import "components/cabinet/cabinet-adaptive";
 
 @media only screen and (min-width : 480px)  {
     @include base-480;
@@ -68,6 +70,8 @@
     @include feedback-480;
     @include catalog-download-480;
     @include get-magazine-480;
+    @include login-480;
+    @include cabinet-480;
 }
 
 @media only screen and (min-width : 640px)  {
@@ -105,6 +109,8 @@
     @include feedback-640;
     @include catalog-download-640;
     @include get-magazine-640;
+    @include login-640;
+    @include cabinet-640;
 }
 
 @media only screen and (min-width : 768px)  {
@@ -142,6 +148,8 @@
     @include feedback-768;
     @include catalog-download-768;
     @include get-magazine-768;
+    @include login-768;
+    @include cabinet-768;
 }
 
 @media only screen and (min-width : 1024px) {
@@ -179,6 +187,8 @@
     @include feedback-1024;
     @include catalog-download-1024;
     @include get-magazine-1024;
+    @include login-1024;
+    @include cabinet-1024;
 }
 
 @media only screen and (min-width : 1190px) {
@@ -215,6 +225,8 @@
     @include feedback-1190;
     @include catalog-download-1190;
     @include get-magazine-1190;
+    @include login-1190;
+    @include cabinet-1190;
 }
 
 @media only screen and (min-width : 1264px) {

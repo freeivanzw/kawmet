@@ -279,9 +279,6 @@ $(function () {
 
     var $certificateSlider = new Swiper(".certificate_slider", {
         spaceBetween: 20,
-        mousewheel: true,
-        cssMode: true,
-        keyboard: true,
         scrollbar: {
             el: ".custom-scrollbar",
             hide: false,
@@ -294,9 +291,6 @@ $(function () {
     });
 
     var $mainSlider = new Swiper(".main_slider", {
-        mousewheel: true,
-        cssMode: true,
-        keyboard: true,
         autoplay: {
             delay: 8000,
             disableOnInteraction: false,
@@ -306,9 +300,6 @@ $(function () {
     var $productSlider = new Swiper(".product_swiper", {
         spaceBetween: -1,
         slidesPerView: "auto",
-        mousewheel: true,
-        cssMode: true,
-        keyboard: true,
         scrollbar: {
             el: ".custom-scrollbar",
             hide: false,
@@ -329,9 +320,6 @@ $(function () {
         var $categoriesSlider = new Swiper(".categories_slider", {
             spaceBetween: 5,
             slidesPerView: "auto",
-            mousewheel: true,
-            cssMode: true,
-            keyboard: true,
             scrollbar: {
                 el: ".custom-scrollbar",
                 hide: false,
@@ -344,9 +332,6 @@ $(function () {
     var $reviewsSlider = new Swiper(".reviews_slider", {
         spaceBetween: 20,
         slidesPerView: "auto",
-        mousewheel: true,
-        cssMode: true,
-        keyboard: true,
         scrollbar: {
             el: ".custom-scrollbar",
             hide: false,
@@ -359,9 +344,6 @@ $(function () {
     });
 
     var $interiorSlider = new Swiper(".interior_slider", {
-        mousewheel: true,
-        cssMode: true,
-        keyboard: true,
         autoplay: {
             delay: 4000,
             disableOnInteraction: false,
@@ -376,9 +358,6 @@ $(function () {
         var $categoriesSlider = new Swiper(".last_news-slider", {
             spaceBetween: 10,
             slidesPerView: "auto",
-            mousewheel: true,
-            cssMode: true,
-            keyboard: true,
             scrollbar: {
                 el: ".custom-scrollbar",
                 hide: false,
@@ -392,14 +371,8 @@ $(function () {
         slidesPerView: "auto",
         freeMode: true,
         watchSlidesProgress: true,
-        mousewheel: true,
-        cssMode: true,
-        keyboard: true,
     });
     var $bigSlider = new Swiper(".big_slider", {
-        mousewheel: true,
-        cssMode: true,
-        keyboard: true,
         navigation: {
             nextEl: ".arrow-next",
             prevEl: ".arrow-prev",
@@ -429,9 +402,6 @@ $(function () {
     var $videoSwiper = new Swiper(".video_swiper.small_video", {
         spaceBetween: 10,
         slidesPerView: "auto",
-        mousewheel: true,
-        cssMode: true,
-        keyboard: true,
         scrollbar: {
             el: ".custom-scrollbar",
             hide: false,
@@ -446,9 +416,6 @@ $(function () {
     var $videoSwiperBig = new Swiper(".video_swiper.big_video", {
         spaceBetween: 10,
         slidesPerView: "auto",
-        mousewheel: true,
-        cssMode: true,
-        keyboard: true,
         scrollbar: {
             el: ".custom-scrollbar",
             hide: false,
@@ -467,9 +434,6 @@ $(function () {
 
     var $interiorSwiper = new Swiper(".interior_swiper", {
         spaceBetween: 10,
-        mousewheel: true,
-        cssMode: true,
-        keyboard: true,
         navigation: {
             nextEl: ".arrow-next",
             prevEl: ".arrow-prev",
@@ -484,9 +448,6 @@ $(function () {
         var $categoriesSlider = new Swiper(".download_doc-swiper", {
             spaceBetween: 10,
             slidesPerView: "auto",
-            mousewheel: true,
-            cssMode: true,
-            keyboard: true,
             scrollbar: {
                 el: ".custom-scrollbar",
                 hide: false,
@@ -496,9 +457,6 @@ $(function () {
     }
     var $compareSlider = new Swiper(".compare_slider", {
         spaceBetween: 0,
-        mousewheel: true,
-        cssMode: true,
-        keyboard: true,
         slidesPerView: "auto",
         scrollbar: {
             el: ".custom-scrollbar",
@@ -509,17 +467,11 @@ $(function () {
 
     var $fixedCompareSlider = new Swiper(".fixed_compare-slider", {
         spaceBetween: 0,
-        mousewheel: true,
-        cssMode: true,
-        keyboard: true,
         slidesPerView: "auto",
     });
 
     var $gallerySlider = new Swiper(".gallery_slider", {
         spaceBetween: 10,
-        mousewheel: true,
-        cssMode: true,
-        keyboard: true,
         slidesPerView: "auto",
         scrollbar: {
             el: ".custom-scrollbar",

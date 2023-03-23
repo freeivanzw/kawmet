@@ -1,0 +1,48 @@
+@mixin login-480 {
+    /*LOGIN*/
+
+}
+
+@mixin login-640 {
+    /*LOGIN*/
+
+}
+
+@mixin login-768 {
+    /*LOGIN*/
+    .login_form {
+        flex-direction: row;
+        padding: 60px 45px;
+    }
+
+    .login_form .headline_2 {
+        text-align: center;
+    }
+
+    .login_form .col-1 {
+        width: 50%;
+        margin-bottom: 0;
+        padding-right: 15px;
+    }
+
+
+    .login_form .col-2 {
+        padding-left: 15px;
+        width: 50%;
+    }
+}
+
+@mixin login-1024 {
+    /*LOGIN*/
+    .login {
+        padding-top: 100px;
+        margin-bottom: 120px;
+    }
+}
+
+@mixin login-1190 {
+    /*LOGIN*/
+    .login_form {
+        padding: 50px 130px;
+    }
+}

@@ -52,4 +52,9 @@
     border-right: 1px solid var(--base-color-1);
     transform: rotate(-45deg);
     position: relative;
+    transition: 0.3s;
+}
+
+.blog_1-item:hover span::after {
+    transform: translateX(4px) rotate(-45deg) ;
 }

@@ -29,6 +29,11 @@
 
     .blog_1-item {
         font-size: 20px;
+        transition: 0.3s;
+    }
+
+    .blog_1-item:hover {
+        box-shadow: 0px 10px 10px rgba(27, 28, 32, 0.15);
     }
 
     .blog_1-item span {

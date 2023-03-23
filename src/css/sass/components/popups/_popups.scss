@@ -15,6 +15,15 @@
     z-index: 10;
     overflow-x: hidden;
     overflow-y: auto;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
+}
+
+.popup_box.hidden {
+    display: flex !important;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .popup {

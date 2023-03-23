@@ -65,9 +65,13 @@
     margin-bottom: 4px;
 }
 
-.last_news-item figcaption b {
+.last_news-name {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--text-color);
     font-size: 13px;
     margin-bottom: 4px;
+    transition: 0.3s;
 }
 
 .last_news-item figcaption span {

@@ -92,6 +92,11 @@
     position: relative;
     text-decoration: none;
     font-size: 13px;
+    transition: 0.3s;
+}
+
+.interested_link:hover {
+    color: var(--main-color-2);
 }
 
 .interested_link::after {
@@ -104,6 +109,11 @@
     border-right: 1px solid var(--main-color-1);
     position: relative;
     transform: rotate(-45deg);
+    transition: 0.3s;
+}
+
+.interested_link:hover::after {
+    border-color: var(--main-color-2)
 }
 
 .blog_details article {

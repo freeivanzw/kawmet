@@ -1,0 +1,90 @@
+@mixin cabinet-480 {
+    /*CABINET*/
+
+}
+
+@mixin cabinet-640 {
+    /*CABINET*/
+    .order_columns.header_colums {
+        display: flex;
+        justify-content: flex-end
+    }
+
+    .order_columns.header_colums>* {
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 500;
+        color: var(--text-light)
+    }
+
+    .order_columns {
+        flex-direction: row
+    }
+
+    .order_image-wrap {
+        flex: 0 0 60px;
+        width: 60px;
+        height: 60px;
+        margin: 0 20px 0 0
+    }
+
+    .order_name {
+        flex: 0 0 calc(40% - 80px);
+        padding-right: 10px
+    }
+
+    .order_price {
+        display: inline-block;
+        flex: 0 0 17%;
+        padding-right: 10px
+    }
+
+    .order_amount {
+        flex: 0 0 17%;
+        padding-right: 10px
+    }
+
+    .order_amount-prefix {
+        display: none
+    }
+
+    .order_item-price {
+        flex: 0 0 26%
+    }
+}
+
+@mixin cabinet-768 {
+    /*CABINET*/
+    .cabinet > .centre > .col-1 {
+        height: max-content;
+        flex: 0 0 270px;
+        width: auto;
+    }
+
+    .cabinet > .centre > .col-2 {
+        flex: 1 1 auto;
+        padding-top: 0;
+        padding-left: 30px;
+        width: auto;
+    }
+
+    .edit_user-info {
+        align-items: flex-start;
+    }
+
+    .edit_user-info .input_wrap {
+        width: 100%;
+    }
+}
+
+@mixin cabinet-1024 {
+    /*CABINET*/
+    .cabinet {
+        margin-bottom: 120px;
+    }
+}
+
+@mixin cabinet-1190 {
+    /*CABINET*/
+
+}

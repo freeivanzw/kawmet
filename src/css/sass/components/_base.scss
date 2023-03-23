@@ -671,6 +671,14 @@ a:not([class]):active {
     background: #1E1E1E;
     opacity: 0.85;
     z-index: 10;
+    transition: 0.3s;
+    visibility: visible;
+}
+
+.shadow.hidden {
+    display: block !important;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .hidden {
@@ -860,6 +868,7 @@ a:not([class]):active {
     width: 26px;
     height: 26px;
     border-radius: var(--border-radius);
+    transition: 0.3s;
 }
 
 .compare_btn .compare_icon {
@@ -884,6 +893,10 @@ a:not([class]):active {
 
 .compare_btn.compare_active .compare_icon {
     fill: var(--base-color-8)
+}
+
+.compare_btn:hover {
+    background-color: var(--base-color-4);
 }
 
 .compare_btn:hover .compare_icon {

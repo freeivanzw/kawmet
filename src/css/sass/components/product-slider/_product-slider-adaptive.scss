@@ -44,9 +44,14 @@
     }
 
     .product_swiper {
-        padding: 0 40px;
+        padding: 0 39px;
         margin: 0 -40px;
         width: calc(100% + 80px);
+    }
+
+    .product_swiper .swiper-wrapper {
+        padding: 15px 0;
+        margin: -15px 0;
     }
 
     .product_swiper::before,
