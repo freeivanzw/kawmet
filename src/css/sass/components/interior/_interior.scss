@@ -47,3 +47,11 @@
 .interior_slider + .show_gallery {
     margin: 0 15px;
 }
+
+.interior_slider .slider_arrow.arrow-prev {
+    left: 15px;
+}
+
+.interior_slider .slider_arrow.arrow-next {
+    right: 15px;
+}

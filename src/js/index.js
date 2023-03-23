@@ -352,6 +352,10 @@ $(function () {
             el: ".swiper-pagination",
             clickable: true,
         },
+        navigation: {
+            nextEl: ".arrow-next",
+            prevEl: ".arrow-prev",
+        }
     });
 
     if ($(window).width() < 768) {

@@ -19,6 +19,8 @@
     display: block;
     width: 100%;
     height: auto;
+    z-index: -1;
+    position: relative;
 }
 
 .certificate_image .btn {
@@ -55,6 +57,7 @@
 }
 
 .certificate_list li span {
+    font-size: 14px;
     color: var(--base-color-7);
     line-height: 1.4;
 }
