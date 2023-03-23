@@ -15,7 +15,7 @@
 .top_header {
     color: var(--text-contrast);
     background-color: var(--base-color-9);
-    padding: 10px 0;
+    padding: 8px 0;
 }
 
 .top_header .centre {
@@ -45,8 +45,8 @@
 
 .header_logo img.mobile {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
 }
 
 .header_logo img.desktop {
@@ -78,8 +78,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 36px;
+    height: 36px;
 }
 
 .mob_menu-btn .icon {
@@ -454,7 +454,7 @@ li.active > .mobile_item-link {
 .search_form input[type=text] {
     width: 100%;
     padding-left: 40px;
-    height: 40px;
+    height: 36px;
 }
 
 .search_box.dark .search_form input[type=text] {
@@ -672,7 +672,7 @@ li.active > .mobile_item-link {
 
 body.header_fixed .compare_popup {
     position: fixed;
-    top: 67px;
+    top: 54px;
     left: 0;
 }
 
